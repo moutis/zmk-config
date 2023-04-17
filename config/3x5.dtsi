@@ -5,9 +5,6 @@
 #ifdef EXTERNAL_POWER
 #    include <dt-bindings/zmk/ext_power.h>
 #endif
-#ifdef MOUSE_KEYS
-#    include <dt-bindings/zmk/mouse.h>
-#endif
 
 // Layer aliases
 #define DEF 0
@@ -16,7 +13,6 @@
 #define SYM 3
 #define NAV 4
 #define FUN 5
-#define MSE 6
 
 // Desktop and tab navigation shortcuts
 #define D_LT   LC(LG(LEFT))
@@ -97,13 +93,6 @@
 #    define FN_EXTRA2 &kp PAUSE_BREAK
 #endif
 
-#ifdef MOUSE_KEYS
-#    include "mouse.dtsi"
-#    define MS_ACT(key) &lt MSE key
-#else
-#    define MS_ACT(key) &kp key
-#endif
-
 &mt {
     flavor = "hold-preferred";
     tapping-term-ms = <150>;
@@ -130,7 +119,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
-            global-quick-tap-ms = <100>;
+            global-quick-tap;
         };
         asl: alpha_shift_l {
             compatible = "zmk,behavior-hold-tap";
@@ -153,7 +142,7 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;
-            global-quick-tap-ms = <100>;
+            global-quick-tap;
         };
         asr: alpha_shift_r {
             compatible = "zmk,behavior-hold-tap";
@@ -167,13 +156,22 @@
             hold-trigger-on-release;
         };
 
-        // Swapper for smart alt+tab
-        swapper: swapper {
-            compatible = "zmk,behavior-tri-state";
-            label = "SWAPPER";
+        // Easy alt-tab with alt+backspace thumb using mod-morphs
+        bstab: backspace_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_TAB";
             #binding-cells = <0>;
-            bindings = <&kt LALT>, <&kp TAB>, <&kt LALT>;
-            ignored-key-positions = <SWP_POS>;
+            bindings = <&kp BSPC>, <&kp TAB>;
+            mods = <MOD_LALT>;
+            keep-mods = <MOD_LALT>;
+        };
+        lt_bspc: layer_tap_backspace_tab {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LT_BT";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "balanced";
+            bindings = <&mo>, <&bstab>;
         };
     };
 
@@ -208,9 +206,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL A  &aml LGUI R   &aml LALT S   &asl LSHFT T  &kp G             &kp M         &asr RSHFT N  &amr RALT E   &amr RGUI I   &amr RCTRL O
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     P_L_DEF       &kp X         &kp C         MS_ACT(D)     I_L_DEF           I_R_DEF       &kp H         &kp COMMA     &kp DOT       P_R_DEF
+     P_L_DEF       &kp X         &kp C         &kp D         I_L_DEF           I_R_DEF       &kp H         &kp COMMA     &kp DOT       P_R_DEF
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET T3_R_DEF
+                                 T3_L_DEF      &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -223,9 +221,9 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &aml LCTRL R  &aml LGUI S   &aml LALT N   &asl LSHFT T  &kp P             &kp K         &asr RSHFT H  &amr RALT E   &amr RGUI I   &amr RCTRL A
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp W         &kp M         MS_ACT(G)     ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
+     ALP_XXX       &kp W         &kp M         &kp G         ALP_XXX           ALP_XXX       &kp D         &kp COMMA     &kp DOT       ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_L_DEF      &mt LCTRL ESC &lt NAV BSPC      &lt SYM SPACE &mt RSHFT RET T3_R_DEF
+                                 T3_L_DEF      &mt LCTRL ESC &lt_bspc NAV 0    &lt SYM SPACE &mt RSHFT RET T3_R_DEF
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -268,7 +266,7 @@
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &kp LCTRL     &kp LGUI      &kp LALT      &mt LSHFT TAB &kp C_VOL_DN      &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT     &kp END
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &kp LS(TAB)   &swapper      &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
+     ALP_XXX       &none         &none         &kp LS(INS)   ALP_PP            ALP_XXX       &kp DEL       &kp C_PREV    &kp C_NEXT    ALP_XXX
 // ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
                                  T3_L_SYM      &sys_reset    &trans            &trans        &kp LSHFT     T3_R_SYM
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -289,22 +287,5 @@
 //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
-
-#ifdef MOUSE_KEYS
-        mouse_layer {
-            label = "MSE";
-            bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none         &none         &none         &none         &none             &mwh S_LEFT   &mwh S_DOWN   &mmv M_UP     &mwh S_UP     &mwh S_RIGHT
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &kp LCTRL     &kp LGUI      &kp LALT      &kp LSHFT     &none             &none         &mmv M_LEFT   &mmv M_DOWN   &mmv M_RIGHT  &none
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     ALP_XXX       &none         &none         &none         ALP_XXX           ALP_XXX       &mkp MB4      &mkp MCLK     &mkp MB5      ALP_XXX
-// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
-                                 T3_XXX        &none         &none             &mkp LCLK     &mkp RCLK     T3_XXX
-//                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
-            >;
-        };
-#endif
     };
 };

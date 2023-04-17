@@ -23,12 +23,12 @@ layers:
   - {t: O, h: Ctrl}
   - X
   - C
-  - {t: D, h: MSE}
+  - D
   - H
   - ','
   - .
   - {t: Esc, h: Ctrl}
-  - {t: ⌫, h: NAV}
+  - {t: ⌫, h: NAV, s: ↹}
   - {t: ␣, h: SYM}
   - {t: ⏎, h: Shift}
   BRD:
@@ -54,12 +54,12 @@ layers:
   - {t: A, h: Ctrl}
   - W
   - M
-  - {t: G, h: MSE}
+  - G
   - D
   - ','
   - .
   - {t: Esc, h: Ctrl}
-  - {t: ⌫, h: NAV}
+  - {t: ⌫, h: NAV, s: ↹}
   - {t: ␣, h: SYM}
   - {t: ⏎, h: Shift}
   GME: [↹, Q, W, E, R, Y, U, I, O, P, Esc, A, S, D, F, H, J, K, L, GME, Z, X, C, M, ',', ., Alt, ␣, NAV, ⏎]
@@ -115,8 +115,8 @@ layers:
   - ↓
   - →
   - End
-  - Win Prev
-  - Win Next
+  - ''
+  - ''
   - Paste
   - ⌦
   - ⏮️
@@ -156,37 +156,6 @@ layers:
   - {type: held}
   - {type: held}
   - Boot
-  MSE:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - MW←
-  - MW↓
-  - M↑
-  - MW↑
-  - MW→
-  - Ctrl
-  - Gui
-  - Alt
-  - Shift
-  - ''
-  - ''
-  - M←
-  - M↓
-  - M→
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - Back Click
-  - Middle Click
-  - Forward Click
-  - ''
-  - ''
-  - Left Click
-  - Right Click
 combos:
 - p: [2, 3]
   k: J
@@ -252,6 +221,3 @@ combos:
   k: BT CLR
   l: [FUN]
   a: bottom
-- p: [26, 27]
-  k: MSE
-  l: [DEF, BRD]
