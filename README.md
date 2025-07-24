@@ -9,9 +9,9 @@ My personal ZMK instance of [**Hands Down**](http://handsdownlayout.com) on smal
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/)
 - [**Dust**](https://kbd.news/Dust-keyboard-1789.html)
 - [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92)
-- [**KLOR**](https://github.com/GEIGEIGEIST/KLOR)
+<!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR)
 - [**Kyria**](https://splitkb.com/products/kyria-rev3)
-
+-->
 ```
      ╭─────────────────────╮ ╭──────────────────────╮
 ESC  │  X   W   M   G   J  │ │  #$  .:  /*  "[  ']  │ BSP
