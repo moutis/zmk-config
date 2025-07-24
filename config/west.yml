@@ -10,7 +10,7 @@ manifest:
 #      url-base: https://github.com/ssbb
   projects:
     - name: zmk
-#      remote: zmkfirmware
+      remote: zmkfirmware
 #      revision: main
 #      import: app/west.yml
 #      remote: caksoylar
