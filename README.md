@@ -44,7 +44,7 @@ Currently building only for a Mac (*hard coded for gui instead of ctrl, and some
  <li>and for the exquisite [Zaphod](https://github.com/petejohanson/zaphod-config) board design</li>
  <li>to [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the sublime [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board.</li>
  <li>Also thanks to [caksoylar](https://github.com/caksoylar)/Bravekarma on the [ZMK Discord](https://discord.gg/HXWA39qJKX) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer) used to make the keymap images below, and a lot of help with some implementations (*consider sponsoring them, too, for all their work maturing ZMK*?).</li>
-
+</ul>
  Below is a somewhat simplified view of my keymap (*no adaptive or config layers, some combos not shown*).
 
 ![zaphod keymap](zaphod_keymap.png)
