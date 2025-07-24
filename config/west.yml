@@ -26,8 +26,8 @@ manifest:
       remote: urob
       revision: main # set to same as ZMK version above (main or v0.2)
 
-    - name: zmk-antecedent-morph
-      remote: ssbb
-      revision: v1
+#    - name: zmk-antecedent-morph
+#      remote: ssbb
+#      revision: v1
   self:
     path: config
