@@ -35,9 +35,9 @@ LSFT │  F   P   L   D   V  │ │  -+   U   O   Y   B  │ RSFT
 
 Currently building only for a Mac (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this too is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
 
-##Thanks to:
+## Thanks to:
  <ul>
- <li>and [urob](https://github.com/urob/) for the excellent [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module</li>
+ <li>[urob](https://github.com/urob/) for the excellent [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module</li>
  <li>[jcmkk3](https://github.com/jcmkk3) for the idea to implement adaptives via sticky layers that worked until proper solutions were made.</li>
  <li>many others on the [**Hands Down** Discord](https://discord.gg/BC3fzb2E) for the endless creativity and support.</li>
  <li>Of course, huge thanks to [Pete Johanson](https://github.com/petejohanson) *and contributors* for ZMK ([*why not consider sponsoring them*](https://github.com/sponsors/petejohanson)?)
