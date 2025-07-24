@@ -10,7 +10,7 @@ manifest:
       url-base: https://github.com/ssbb
   projects:
     - name: zmk
-      remote: zmkfirmware
+#      remote: zmkfirmware
 #      revision: main
 
 #      remote: caksoylar ## For zen display/power fixesS
