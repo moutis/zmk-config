@@ -18,7 +18,7 @@ macros {
             <&to l_japan>; // make Japanese layer default
        )
 /*
-     ZMK_MACRO(CmmaSpc, tap-ms = <40>; bindings = <&kp CMMA &kp SPACE>;)
+     ZMK_MACRO(CmmaSpc, tap-ms = <40>; bindings = <&kp COMMA &kp SPACE>;)
      ZMK_MACRO(m_shft, tap-ms = <40>; bindings = <&sl l_akDot>;) // <&sk LSHIFT> <&sl l_akDot>
 */
    ZMK_MACRO(AppSwitch,
@@ -205,7 +205,7 @@ macros {
                     , <&macro_tap &kp G>
                     , <&macro_release &kp LSHFT>
                     , <&macro_release &kp RSHFT>
-                    , <&macro_tap &kp R &kp A &kp T &kp E &kp F &kp U &kp L &kp L &kp Y &kp CMMA &kp SPACE>
+                    , <&macro_tap &kp R &kp A &kp T &kp E &kp F &kp U &kp L &kp L &kp Y &kp COMMA &kp SPACE>
                 ;
         )
 
