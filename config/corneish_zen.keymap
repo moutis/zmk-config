@@ -23,6 +23,7 @@
 
 / {
 #include "moutis_behaviors.dtsi"    // includes modtaps, modmorphs, lingers, adaptives
+
 #include "moutis_macros.dtsi"
 
     combos {
