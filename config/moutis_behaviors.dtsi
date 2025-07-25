@@ -298,7 +298,7 @@ behaviors {
             #binding-cells = <0>;
             bindings = <&kp CMMA>;
 
-        ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&caps_word>; };
+        ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
         
 //
