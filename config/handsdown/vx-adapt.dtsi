@@ -59,9 +59,10 @@
             bindings = <&kp G>;
 
             akG_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(G)>; };
-            akG_b_gl { trigger-keys = <M>; bindings = <&kp BSPC &kp L &kp G>; };
-            akG_t_pg { trigger-keys = <J>; bindings = <&kp P &kp G>; };
-            akG_b_lml { trigger-keys = <W>; bindings = <&kp BSPC &kp L &kp M &kp L>; };
+            akG_t_pg { trigger-keys = <J>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp P &kp G>; };
+            akG_t_l  { trigger-keys = <K>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            akG_b_gl { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp G>; };
+            akG_b_lml { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M &kp L>; };
         };
         ak_H: ak_H {
             compatible = "zmk,behavior-adaptive-key";
@@ -88,8 +89,8 @@
             bindings = <&kp J>;
 
             akJ_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(J)>; };
-            akJ_t_th { trigger-keys = <G>; bindings = <&kp T &kp H>; };
-            akJ_t_l { trigger-keys = <M W>; bindings = <&kp L>; };
+            akJ_t_th { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T &kp H>; };
+            akJ_t_l { trigger-keys = <M W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
         };
         ak_K: ak_K {
             compatible = "zmk,behavior-adaptive-key";
@@ -97,8 +98,8 @@
             bindings = <&kp K>;
 
             akK_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(K)>; };
-            akK_b_lk { trigger-keys = <D G>; bindings = <&kp BSPC &kp L &kp K>; };
-            akK_b_ck { trigger-keys = <T>; bindings = <&kp BSPC &kp C &kp K>; };
+            akK_b_lk { trigger-keys = <D G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp K>; };
+            akK_b_ck { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp C &kp K>; };
         };
         ak_L: ak_L {
             compatible = "zmk,behavior-adaptive-key";
