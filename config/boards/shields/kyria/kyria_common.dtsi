@@ -12,7 +12,7 @@
     chosen {
         zephyr,display = &oled;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &splitkb_kyria_6col_layout;
+        zmk,physical-layout = &splitkb_kyria_5col_layout;
     };
 
     kscan0: kscan {

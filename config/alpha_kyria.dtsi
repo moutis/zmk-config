@@ -1,0 +1,33 @@
+/*  Abstracted base (alpha) layers & associated adaptive key layers on a 36 key board
+    The values here are all defined in the corresponding HD-##.h file
+*/
+
+            l_alpha {
+                label = HD_Layer_label;
+                bindings = <
+                                HD_Ltop                                 HD_Rtop
+                                HD_Lmid                                 HD_Rmid
+                                HD_Lbtm LS(LS(3)) LG(F) LG(G) LS(LS(4)) HD_Rbtm
+          &kp K_MUTE &AppSwitch HD_Lthm LS(LS(3))             LS(LS(4)) HD_Rthm &tog l_num &kp K_PP
+                        >;
+                    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                    };
+            l_jp {
+                label = JP_Layer_label; // Japanese "mode" (L, C, X not used in Japanese, so repurpose to ん, Z, -)
+                bindings = <
+                                JP_Ltop                                  JP_Rtop
+                                JP_Lmid                                  JP_Rmid
+                                JP_Lbtm _______ _______  _______ _______ JP_Rbtm
+                _______ _______ JP_Lthm _______                  _______ JP_Rthm _______ _______
+                    sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+                >;
+            };
+            l_akDOT {
+                label = l_akDOT_label;
+                bindings = <
+                                DOT_Ltop                                  DOT_Rtop
+                                DOT_Lmid                                  DOT_Rmid
+                                DOT_Lbtm _______ _______  _______ _______ DOT_Rbtm
+                _______ _______ DOT_Lthm _______                  _______ DOT_Rthm _______ _______
+                >;
+            };
