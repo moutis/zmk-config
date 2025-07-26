@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 
-#include "keynames_kyria.h"         // key name defs for this board topology
+#include "includes/keynames_kyria.h"// key name defs for this board topology
 #include "moutis_config.dtsi"       // my add-on feature defs
 #include "handsdown/vf-config.h"    // HD alpha & related ak_layer definitions
 
