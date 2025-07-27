@@ -9,6 +9,7 @@ on:
       - config/*.conf
       - config/boards/**
       - config/*.h
+      - config/include/**
       - config/handsdown/**
       - build.yaml
 
