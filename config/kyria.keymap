@@ -28,7 +28,7 @@
         compatible = "zmk,keymap";
 
 #include "alpha_kyria.dtsi"    // base (alpha) layer (& related adaptive layers)
-#include "layers_3x5_3.dtsi"   // all other (common) layers (shouldn't vary)
+#include "layers_kyria.dtsi"   // all other (common) layers (shouldn't vary)
     };
 
 };
