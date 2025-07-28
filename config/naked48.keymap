@@ -36,25 +36,4 @@
 
 #include "keymaps/keymap_4x12_wide.dtsi"    // consolidated keymap
 
-/*
-        compatible = "zmk,keymap";
-
-        default_layer {
-            // ----------------------------------------------------------------------------------------------------------------------
-            // |  TAB  |   X   |   W   |   M   |   G   |   J   | ------- | ------- |   #   |   .    |   /   |   "   |   '   |   \   |
-            // | SHIFT |   S   |   C   |   N   |   T   |   K   | ------- | ------- |   ,   |   A    |   E   |   I   |   H   |   '   |
-            // | CTRL  |   F   |   P   |   L   |   D   |   V   | ------- | ------- |   -   |   U    |   O   |   Y   |   B   | ENTER |
-            // |-------|ADJUST | LCTL  | LALT  | LGUI  | LOWR  | bootloader | SPACE| RAIS  |  LARW  |  DARW |  UARW | RARW  |-------|
-            // ----------------------------------------------------------------------------------------------------------------------
-
-
-            bindings = <
-                &kp TAB    &kp X  &kp W     &kp M    &kp G    &kp J                     &kp HASH   &kp DOT  &kp FSLH  &kp DQT &kp SQT   &kp BSLH
-                &kp LSHFT  &kp S  &kp C     &kp N    &kp T    &kp K                     &kp COMMA  &kp A    &kp E     &kp I   &kp H     &kp SQT
-                &kp LCTRL  &kp F  &kp P     &kp L    &kp D    &kp V                     &kp MINUS  &kp U    &kp O     &kp Y   &kp B     &kp RET
-                           &mo 3  &kp LCTRL &kp LALT &kp LGUI &mo 1 &bootloader &kp SPACE &mo 2  &kp LEFT &kp DOWN  &kp UP  &kp RIGHT
-            >;
-        };
-*/
-
 };
