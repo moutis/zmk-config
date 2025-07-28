@@ -20,12 +20,12 @@
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives
 
     };
-/*
     macros {    // separating these allows us to add board specific macros here (if any)
     
 #include "moutis/moutis_macros.dtsi"    // common macros (superset)
 
     };
+/*
 
     combos {    // separating these allows us to add board specific combos here (if any)
         compatible = "zmk,combos";
