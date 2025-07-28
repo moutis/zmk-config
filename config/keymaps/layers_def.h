@@ -63,7 +63,7 @@
 #define l_fun_RM &kp KP_MULTIPLY    &mt RSHFT N1        &mt RGUI N2         &mt RALT N3         &mt LCTRL KP_PLUS
 
 #define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              &kp F15
-#define l_fun_RB &kp CMMA           &kp N4              &kp N5              &kp N6              &kp EQUAL
+#define l_fun_RB &kp COMMA          &kp N4              &kp N5              &kp N6              &kp EQUAL
 
 #define l_fun_LH &kp BSPC           &kp DEL
 #define l_fun_RH &kp N0             &kp DOT
