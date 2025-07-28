@@ -11,7 +11,7 @@ My personal ZMK instance of [**Hands Down**](http://handsdownlayout.com) on smal
 - [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit)
 - [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92)
 - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR)
-- [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5 - I don't use 3x6*)
+- [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5 only*)
 
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
@@ -29,7 +29,7 @@ My personal ZMK instance of [**Hands Down**](http://handsdownlayout.com) on smal
 
  Currently I have most of the combos: (`Qu`,`Z`, `Undo`, `Cut`, `Copy`, `Paste`, etc.), punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.), **`H` digraph combos** *(* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*), and pronouns (`I `, `I've `, `you'll`, `we'd`, etc. ). [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are now using urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) to further improve an already great layout (*removing more SFBs, scissors, etc.*), that even works for my `comma-cap` behavior! It's all very snappy. [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (via macros, and hold-tap behaviors) for things like diacritics `éèôåō` and paired symbols like `{([<>])}`, and more. My ZMK boards are almost indistinguishable from QMK now.
  
-### In the works (*I test the builds on several boards, with adaptives & combos*):
+- In the works (*I test the builds on several boards, with adaptives & combos*):
 - [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w)
 - [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx)
 
@@ -43,6 +43,4 @@ Currently building only for a Mac (*hard coded for gui instead of ctrl, and some
  - Of course, huge thanks to [Pete Johanson](https://github.com/petejohanson) *and contributors* for ZMK ([*why not consider sponsoring them*](https://github.com/sponsors/petejohanson)?)
 - and for the exquisite [Zaphod](https://github.com/petejohanson/zaphod-config) board design
 - [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the sublime [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board.
-- Also thanks to [caksoylar](https://github.com/caksoylar)/Bravekarma on the [ZMK Discord](https://discord.gg/HXWA39qJKX) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer) used to make the keymap images below, and a lot of help with some implementations (*consider sponsoring them, too, for all their work maturing ZMK*?).</li>
-
- Below is a somewhat simplified view of my keymap (*no adaptive or config layers, some combos not shown*).
+- Also thanks to [caksoylar](https://github.com/caksoylar)/Bravekarma on the [ZMK Discord](https://discord.gg/HXWA39qJKX) for the great keymap visualization tool, [keymap drawer](https://github.com/caksoylar/keymap-drawer) used to make the keymap images below, and a lot of help with some implementations (*consider sponsoring them, too, for all their work maturing ZMK*?). And for other individual help.
