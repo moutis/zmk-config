@@ -1,0 +1,30 @@
+ /*
+ * t_  = type text
+ * b_  = backspace then type text (often for "adaptive key")
+ * m_  = macro (performs commands/behaviors, incl. typing).
+ * ak_ = type a letter as an adaptive key (consider the prior key).
+ */
+ 
+
+     ZMK_MACRO(m_alpha,
+        bindings =
+            <&kp LANG2>, // switch to Roman/Latin script (m_henk)
+            <&to l_alpha>; // make alpha layer default
+       )
+     ZMK_MACRO(m_japan,
+        bindings =
+            <&kp LANG1>, // switch to Japanese script (m_henk)
+            <&to l_japan>; // make Japanese layer default
+       )
+/*
+     ZMK_MACRO(CmmaSpc, tap-ms = <40>; bindings = <&kp CMMA &kp SPACE>;)
+     ZMK_MACRO(m_shft, tap-ms = <40>; bindings = <&sl l_akDot>;) // <&sk LSHIFT> <&sl l_akDot>
+*/
+
+        
+    ZMK_MACRO(t_Semi,
+        tap-ms = <40>;
+        bindings = <&macro_release &kp LSHFT>
+                , <&macro_tap &kp SEMICOLON>
+                ;
+        )

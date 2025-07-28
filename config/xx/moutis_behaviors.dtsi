@@ -1,12 +1,3 @@
-/*    KEY POSITION Names
-    ╭─────────────────────╮ ╭─────────────────────╮
-LT5 │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │ RT5
-LM5 │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │ RM5
-LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
-    ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
-            ╰─────────────╯ ╰─────────────╯
-*/
-
 
 #define     my_hrm_config \
             compatible = "zmk,behavior-hold-tap"; \
@@ -110,76 +101,6 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             bindings = <&kp>, <&kp>;
         };
 
-        lk_qu: lk_qu {
-            my_lk_config;
-            bindings = <&kp>, <&t_Qu>;
-        };
-        lk_E_accent: lk_E_accent { // ´, é on "linger"
-            my_lk_config;
-            bindings = <&t_Eaccent>, <&kp>;
-        };
-        lk_E_grave: lk_E_grave { // `, è on "linger"
-            my_lk_config;
-            bindings = <&t_Egrave>, <&kp>;
-        };
-        lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
-            my_lk_config;
-            bindings = <&t_Eacute>, <&kp>;
-        };
-        lk_O_macron: lk_O_macron { // ¯, ō on "linger"
-            my_lk_config;
-            bindings = <&t_Omacron>, <&kp>;
-        };
-        lk_A_ring: lk_A_ring { // ˚, å on "linger"
-            my_lk_config;
-            bindings = <&t_Aring>, <&kp>;
-        };
-        lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
-            my_lk_config;
-            bindings = <&t_Uumlaut>, <&kp>;
-        };
-        lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
-            my_lk_config;
-            bindings = <&t_Cedille>, <&kp>;
-        };
-
-
-        lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
-            my_lk_config;
-            bindings = <&t_Japanese>, <&t_Japan>;
-        };
-        lk_th: lk_th { // Th on tap, tion on "linger"
-            my_lk_config;
-            bindings = <&t_tion>, <&t_Th>;
-        };
-        lk_sh: lk_sh { // Sh on tap, sion on "linger"
-            my_lk_config;
-            bindings = <&t_sion>, <&t_Sh>;
-        };
-        lk_gh: lk_gh { // Gh on tap, Ght on "linger"
-            my_lk_config;
-            bindings = <&t_ght>, <&t_Gh>;
-        };
-        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
-            my_lk_config;
-            bindings = <&pairDquo>, <&kp>;
-        };
-        lk_par: lk_par { // ( on tap, () on "linger"
-            my_lk_config;
-            bindings = <&pairPar>, <&kp>;
-        };
-        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
-            my_lk_config;
-            bindings = <&pairBkt>, <&kp>;
-        };
-        lk_brc: lk_brc {
-            my_lk_config;
-            bindings = <&pairBrc>, <&kp>;
-        };
-        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
-            my_lk_config;
-            bindings = <&pairLtGt>, <&kp>;
-        };
 /*
  * modmorph behaviors
  * identified by the mixed case of each of the keycodes
@@ -279,13 +200,5 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             #binding-cells = <0>;
             bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        
-        ak_CMMA: ak_CMMA {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>;
-
-            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
         
