@@ -1,0 +1,8 @@
+file_format: "1"
+id: naked48
+name: Naked48
+type: shield
+url: https://salicylic-acid3.hatenablog.com/
+requires: [pro_micro]
+features:
+  - keys

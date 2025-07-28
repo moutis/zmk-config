@@ -1,0 +1,98 @@
+/*
+    Assemble the keymap from the abstracted alpha layer and other layers
+
+
+    This is for a Kyria (3x5+5) board (uses the 3x5 matrix)
+
+
+    Uses the core 3x5+2 alpha row defs and adds extra keys to fill out the keymap.
+    The key (rows) values are defined in the corresponding HD-##.h file
+    that should be included in the .keymap file before this.
+
+    Layers are defined in moutis_config.dtsi so they can be
+    referenced anywhere (keymap, behaviors, combos, adaptives)
+
+*/
+
+#include "layers_def.h" // layer def common core (3x5+2)
+
+    keymap {
+        compatible = "zmk,keymap";
+            l_alpha {
+                label = HD_Layer_label;
+                bindings = <
+                                        HD_LT                                   HD_RT
+                                        HD_LM                                   HD_RM
+                                        HD_LB                                   HD_RB
+                &kp C_MUTE  &AppSwitch  HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))  HD_RH       &tog l_num &kp C_PP
+                >;
+            };
+            l_jp {
+                label = JP_Layer_label;
+                bindings = <
+                                        JP_LT                                   JP_RT
+                                        JP_LM                                   JP_RM
+                                        JP_LB                                   JP_RB
+                _______     _______     JP_LH   _______                 _______ JP_RH       _______     _______
+                >;
+            };
+            l_akDOT {
+                label = l_akDOT_label;
+                bindings = <
+                                        DOT_LT                                  DOT_RT
+                                        DOT_LM                                  DOT_RM
+                                        DOT_LB                                  DOT_RB
+                _______     _______     DOT_LH  _______                 _______ DOT_RH      _______     _______
+                >;
+            };
+
+            l_sym {
+            label = l_sym_label;
+                bindings = <
+                                        l_sym_LT                                l_sym_RT
+                                        l_sym_LM                                l_sym_RM
+                                        l_sym_LB                                l_sym_RB
+                _______     _______     l_sym_LH    _______             _______ l_sym_RH    _______     _______
+                >;
+            };
+
+            l_num {
+                label = l_num_label;
+                bindings = <
+                                        l_num_LT                                l_num_RT
+                                        l_num_LM                                l_num_RM
+                                        l_num_LB                                l_num_RB
+                _______     _______     l_num_LH    _______             _______ l_num_RH    _______     _______
+                >;
+            };
+
+            l_fun {
+                label = l_fun_label;
+                bindings = <
+                                        l_fun_LT                                l_fun_RT
+                                        l_fun_LM                                l_fun_RM
+                                        l_fun_LB                                l_fun_RB
+                _______     _______     l_fun_LH   _______              _______ l_fun_RH    _______     _______
+                >;
+            };
+
+            l_nav {
+                label = l_nav_label;
+                bindings = <
+                                        l_nav_LT                                l_nav_RT
+                                        l_nav_LM                                l_nav_RM
+                                        l_nav_LB                                l_nav_RB
+                _______     _______     l_nav_LH   _______              _______ l_nav_RH    _______     _______
+                >;
+            };
+
+            l_cfg {
+                label = l_cfg_label;
+                bindings = <
+                                        l_cfg_LT                                l_cfg_RT
+                                        l_cfg_LM                                l_cfg_RM
+                                        l_cfg_LB                                l_cfg_RB
+                _______     _______     l_cfg_LH   _______              _______ l_cfg_RH    _______     _______
+                >;
+            };
+    };

@@ -1,0 +1,21 @@
+# Draw keymap diagrams using keymap-drawer ZMK user config workflow
+name: Draw ZMK keymaps
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'config/*.keymap'
+#      - 'config/*.dtsi'
+      - keymap-drawer/config.yaml
+      - .github/workflows/draw-keymaps.yml
+
+jobs:
+  draw:
+    uses: caksoylar/keymap-drawer/.github/workflows/draw-zmk.yml@main
+    with:
+      keymap_patterns: 'config/*.keymap'
+      config_path: keymap-drawer/config.yaml
+      output_folder: keymap-drawer
+      install_branch: main
+      amend_commit: true
+      draw_args: "corneish_zen:'--ghost-keys 20 24 25 29 30 35'"

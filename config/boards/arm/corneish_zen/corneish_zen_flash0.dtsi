@@ -1,0 +1,80 @@
+/*
+*
+* Copyright (c) 2021 Darryl deHaan
+* SPDX-License-Identifier: MIT
+*
+*/
+
+
+/* NOTICE / WARNING:
+ *
+ * redefine &flash0 here to match the Zaphod definitions because I accidentally
+ * flashed zaphod firmware onto the Zen, and botched it all. To correct it,
+ * caksoylar suggested this to move the flash partition on the Zen to match the
+ * partition on the Zaphod. It worked, after flashing a new settings_reset.
+ *   This means that this Zen cannot use the standard Zen definitions, and that
+ * this may not work on a stock Zen.
+ */
+
+&flash0 {
+    /*
+     * For more information, see:
+     * http://docs.zephyrproject.org/latest/devices/dts/flash_partitions.html
+     */
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+/*
+        // Corneish-zen
+        sd_partition: partition@0 {
+            reg = <0x00000000 0x00026000
+*/
+        // Zaphod 
+        /delete-property/ sd_partition;
+        sd_partition: partition@0 {
+            reg = <0x00000000 0x00001000>;
+        };
+/*
+        // Corneish-zen
+        code_partition: partition@26000 {
+            reg = <0x00026000 0x000c6000>;
+        };
+*/
+        // Zaphod
+        /delete-property/ code_partition;
+//        code_partition: partition@1000 {
+        code_partition: partition@26000 {
+            reg = <0x00001000 0x000d3000>;
+        };
+
+        /*
+         * The flash starting at 0x000ec000 and ending at
+         * 0x000f3fff is reserved for use by the application.
+         */
+
+        /*
+         * Storage partition will be used by FCB/LittleFS/NVS
+         * if enabled.
+         */
+/*
+        // Corneish-zen
+        storage_partition: partition@ec000 {
+            reg = <0x000ec000 0x00008000>;
+        };
+*/
+        // Zaphod
+        /delete-property/ storage_partition;
+//        storage_partition: partition@d4000 {
+        storage_partition: partition@ec000 {
+            reg = <0x000d4000 0x00020000>;
+        };
+
+        // this didn't change.
+        boot_partition: partition@f4000 {
+            reg = <0x000f4000 0x0000c000>;
+        };
+
+    };
+};
