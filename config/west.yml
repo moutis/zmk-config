@@ -22,7 +22,7 @@ manifest:
 #      import: app/west.yml
     - name: zmk-adaptive-key
       remote: urob
-      revision: v0.2+fix-child-nodes # set to same as ZMK version above
+      revision: main # set to same as ZMK version above
 #    - name: zmk-antecedent-morph
 #      remote: ssbb
 #      revision: v1
