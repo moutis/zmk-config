@@ -14,11 +14,14 @@
 
 */
 
+#define l_raise 1
+
+
 #include "layers_def.h" // layer def common core (3x5+2)
 
     keymap {
         compatible = "zmk,keymap";
-        default_layer {
+        l_alpha {
             // ----------------------------------------------------------------------------------------------------------------------
             // |   X   |   W   |   M   |   G   |   J   |  TAB  | ------- | ------- | btldr |   #   |   .    |   /   |   "   |   '   |
             // |   S   |   C   |   N   |   T   |   K   | raise | ------- | ------- |  esc  |   ,   |   A    |   E   |   I   |   H   |
