@@ -16,9 +16,6 @@
 
 #define l_raise 1
 
-
-// #include "layers_def.h" // layer def common core (3x5+2)
-
     keymap {
         compatible = "zmk,keymap";
         l_alpha {
@@ -32,13 +29,13 @@
 
             bindings = <
                 HD_LT       &kp TAB                                                  &kp bootloader  HD_RT
-                HD_LM       &mo 1                                                    &kp ESC         HD_RM
+                HD_LM       &mo l_raise                                                    &kp ESC         HD_RM
                 HD_LB       &kp Z                                                    &kp Q           HD_RB
                 &kp LEFT    &kp RIGHT   HD_LH       &kp LSHFT   &kp LCTRL   &kp RALT &kp RGUI        HD_RH   &kp UP  &kp DOWN
             >;
         };
 
-        raise {
+        l_raise {
             // ----------------------------------------------------------------------------------------------------------
             // |   ~   |  1   |  2   |  3   |  4   |  5   |-------|-------|  6    |   7   |  8   |  9   |   0   |  DEL  |
             // |  DEL  |  F1  |  F2  |  F3  |  F4  |  F5  |-------|-------|  F6   |   -   |  =   |  [   |   ]   |   \   |
