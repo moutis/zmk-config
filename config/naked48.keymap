@@ -42,7 +42,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-#include “keymaps/keymap_4x12.dtsi”
+#include "keymaps/keymap_4x12.dtsi"
 
     };
 */
