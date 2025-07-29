@@ -7,10 +7,9 @@
  * b_  = backspace then type text (often for "adaptive key")
  * m_  = macro (performs commands/behaviors, incl. typing).
  * ak_ = type a letter as an adaptive key (consider the prior key).
+ *
  */
- #define rst_btld reset_bootldr 0 0
-
-
+ 
      ZMK_MACRO(m_alpha,
         bindings =
             <&kp LANG2>,    // switch to Roman/Latin script (m_henk)
@@ -22,9 +21,8 @@
             <&to l_jp>;     // make Japanese layer default
        )
 
-   ZMK_MACRO(SlAppy,
-        wait-ms = <50>;
-        tap-ms = <20>;
+   ZMK_MACRO(SlAppy,        // "Sticky Layer App Switcher"
+        wait-ms = <50>; tap-ms = <20>;
         bindings =
                     <&macro_press &kp RGUI>    // leave GUI down to keep menu up
                   , <&macro_tap &kp TAB>       // (use press for repeat)
@@ -35,17 +33,16 @@
                   , <&macro_release &kp RGUI>  // release the previous hold
                   ;
         )
-    ZMK_MACRO(SlApBack,
-        wait-ms = <50>;
-        tap-ms = <20>;
+    ZMK_MACRO(SlApBack,        // "Sticky Layer App Switcher Backwards"
+        wait-ms = <50>; tap-ms = <20>;
         bindings =
-                    <&macro_press &sk RGUI> // leave GUI down to keep menu up
-                  , <&macro_press &kp LSHFT> //
-                  , <&macro_tap &kp TAB> // just tap for no repeat
-                  , <&macro_pause_for_release> // hold for repeat ...
-                  , <&macro_release &kp LSHFT> //
-                  , <&macro_tap &skapp LGUI> // release other GUI after a timeout
-                  , <&macro_release &sk RGUI> // now release the previous hold
+                    <&macro_press &sk RGUI>     // leave GUI down to keep menu up
+                  , <&macro_press &kp LSHFT>    //
+                  , <&macro_tap &kp TAB>        // just tap for no repeat
+                  , <&macro_pause_for_release>  // hold for repeat ...
+                  , <&macro_release &kp LSHFT>  //
+                  , <&macro_tap &skapp LGUI>    // release other GUI after a timeout
+                  , <&macro_release &sk RGUI>   // now release the previous hold
                   ;
         )
 

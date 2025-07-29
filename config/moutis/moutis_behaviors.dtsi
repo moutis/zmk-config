@@ -36,13 +36,14 @@
             release-after-ms = <900>;
         };
 
-         reset_bootldr: reset_bootldr {
+         reset_bootldr: reset_bootldr { // tap for reset, hold for bootloader
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <500>;    // hold 0.5 seconds (Nice!Nano double-tap reset timing)
             flavor = "tap-preferred";
             bindings = <&bootloader>, <&sys_reset>;
         };
+#define rst_btld reset_bootldr 0 0 // simple macro to keep the keymap uncluttered
 
 //
 // home row mods

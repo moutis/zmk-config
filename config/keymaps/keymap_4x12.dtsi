@@ -24,7 +24,7 @@
 
 
             bindings = <
-                HD_LT       &kp TAB                                                         &bootloader HD_RT
+                HD_LT       &kp TAB                                                         &rst_btld   HD_RT
                 HD_LM       &mo 1                                                           &kp ESC     HD_RM
                 HD_LB       &kp Z                                                    &kp Q              HD_RB
                 &kp LEFT    &kp RIGHT   HD_LH       &kp LSHFT   &kp LCTRL   &kp RALT &kp RGUI           HD_RH   &kp UP  &kp DOWN
