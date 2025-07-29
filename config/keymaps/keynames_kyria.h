@@ -1,29 +1,29 @@
-//
-// keynames_kyria.h
-//
-//
-//  Created by Alan on 7/24/22.
-//
-/*  Key Position Names for a 3x5+5 Kyria (44 keys) form factor
-
-    Inside the box is the 3x5+2 (34) key core def.
-
-    While all key positions are defined, I default to
-    combos only using the core 3x5+2 zone.
-     ╭─────────────────────╮                  ╭─────────────────────╮
- LT5 │ LT4 LT3 LT2 LT1 LT0 │ LTA          RTB │ RT0 RT1 RT2 RT3 RT4 │ RT5
- LM5 │ LM4 LM3 LM2 LM1 LM0 | LMA          RMA | RT0 RM1 RM2 RM3 RM4 │ RM5
- LB5 │ LB4 LB3 LB2 LB1 LB0 │ LBA LBB  RBB RBA │ RB0 RB1 RB2 RB3 RB4 │ RB5
-     ╰───────────╮ LH2 LH1 │ LH0 LHA  RHA RH0 │ RH1 RH2 ╭───────────╯
-     LH5 LH4 LH3 ╰─────────╯                  ╰─────────╯ RH3 RH4 RH5
-
-     ╭─────────────────────╮                  ╭─────────────────────╮
- LT5 │   0   1   2   3   4 │ LTA          RTB │   5   6   7   8   9 │ RT5
- LM5 │  10  11  12  13  14 | LMA          RMA |  15  16  17  18  19 │ RM5
- LB5 │  20  21  22  23  24 │ 25  26    27  28 │  29  30  31  32  33 │ RB5
-     ╰───────────╮  36  37 │ 38  LHA  RHA  39 │  40  41 ╭───────────╯
-     LH5  34  35 ╰─────────╯                  ╰─────────╯  42  43 RH5
+/*
+ * keynames_kyria.h
+ *
+ *
+ *  Created by Alan on 7/24/22.
+ *
+ *  Key Position Names for a 3x5+5 Kyria (44 keys) form factor
 */
+/*                       UNIVERSAL KEY POSITION NAMES
+ *          alphas & combos should be limited to 3x5+2 common core
+ *     ╭─────────────────────╮                  ╭─────────────────────╮
+ * LT5 │   0   1   2   3   4 │ LTA          RTB │   5   6   7   8   9 │ RT5
+ * LM5 │  10  11  12  13  14 | LMA          RMA |  15  16  17  18  19 │ RM5
+ * LB5 │  20  21  22  23  24 │ 25  26     27 28 │  29  30  31  32  33 │ RB5
+ *     ╰───────────╮  36  37 │ 38 LHA    RHA 39 │  40  41 ╭───────────╯
+ *     LH5  34  35 ╰─────────╯                  ╰─────────╯  42  43 RH5
+ *
+ * FRA   FR1 FR2 FR3 FR4 FR5                      FR6 FR7 FR8 FR9 FR0   FRB
+ * NRA   NR1 NR2 NR3 NR4 NR5                      NR6 NR7 NR8 NR9 NR0   NRB
+ *     ╭─────────────────────╮                  ╭─────────────────────╮
+ * LT5 │ LT4 LT3 LT2 LT1 LT0 │ LTA          RTA │ RT0 RT1 RT2 RT3 RT4 │ RT5
+ * LM5 │ LM4 LM3 LM2 LM1 LM0 │ LMA          RMA │ RM0 RM1 RM2 RM3 RM4 │ RM5
+ * LB5 │ LB4 LB3 LB2 LB1 LB0 │ LBA LBB  RBB RBA │ RB0 RB1 RB2 RB3 RB4 │ RB5
+ *     ╰────────────╮LH2 LH1 | LH0 LHA  RHA RH0 | RH1 RH2╭────────────╯
+ *      LH5 LH4 LH3 ╰────────╯                  ╰────────╯ RH3 RH4 LH5
+ */
 
 #pragma once
 

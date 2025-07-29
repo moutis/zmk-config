@@ -1,28 +1,28 @@
-//
-// keynames_3x5_3.h
-//
-//
-//  Created by Alan on 7/24/22.
-//
-/*  Key Position Names for a 3x5+3 (36 key) form factor
-
-    Inside the box is the 3x5+2 (34) key core def.
-
-    While all key positions are defined, I default to
-    combos only using the core 3x5+2 zone.
-     ╭─────────────────────╮                  ╭─────────────────────╮
-     │   0   1   2   3   4 │                  │  5   6   7   8   9  │
-     │  10  11  12  13  14 │                  │ 15  16  17  18  19  |
-     |  20  21  22  23  24 │                  │ 25  26  27  28  29  |
-     ╰────────╮ 30  31  32 |                  | 33  35  35 ╭────────╯
-              ╰────────────╯                  ╰────────────╯
-
-     ╭─────────────────────╮                  ╭─────────────────────╮
-     │ LT4 LT3 LT2 LT1 LT0 │                  │ RT0 RT1 RT2 RT3 RT4 │
-     │ LM4 LM3 LM2 LM1 LM0 │                  │ RM0 RM1 RM2 RM3 RM4 │
-     │ LB4 LB3 LB2 LB1 LB0 │                  │ RB0 RB1 RB2 RB3 RB4 │
-     ╰───────╮ LH3 LH2 LH1 |                  | RH1 RH2 RH3 ╭───────╯
-             ╰─────────────╯                  ╰─────────────╯
+/*
+ * keynames_3x5_3.h
+ *
+ *
+ * Created by Alan on 7/24/22.
+ *
+ * Key Position Names for a 3x5+3 (34 key) form factor
+ *
+ *
+ *                       UNIVERSAL KEY POSITION NAMES
+ *          alphas & combos should be limited to 3x5+2 common core
+ *     ╭─────────────────────╮                  ╭─────────────────────╮
+ *     │   0   1   2   3   4 │                  │  5   6   7   8   9  │
+ *     │  10  11  12  13  14 │                  │ 15  16  17  18  19  |
+ *     |  20  21  22  23  24 │                  │ 25  26  27  28  29  |
+ *     ╰────────╮ 30  31  32 |                  | 33  35  35 ╭────────╯
+ *              ╰────────────╯                  ╰────────────╯
+ * FRA   FR1 FR2 FR3 FR4 FR5                      FR6 FR7 FR8 FR9 FR0   FRB
+ * NRA   NR1 NR2 NR3 NR4 NR5                      NR6 NR7 NR8 NR9 NR0   NRB
+ *     ╭─────────────────────╮                  ╭─────────────────────╮
+ * LT5 │ LT4 LT3 LT2 LT1 LT0 │ LTA          RTA │ RT0 RT1 RT2 RT3 RT4 │ RT5
+ * LM5 │ LM4 LM3 LM2 LM1 LM0 │ LMA          RMA │ RM0 RM1 RM2 RM3 RM4 │ RM5
+ * LB5 │ LB4 LB3 LB2 LB1 LB0 │ LBA LBB  RBB RBA │ RB0 RB1 RB2 RB3 RB4 │ RB5
+ *     ╰────────╮LH3 LH2 LH1 | LH0 LHA  RHA RH0 | RH1 RH2 RB3╭────────╯
+ *      LH5 LH4 ╰────────────╯                  ╰────────────╯ RH4 LH5
 */
 
 #pragma once
