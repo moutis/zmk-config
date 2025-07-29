@@ -103,84 +103,6 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 
 
 /*
- * lk_ linger key behaviors (approximated via hold-tap)
- */
-        lk: lk {
-            my_lk_config;
-            bindings = <&kp>, <&kp>;
-        };
-
-        lk_qu: lk_qu {
-            my_lk_config;
-            bindings = <&kp>, <&t_Qu>;
-        };
-        lk_E_accent: lk_E_accent { // ´, é on "linger"
-            my_lk_config;
-            bindings = <&t_Eaccent>, <&kp>;
-        };
-        lk_E_grave: lk_E_grave { // `, è on "linger"
-            my_lk_config;
-            bindings = <&t_Egrave>, <&kp>;
-        };
-        lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
-            my_lk_config;
-            bindings = <&t_Eacute>, <&kp>;
-        };
-        lk_O_macron: lk_O_macron { // ¯, ō on "linger"
-            my_lk_config;
-            bindings = <&t_Omacron>, <&kp>;
-        };
-        lk_A_ring: lk_A_ring { // ˚, å on "linger"
-            my_lk_config;
-            bindings = <&t_Aring>, <&kp>;
-        };
-        lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
-            my_lk_config;
-            bindings = <&t_Uumlaut>, <&kp>;
-        };
-        lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
-            my_lk_config;
-            bindings = <&t_Cedille>, <&kp>;
-        };
-
-
-        lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
-            my_lk_config;
-            bindings = <&t_Japanese>, <&t_Japan>;
-        };
-        lk_th: lk_th { // Th on tap, tion on "linger"
-            my_lk_config;
-            bindings = <&t_tion>, <&t_Th>;
-        };
-        lk_sh: lk_sh { // Sh on tap, sion on "linger"
-            my_lk_config;
-            bindings = <&t_sion>, <&t_Sh>;
-        };
-        lk_gh: lk_gh { // Gh on tap, Ght on "linger"
-            my_lk_config;
-            bindings = <&t_ght>, <&t_Gh>;
-        };
-        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
-            my_lk_config;
-            bindings = <&pairDquo>, <&kp>;
-        };
-        lk_par: lk_par { // ( on tap, () on "linger"
-            my_lk_config;
-            bindings = <&pairPar>, <&kp>;
-        };
-        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
-            my_lk_config;
-            bindings = <&pairBkt>, <&kp>;
-        };
-        lk_brc: lk_brc {
-            my_lk_config;
-            bindings = <&pairBrc>, <&kp>;
-        };
-        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
-            my_lk_config;
-            bindings = <&pairLtGt>, <&kp>;
-        };
-/*
  * modmorph behaviors
  * identified by the mixed case of each of the keycodes
  */
@@ -289,3 +211,82 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
         
+/*
+ * lk_ linger key behaviors (approximated via hold-tap)
+ * most require a combo to execute the multiple key taps
+ */
+        lk: lk {    // a generic linger behavior
+            my_lk_config;
+            bindings = <&kp>, <&kp>;
+        };
+
+        lk_qu: lk_qu {
+            my_lk_config;
+            bindings = <&kp>, <&t_Qu>;
+        };
+        lk_E_accent: lk_E_accent { // ´, é on "linger"
+            my_lk_config;
+            bindings = <&t_Eaccent>, <&kp>;
+        };
+        lk_E_grave: lk_E_grave { // `, è on "linger"
+            my_lk_config;
+            bindings = <&t_Egrave>, <&kp>;
+        };
+        lk_E_acute: lk_E_acute { // ˆ, ê on "linger"
+            my_lk_config;
+            bindings = <&t_Eacute>, <&kp>;
+        };
+        lk_O_macron: lk_O_macron { // ¯, ō on "linger"
+            my_lk_config;
+            bindings = <&t_Omacron>, <&kp>;
+        };
+        lk_A_ring: lk_A_ring { // ˚, å on "linger"
+            my_lk_config;
+            bindings = <&t_Aring>, <&kp>;
+        };
+        lk_U_umlaut: lk_U_umlaut { // ¨, ü on "linger"
+            my_lk_config;
+            bindings = <&t_Uumlaut>, <&kp>;
+        };
+        lk_C_cedille: lk_C_cedille { // ¸, ç on "linger"
+            my_lk_config;
+            bindings = <&t_Cedille>, <&kp>;
+        };
+
+
+        lk_Japan: lk_Japan { // Japan on tap, Japanese on "linger"
+            my_lk_config;
+            bindings = <&t_Japanese>, <&t_Japan>;
+        };
+        lk_th: lk_th { // Th on tap, tion on "linger"
+            my_lk_config;
+            bindings = <&t_tion>, <&t_Th>;
+        };
+        lk_sh: lk_sh { // Sh on tap, sion on "linger"
+            my_lk_config;
+            bindings = <&t_sion>, <&t_Sh>;
+        };
+        lk_gh: lk_gh { // Gh on tap, Ght on "linger"
+            my_lk_config;
+            bindings = <&t_ght>, <&t_Gh>;
+        };
+        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
+            my_lk_config;
+            bindings = <&pairDquo>, <&kp>;
+        };
+        lk_par: lk_par { // ( on tap, () on "linger"
+            my_lk_config;
+            bindings = <&pairPar>, <&kp>;
+        };
+        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
+            my_lk_config;
+            bindings = <&pairBkt>, <&kp>;
+        };
+        lk_brc: lk_brc {
+            my_lk_config;
+            bindings = <&pairBrc>, <&kp>;
+        };
+        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
+            my_lk_config;
+            bindings = <&pairLtGt>, <&kp>;
+        };
