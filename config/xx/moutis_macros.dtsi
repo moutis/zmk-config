@@ -43,11 +43,6 @@
                   , <&macro_release &sk RGUI> // now release the previous hold
                   ;
         )
-    ZMK_MACRO(RsetBoot,
-        tap-ms = <40>;
-        bindings = <&lk &bootloader &sys_reset>;
-        )
-
 
     ZMK_MACRO(m_findsel,
         tap-ms = <40>;
@@ -64,6 +59,7 @@
                     , <&macro_tap &kp LS(LA(RIGHT))>
                 ;
         )
+        
     ZMK_MACRO(pairDquo,
         wait-ms = <50>; // need to slow this down for some systems.
         bindings = <&kp LA(LBKT) &kp LS(LA(LBKT)) &kp LEFT>

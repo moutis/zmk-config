@@ -36,6 +36,14 @@
             release-after-ms = <900>;
         };
 
+        rst_boot: rst_boot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            bindings = <&bootloader>, <&sys_reset>;
+        };
+
 //
 // home row mods
 //

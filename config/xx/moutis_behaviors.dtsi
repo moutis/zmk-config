@@ -23,12 +23,20 @@
             flavor = "tap-preferred"
 
 
-        skapp: sticky_key_app_switcher {
+        skapp: sticky_key_app_switcher {  // sticky key for app switcher (any works)
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
             release-after-ms = <900>;
         };
+        rst_boot: rst_boot {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <500>;
+            flavor = "tap-preferred";
+            bindings = <&bootloader>, <&sys_reset>;
+        };
+
 
         hm: homerow_mods { // use on either hand
             my_hrm_config;
