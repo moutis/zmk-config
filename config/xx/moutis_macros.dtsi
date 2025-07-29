@@ -8,13 +8,13 @@
 
      ZMK_MACRO(m_alpha,
         bindings =
-            <&kp LANG2>, // switch to Roman/Latin script (mhenk)
-            <&to l_alpha>; // make alpha layer default
+            <&kp LANG2>,    // switch to Roman/Latin script (mhenk)
+            <&to l_alpha>; //  alpha layer default
        )
      ZMK_MACRO(m_japan,
         bindings =
-            <&kp LANG1>, // switch to Japanese script (henk)
-            <&to l_japan>; // make Japanese layer default
+            <&kp LANG1>,    // switch to Japanese script (henk)
+            <&to l_jp>;     // Romaji layer default (no adaptives)
        )
         
     ZMK_MACRO(pairDquo,
