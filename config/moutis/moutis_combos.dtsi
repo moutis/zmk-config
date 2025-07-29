@@ -14,7 +14,7 @@
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
 //    require-prior-idle-ms = <0>; \
-    slow-release = true; \
+    slow-release; \
     timeout-ms = <45>; \
 };
 #define COMBO_ANY(NAME, BINDINGS, KEYPOS) \
@@ -22,7 +22,7 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
 //    require-prior-idle-ms = <0>; \
-//    slow-release = true; \
+//    slow-release; \
     timeout-ms = <45>; \
 };
 

@@ -105,7 +105,7 @@
 #define l_cfg_LM &none              &kp C_NEXT          &kp C_PP            &kp C_VOL_UP        &kp C_BRI_UP
 #define l_cfg_RM &kp LG(EQUAL)      &kp C_VOL_UP        &kp C_MUTE          &kp C_NEXT          &none
 
-#define l_cfg_LB &none              &kp C_PREV          &kp C_MUTE          &kp C_VOL_DN        &kp C_BRI_DN
+#define l_cfg_LB &BootRst              &kp C_PREV          &kp C_MUTE          &kp C_VOL_DN        &kp C_BRI_DN
 #define l_cfg_RB &kp LG(MINUS)      &kp C_VOL_DN        &kp C_PP            &kp C_PREV          &none
 
 #define l_cfg_LH &kp LG(EQUAL)      &kp LG(MINUS)
