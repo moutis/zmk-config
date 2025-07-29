@@ -60,7 +60,7 @@
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_CMMA>, <&kp SEMI>;
+            bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
