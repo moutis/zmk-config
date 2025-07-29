@@ -14,7 +14,6 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-//    require-prior-idle-ms = <0>; \
     slow-release; \
     timeout-ms = <45>; \
 };
@@ -22,8 +21,6 @@
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-//    require-prior-idle-ms = <0>; \
-//    slow-release; \
     timeout-ms = <45>; \
 };
 
