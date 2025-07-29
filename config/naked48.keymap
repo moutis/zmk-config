@@ -37,12 +37,8 @@
 
     };
 
-
-/*
     keymap {
         compatible = "zmk,keymap";
-
-//#include "keymaps/keymap_4x12.dtsi"
         l_alpha {
             // ----------------------------------------------------------------------------------------------------------------------
             // |   X   |   W   |   M   |   G   |   J   |  TAB  | ------- | ------- | btldr |   #   |   .    |   /   |   "   |   '   |
@@ -73,7 +69,6 @@
                           &trans   &trans   &trans   &trans    &mo 3   &trans &trans &trans    &trans          &trans          &trans       &trans
             >;
         };
-
     };
-*/
+
 };
