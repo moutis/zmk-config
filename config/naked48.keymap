@@ -14,27 +14,6 @@
 #include "handsdown/xx-config.h"        // HD alpha keymap, adapt, combo definitions
 
 / {
-/*
-    behaviors { // separating these allows us to add board specific behaviors here (if any)
-
-#include "xx/moutis_behaviors.dtsi"     // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
-#include HD_adapt_file                  // HDalpha/mnemonic based adaptives
-
-    };
-
-    macros {    // separating these allows us to add board specific macros here (if any)
-    
-#include "xx/moutis_macros.dtsi"    // common macros (superset)
-
-    };
-
-    combos {    // separating these allows us to add board specific combos here (if any)
-        compatible = "zmk,combos";
-
-#include "xx/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
-#include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
-*/
-    };
 
 #define l_raise 1
 
@@ -51,7 +30,7 @@
 
             bindings = <
                 HD_LT       &kp TAB                                                  &kp bootloader  HD_RT
-                HD_LM       &mo l_raise                                                    &kp ESC         HD_RM
+                HD_LM       &mo l_raise                                              &kp ESC         HD_RM
                 HD_LB       &kp Z                                                    &kp Q           HD_RB
                 &kp LEFT    &kp RIGHT   HD_LH       &kp LSHFT   &kp LCTRL   &kp RALT &kp RGUI        HD_RH   &kp UP  &kp DOWN
             >;
