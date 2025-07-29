@@ -17,7 +17,7 @@
 #define l_raise 1
 
 
-#include "layers_def.h" // layer def common core (3x5+2)
+// #include "layers_def.h" // layer def common core (3x5+2)
 
     keymap {
         compatible = "zmk,keymap";
