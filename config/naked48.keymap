@@ -29,6 +29,14 @@
 
     };
 
+    combos {    // separating these allows us to add board specific combos here (if any)
+        compatible = "zmk,combos";
+
+#include "moutis/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
+#include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
+
+    };
+
     keymap {
         compatible = "zmk,keymap";
         l_alpha {

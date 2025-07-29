@@ -1,12 +1,8 @@
-/*    KEY POSITION Names
-    ╭─────────────────────╮ ╭─────────────────────╮
-LT5 │ LT4 LT3 LT2 LT1 LT0 │ │ RT0 RT1 RT2 RT3 RT4 │ RT5
-LM5 │ LM4 LM3 LM2 LM1 LM0 │ │ RM0 RM1 RM2 RM3 RM4 │ RM5
-LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
-    ╰───────╮ LH3 LH2 LH1 | | RH1 RH2 RH3 ╭───────╯
-            ╰─────────────╯ ╰─────────────╯
-*/
-
+/*
+ * moutis_behaviors.dtsi
+ *
+ */
+ 
 
 #define     my_hrm_config \
             compatible = "zmk,behavior-hold-tap"; \
@@ -54,7 +50,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 //
-// these are really layout dependent, so should be separated…but for now...
+// these are really layout dependent, maybe should be separated? for now...
 //
         mt_S: mt_S {
             my_hrm_config;
@@ -104,7 +100,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
 
 /*
  * modmorph behaviors
- * identified by the mixed case of each of the keycodes
+ * identified by the camel case of each of the keycodes
  */
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
@@ -118,7 +114,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             bindings = <&ak_dot>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DotColnJ: DotColnJ {
+        DotColnJ: DotColnJ { // no adaptive Japanese
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
@@ -130,7 +126,7 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             bindings = <&kp FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SlshStarJ: SlshStarJ {
+        SlshStarJ: SlshStarJ { // no adaptive Japanese
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp FSLH>, <&kp STAR>;
@@ -148,49 +144,49 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ │ RB0 RB1 RB2 RB3 RB4 │ RB5
             bindings = <&kp MINUS>, <&kp PLUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtLT: DqtLT {
+        DqtLT: DqtLT { // "<
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DQT>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtLbkt: DqtLbkt {
+        DqtLbkt: DqtLbkt { // "[
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&DqtLT>, <&kp LA(BSLH)>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        DqtGT: DqtGT {
+        DqtGT: DqtGT { // ">
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DQT>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtRbkt: DqtRbkt {
+        DqtRbkt: DqtRbkt { // "]
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&DqtGT>, <&kp LS(LA(BSLH))>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        SqtLT: SqtLT {
+        SqtLT: SqtLT { // '<
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtLbkt: SqtLbkt {
+        SqtLbkt: SqtLbkt { // '[
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&SqtLT>, <&kp LA(BSLH)>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        SqtGT: SqtGT {
+        SqtGT: SqtGT { // '>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtRbkt: SqtRbkt {
+        SqtRbkt: SqtRbkt { // ']
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
