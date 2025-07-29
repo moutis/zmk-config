@@ -8,15 +8,52 @@
 
      ZMK_MACRO(m_alpha,
         bindings =
-            <&kp LANG2>, // switch to Roman/Latin script (m_henk)
+            <&kp LANG2>, // switch to Roman/Latin script (mhenk)
             <&to l_alpha>; // make alpha layer default
        )
      ZMK_MACRO(m_japan,
         bindings =
-            <&kp LANG1>, // switch to Japanese script (m_henk)
+            <&kp LANG1>, // switch to Japanese script (henk)
             <&to l_japan>; // make Japanese layer default
        )
         
+    ZMK_MACRO(pairDquo,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&kp LA(LBKT) &kp LS(LA(LBKT)) &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(pairSquo,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&kp LA(RBKT) &kp LS(LA(RBKT)) &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(pairLtGt,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&kp LT &kp GT &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(pairPar,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&kp LPAR &kp RPAR &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(pairBrc,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&kp LBRC &kp RBRC &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(pairBkt,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&kp LBKT &kp RBKT &kp LEFT>
+                ;
+        )
+
+    ZMK_MACRO(ak_dot,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&macro_tap &kp DOT>
+                , <&sl l_akDot>
+                ;
+        )
     ZMK_MACRO(t_Qu,
         tap-ms = <40>;
         bindings = <&ak_Q>
