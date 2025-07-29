@@ -8,7 +8,8 @@
  * m_  = macro (performs commands/behaviors, incl. typing).
  * ak_ = type a letter as an adaptive key (consider the prior key).
  */
- 
+ #define rst_btldr &rst_boot 0 0
+
 
      ZMK_MACRO(m_alpha,
         bindings =
@@ -46,10 +47,6 @@
                   , <&macro_tap &skapp LGUI> // release other GUI after a timeout
                   , <&macro_release &sk RGUI> // now release the previous hold
                   ;
-        )
-    ZMK_MACRO(RsetBoot,
-        tap-ms = <40>;
-        bindings = <&mt &bootloader &sys_reset>;
         )
 
     ZMK_MACRO(m_selword,

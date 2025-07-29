@@ -43,6 +43,9 @@
                   , <&macro_release &sk RGUI> // now release the previous hold
                   ;
         )
+    ZMK_MACRO(rst_btldr,
+        bindings = <&rst_boot 0 0>;
+        )
 
     ZMK_MACRO(m_findsel,
         tap-ms = <40>;
