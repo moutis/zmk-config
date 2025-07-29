@@ -192,13 +192,7 @@
             bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        
+
         ak_CMMA: ak_CMMA {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
