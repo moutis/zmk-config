@@ -43,6 +43,10 @@
                   , <&macro_release &sk RGUI> // now release the previous hold
                   ;
         )
+    ZMK_MACRO(RsetBoot,
+        tap-ms = <40>;
+        bindings = <&mt &bootloader &sys_reset>;
+        )
 
 
     ZMK_MACRO(m_findsel,
