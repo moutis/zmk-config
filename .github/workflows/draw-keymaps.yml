@@ -3,6 +3,8 @@ name: Draw ZMK keymaps
 on:
   workflow_dispatch:
   push:
+    branches:
+      - master
     paths:
       - 'config/*.keymap'
 #      - 'config/*.dtsi'
@@ -18,4 +20,4 @@ jobs:
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
-      draw_args: "corneish_zen:'--ghost-keys 20 24 25 29 30 35'"
+#      draw_args: "corneish_zen:'--ghost-keys 20 24 25 29 30 35'"
