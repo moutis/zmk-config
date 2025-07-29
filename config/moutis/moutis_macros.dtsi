@@ -8,6 +8,8 @@
  * m_  = macro (performs commands/behaviors, incl. typing).
  * ak_ = type a letter as an adaptive key (consider the prior key).
  */
+ #define rst_btld reset_bootldr 0 0
+
 
      ZMK_MACRO(m_alpha,
         bindings =
