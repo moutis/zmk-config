@@ -6,12 +6,15 @@
  *
  *  Key Position Names for a Planck 12x4 (48 key) ortholinear form factor
  *
- *  A = Standard Planck's 6th column for "Wide Planck"
- *  (Standard Planck 6th column is undefined here)
- */
-
-/*                       UNIVERSAL KEY POSITION NAMES
+ *
+ *                       UNIVERSAL KEY POSITION NAMES
  *          alphas & combos should be limited to 3x5+2 common core
+ *     ╭─────────────────────╮                  ╭─────────────────────╮
+ *   0 │   1   2   3   4   5 │                  │   6   7   8   9  10 │ 11
+ *  12 │  13  14  15  16  17 |                  |  18  19  20  21  22 │ 23
+ *  24 │  25  26  27  28  29 │                  │  30  31  32  33  34 │ 35
+ *     ╰───────────╮  40 44  │                  │  42 43  ╭───────────╯
+ *  36  37  38  39 ╰─────────╯                  ╰─────────╯ 44  45  46  47
  *
  * FRA   FR1 FR2 FR3 FR4 FR5                      FR6 FR7 FR8 FR9 FR0   FRB
  * NRA   NR1 NR2 NR3 NR4 NR5                      NR6 NR7 NR8 NR9 NR0   NRB

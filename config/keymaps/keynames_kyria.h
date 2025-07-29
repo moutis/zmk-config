@@ -5,8 +5,9 @@
  *  Created by Alan on 7/24/22.
  *
  *  Key Position Names for a 3x5+5 Kyria (44 keys) form factor
-*/
-/*                       UNIVERSAL KEY POSITION NAMES
+ *
+ *
+ *                       UNIVERSAL KEY POSITION NAMES
  *          alphas & combos should be limited to 3x5+2 common core
  *     ╭─────────────────────╮                  ╭─────────────────────╮
  * LT5 │   0   1   2   3   4 │ LTA          RTB │   5   6   7   8   9 │ RT5
