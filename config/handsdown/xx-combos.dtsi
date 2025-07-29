@@ -30,16 +30,16 @@
 */
 
 
-//
-// type a glyph (tiny board accommodation)
-//
+
+/* type a glyph (tiny board accommodation) */
+
 COMBO_LAYER(t_Q,     &lk_qu Q U,    LT3 LT1, l_alpha)       // type Qu, linger deletes u
 COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_alpha)       // Z is typically off map
 
 #ifdef H_DIGRAPH_COMBOS
-//
-// H Digraphs REQUIRE macros/behaviors (defined earlier) to process
-//
+
+/* H Digraphs REQUIRE macros/behaviors (defined earlier) to process */
+
 COMBO_LAYER(sch,    &t_Sch,         LM4  LM3 LM2, l_alpha)  // Sch
 COMBO_LAYER(tch,    &t_Tch,         LM4  LM3 LM1, l_alpha)  // Tch
 COMBO_LAYER(th,     &lk_th H T,     LM2 LM1, l_alpha )      // Th/sion
@@ -51,9 +51,8 @@ COMBO_LAYER(ph,     &t_Ph,          LB3 LB1, l_alpha )      // Ph
 #endif
 
 #ifdef EN_PRONOUN_COMBOS
-//
-// Pronoun combos REQUIRE macros (define paired macros in moutis_config.dtsi)
-//
+
+/* Pronoun combos REQUIRE macros (define paired macros in moutis_config.dtsi) */
 
 COMBO_LAYER(pnI,     &t_PnI,        RM3 RM4, l_alpha)       // "I "
 COMBO_LAYER(pnIm,    &t_PnIm,       RM3 LT2, l_alpha)       // "I'm "
