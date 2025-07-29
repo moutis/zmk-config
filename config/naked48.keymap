@@ -18,7 +18,7 @@
 
     behaviors { // separating these allows us to add board specific behaviors here (if any)
 
-#include "moutis/moutis_behaviors.dtsi"     // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
+#include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives
 
     };
@@ -32,7 +32,7 @@
     combos {    // separating these allows us to add board specific combos here (if any)
         compatible = "zmk,combos";
 
-#include "xx/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
+#include "moutis/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
 #include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
 
     };
