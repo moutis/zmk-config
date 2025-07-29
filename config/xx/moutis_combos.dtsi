@@ -46,7 +46,6 @@ LB5 │ LB4 LB3 LB2 LB1 LB0 │ LBA LBB  RBB RBA │ RB0 RB1 RB2 RB3 RB4 │ RB5
 // control/modes
 //
 
-COMBO_LAYER(docaps,  &caps_word,    RB3 RB4, l_alpha) // CAPSWORD
 
 //
 // Editing actions (&whitespace)
