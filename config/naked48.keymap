@@ -15,6 +15,12 @@
 
 / {
 
+    behaviors { // separating these allows us to add board specific behaviors here (if any)
+
+#include "xx/moutis_behaviors.dtsi"     // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
+
+    };
+
 #define FnNum 1
 
     keymap {
