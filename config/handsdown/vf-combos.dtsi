@@ -12,7 +12,7 @@
  the underlying alpha, esp H-Digraph combos. They are defined here.
  
  BE_CAREFUL: Don't let any of these combos conflict with any of
-    the common combos defined in moutis/moutis_combos.dtsi
+    the common combos defined in moutis_combos.dtsi
 */
 
 
