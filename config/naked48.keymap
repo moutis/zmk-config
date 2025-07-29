@@ -23,6 +23,11 @@
 
     };
 
+    macros {    // separating these allows us to add board specific macros here (if any)
+    
+#include "moutis/moutis_macros.dtsi"    // common macros (superset)
+
+    };
 
     keymap {
         compatible = "zmk,keymap";
