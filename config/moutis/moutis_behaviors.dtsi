@@ -29,6 +29,10 @@
             tapping-term-ms = <my_tapping_term>; \
             flavor = "tap-preferred"
 
+//
+// home row mods
+//
+
         hm: homerow_mods { // use on either hand
             my_hrm_config;
             bindings = <&kp>, <&kp>;

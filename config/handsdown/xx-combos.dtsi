@@ -12,7 +12,7 @@
  the underlying alpha, esp H-Digraph combos. They are defined here.
  
  BE_CAREFUL: Don't let any of these combos conflict with any of
-    the common combos defined in moutis/moutis_combos.dtsi
+    the common combos defined in moutis_combos.dtsi
 */
 
 
@@ -52,7 +52,7 @@ COMBO_LAYER(ph,     &t_Ph,          LB3 LB1, l_alpha )      // Ph
 
 #ifdef EN_PRONOUN_COMBOS
 //
-// Pronoun combos REQUIRE macros to process
+// Pronoun combos REQUIRE macros (define paired macros in moutis_config.dtsi)
 //
 
 COMBO_LAYER(pnI,     &t_PnI,        RM3 RM4, l_alpha)       // "I "
@@ -67,12 +67,12 @@ COMBO_LAYER(pnYoull, &t_PnYoull,    RB3 LB2, l_alpha)       // "You'll "
 COMBO_LAYER(pnYoud,  &t_PnYoud,     RB3 LB1, l_alpha)       // "You'd "
 COMBO_LAYER(pnYouve, &t_PnYouve,    RB3 LB0, l_alpha)       // "You've "
 
-COMBO_LAYER(pnWere,  &t_PnWere,    LT4 RT4, l_alpha)        // "We're "
-COMBO_LAYER(pnWell,  &t_PnWell,    LT4 LT2, l_alpha)        // "We'll "
-COMBO_LAYER(pnWed,   &t_PnWed,     LT4 LT1, l_alpha)        // "We'd "
-COMBO_LAYER(pnWeve,  &t_PnWeve,    LT4 LT0, l_alpha)        // "We've "
+COMBO_LAYER(pnWere,  &t_PnWere,     LT4 RT4, l_alpha)       // "We're "
+COMBO_LAYER(pnWell,  &t_PnWell,     LT4 LT2, l_alpha)       // "We'll "
+COMBO_LAYER(pnWed,   &t_PnWed,      LT4 LT1, l_alpha)       // "We'd "
+COMBO_LAYER(pnWeve,  &t_PnWeve,     LT4 LT0, l_alpha)       // "We've "
 
-COMBO_LAYER(pnWhere, &t_PnWhere,   LT4 LH1, l_alpha)        // "Where "
+COMBO_LAYER(pnWhere, &t_PnWhere,    LT4 LH1, l_alpha)       // "Where "
 
 #endif // EN_PRONOUN_COMBOS
 
