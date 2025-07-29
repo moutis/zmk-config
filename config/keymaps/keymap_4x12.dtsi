@@ -14,6 +14,10 @@
 
 */
 
+#include "layers_def.h" // layer def common core (3x5+2)
+
+    keymap {
+        compatible = "zmk,keymap";
         l_alpha {
             // ----------------------------------------------------------------------------------------------------------------------
             // |   X   |   W   |   M   |   G   |   J   |  TAB  | ------- | ------- | btldr |   #   |   .    |   /   |   "   |   '   |
@@ -44,4 +48,4 @@
                           &trans   &trans   &trans   &trans    &mo 3   &trans &trans &trans    &trans          &trans          &trans       &trans
             >;
         };
-
+    };
