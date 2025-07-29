@@ -13,7 +13,6 @@
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
     layers = <LAYERS>; \
-//    require-prior-idle-ms = <0>; \
     slow-release = true; \
     timeout-ms = <45>; \
 };
@@ -21,8 +20,6 @@
   combo_##NAME { \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
-//    require-prior-idle-ms = <0>; \
-//    slow-release = true; \
     timeout-ms = <45>; \
 };
 
@@ -75,7 +72,6 @@ COMBO_LAYER(open,    &kp LG(O),      RM0 RB0, l_alpha)
 //
 // type a glyph (tiny board accommodation)
 //
-COMBO_LAYER(t_Japan, &lk_Japan P J,  RT1 RT2 RT3, l_alpha) // Japan
 COMBO_LAYER(t_Coln,  &lk LA(SEMI) COLON,    RT1 RT3, l_alpha)
 COMBO_LAYER(t_Semi,  &kp SEMI,     RM0 RM1, l_alpha)
 COMBO_LAYER(t_Excl,  &kp EXCL,     RT1 RT2, l_alpha)

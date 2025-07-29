@@ -33,6 +33,7 @@
 
 #define my_ak_term 350 // behavior-adaptive-key trigger time window
 #define my_ak_delay 50 // behavior-adaptive-key typing speed
+#define my_sticky_term 1100 // for sticky keys and sticky layers
 
 #define my_tapping_term 200
 #define my_quick_tapping_term 55
@@ -52,11 +53,11 @@
     tapping-term-ms = <my_tapping_term>;
 };
 &sl {
-    release-after-ms = <1000>;
+    release-after-ms = <my_sticky_term>;
 };
 &sk {
     lazy;
-    release-after-ms = <1000>;
+    release-after-ms = <my_sticky_term>;
 };
 &caps_word {
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;

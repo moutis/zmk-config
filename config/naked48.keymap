@@ -21,7 +21,7 @@
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives
 
     };
-*/
+
     macros {    // separating these allows us to add board specific macros here (if any)
     
 #include "xx/moutis_macros.dtsi"    // common macros (superset)
@@ -33,7 +33,7 @@
 
 #include "xx/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
 #include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
-
+*/
     };
 
 #include "keymaps/keymap_4x12.dtsi"    // consolidated keymap
