@@ -45,7 +45,7 @@
         )
     ZMK_MACRO(RsetBoot,
         tap-ms = <40>;
-        bindings = <&mt &bootloader &sys_reset>;
+        bindings = <&lk &bootloader &sys_reset>;
         )
 
 
