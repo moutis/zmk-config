@@ -30,19 +30,19 @@
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
 //|   Top   |  HOME  |   UP   | PG_UP |   ¶up   |                |    /   |   7    |   8    |   9    |    -   |
 //|  Lword  |  LEFT  |  DOWN  |  RGT  |  Rword  |                |    *   |  S/4   |  G/5   |  A/6   |   C/+  |
-//|   Bot   |   END  |   SPC  | PG_DN |   ¶dn   |                |    -   |   1    |   2    |   3    |    =   |
+//|   Bot   |   END  |   SPC  | PG_DN |   ¶dn   |                |    ,   |   1    |   2    |   3    |    =   |
 //╰──────────────────────────╮  BSPC  |KP_ENTER |                |    0   |   .    ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_num_label "l_num"
 
 #define l_num_LT &kp LG(UP)         &kp HOME            &kp UP              &kp PG_UP           &kp LA(UP)
-#define l_num_RT &kp KP_SLASH       &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_MINUS
+#define l_num_RT &kp KP_DIVIDE      &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_SUBTRACT
 
 #define l_num_LM &kp LA(LEFT)       &kp LEFT            &kp DOWN            &kp RIGHT           &kp LA(RIGHT)
 #define l_num_RM &kp KP_MULTIPLY    &mt RSHFT KP_N4     &mt RGUI KP_N5      &mt RALT KP_N6      &mt LCTRL KP_PLUS
 
 #define l_num_LB &kp LG(DOWN)       &kp END             &kp SPACE           &kp PG_DN           &kp LA(DOWN)
-#define l_num_RB &kp MINUS          &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_EQUAL
+#define l_num_RB &kp KP_COMMA       &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_EQUAL
 
 #define l_num_LH &lt l_fun BSPC     &lt l_nav KP_ENTER
 #define l_num_RH &kp KP_N0          &kp KP_DOT
@@ -57,10 +57,10 @@
 #define l_fun_label "l_fn"
 
 #define l_fun_LT &kp F9             &kp F10             &kp F11             &kp F12             &kp F13
-#define l_fun_RT &kp KP_SLASH       &kp N7              &kp N8              &kp N9              &kp KP_MINUS
+#define l_fun_RT &kp FSLH           &kp N7              &kp N8              &kp N9              &kp MINUS
 
 #define l_fun_LM &mt LCTRL F5       &mt LALT F6         &mt LGUI F7         &mt LSHFT F8        &kp F14
-#define l_fun_RM &kp KP_MULTIPLY    &mt RSHFT N1        &mt RGUI N2         &mt RALT N3         &mt LCTRL KP_PLUS
+#define l_fun_RM &kp STAR           &mt RSHFT N1        &mt RGUI N2         &mt RALT N3         &mt LCTRL PLUS
 
 #define l_fun_LB &kp F1             &kp F2              &kp F3              &kp F4              &kp F15
 #define l_fun_RB &kp COMMA          &kp N4              &kp N5              &kp N6              &kp EQUAL
