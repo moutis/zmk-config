@@ -25,7 +25,7 @@
 
     macros {    // separating these allows us to add board specific macros here (if any)
     
-#include "xx/moutis_macros.dtsi"    // common macros (superset)
+#include "moutis/moutis_macros.dtsi"    // common macros (superset)
 
     };
 
