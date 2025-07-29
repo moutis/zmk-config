@@ -69,24 +69,14 @@
             bindings = <&ak_dot>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DotColnJ: DotColnJ {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+
         SlshStar: SlshStar {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SlshStarJ: SlshStarJ {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp STAR>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+
         HashDllr: HashDllr {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -98,54 +88,6 @@
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp PLUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        DqtLT: DqtLT {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp LT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        DqtLbkt: DqtLbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&DqtLT>, <&kp LA(BSLH)>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        DqtGT: DqtGT {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp GT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        DqtRbkt: DqtRbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&DqtGT>, <&kp LS(LA(BSLH))>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        SqtLT: SqtLT {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp LT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        SqtLbkt: SqtLbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&SqtLT>, <&kp LA(BSLH)>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        SqtGT: SqtGT {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp GT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        SqtRbkt: SqtRbkt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
-            mods = <(MOD_LALT|MOD_RALT)>;
         };
         lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
