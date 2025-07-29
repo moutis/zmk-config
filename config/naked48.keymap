@@ -18,7 +18,7 @@
 
     behaviors { // separating these allows us to add board specific behaviors here (if any)
 
-#include "xx/moutis_behaviors.dtsi"     // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
+#include "moutis/moutis_behaviors.dtsi"     // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives
 
     };

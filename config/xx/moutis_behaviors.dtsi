@@ -45,10 +45,52 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 
+//
+// these are really layout dependent, so should be separated…but for now...
+//
+        mt_S: mt_S {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_S>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_C: mt_C {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_C>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_N: mt_N {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_N>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_T: mt_T {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_T>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_A: mt_A {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_A>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+       };
+        mt_E: mt_E {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_E>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
+        mt_I: mt_I {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_I>;
+            hold-trigger-key-positions = <KEYS_L THUMBS>; // left hand allowed
+        };
         mt_H: mt_H {
             my_hrm_config;
             bindings = <&kp>, <&ak_H>;
             hold-trigger-key-positions = <KEYS_L THUMBS>; // right hand allowed
+        };
+        lt_R: lt_R {
+            my_lt_config;
+            bindings = <&mo>, <&ak_R>;
         };
 
 /*
@@ -66,7 +108,7 @@
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp SEMI>;
+            bindings = <&ak_CMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColn: DotColn {
@@ -100,5 +142,68 @@
             #binding-cells = <0>;
             bindings = <&lt FnNum BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        
+        DqtLT: DqtLT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DqtLbkt: DqtLbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&DqtLT>, <&kp LA(BSLH)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        DqtGT: DqtGT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DqtRbkt: DqtRbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&DqtGT>, <&kp LS(LA(BSLH))>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        SqtLT: SqtLT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SqtLbkt: SqtLbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&SqtLT>, <&kp LA(BSLH)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        SqtGT: SqtGT {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        SqtRbkt: SqtRbkt {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        
+        ak_CMMA: ak_CMMA {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>;
+
+            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
         
