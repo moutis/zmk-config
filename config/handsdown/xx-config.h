@@ -20,7 +20,7 @@
 #define HD_LH                                                 &kp BSPC        &lt 0 R
 
 #define HD_RT &kp HASH        &kp DOT         &kp FSLH        &kp DQT         &kp SQT
-#define HD_RM &CmmaSemi       &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL H
-#define HD_RB &MinusPlus      &kp U           &kp O           &kp Y           &kp B
+#define HD_RM &kp COMMA       &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL H
+#define HD_RB &kp MINUS       &kp U           &kp O           &kp Y           &kp B
 #define HD_RH &lt 0 SPACE     &lt 0 RETURN
 
