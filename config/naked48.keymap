@@ -29,8 +29,8 @@
 
 
             bindings = <
-                HD_LT       &kp TAB                                                  &bootloader     HD_RT
-                &hml RCTRL S    &hml RALT C &hml RGUI N &hml RSHFT T    &kp K   &mo l_raise     &kp ESC  &kp COMMA &hmr LSHFT A &hmr LGUI E &hmr LALT I &hmr LCTRL H
+                HD_LT       &kp TAB                                                             &bootloader     HD_RT
+                &hml RCTRL S    &hml RALT C &hml RGUI N &hml RSHFT T    &kp K   &mo 1     &kp ESC  &kp COMMA &hmr LSHFT A &hmr LGUI E &hmr LALT I &hmr LCTRL H
                 HD_LB       &kp Z                                                    &kp Q           HD_RB
                 &kp LEFT    &kp RIGHT   HD_LH       &kp LSHFT   &kp LCTRL   &kp RALT &kp RGUI        HD_RH   &kp UP  &kp DOWN
             >;
