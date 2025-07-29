@@ -37,6 +37,6 @@
 
     };
 
-#include "keymaps/keymap_4x12.dtsi"
+#include "keymaps/keymap_4x12_wide.dtsi"
 
 };
