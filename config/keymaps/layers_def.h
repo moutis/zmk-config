@@ -86,7 +86,7 @@
 #define l_nav_LB &kp RG(Z)          &kp RG(X)           &kp RG(C)           &kp RG(V)           &kp RG(G)
 #define l_nav_RB &kp LG(DOWN)       &kp END             &kp DOWN            &kp PG_DN           &kp LA(DOWN)
 
-#define l_nav_LH &S_AppSwitch       &AppSwitch
+#define l_nav_LH &SlApBack          &SlAppy
 #define l_nav_RH &kp LG(LBKT)       &kp LG(RBKT)
 
 //                                          Keyboard & System Settings

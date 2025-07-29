@@ -24,7 +24,7 @@
                                         HD_LT                                       HD_RT
                                         HD_LM                                       HD_RM
                                         HD_LB   _______ _______  _______ _______    HD_RB
-                &kp C_MUTE  &AppSwitch  HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))      HD_RH   &tog l_num &kp C_PP
+                &kp C_MUTE  &SlAppy     HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))      HD_RH   &tog l_num &kp C_PP
                 >;
             };
             l_jp {

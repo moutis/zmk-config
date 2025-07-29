@@ -27,8 +27,11 @@
 
 
 
-#define H_DIGRAPH_COMBOS //  (th, ch, sh, wh, gh, ph)
-#define EN_PRONOUN_COMBOS //  (I, I'm, I've I'd I'll etc)
+#define H_DIGRAPH_COMBOS    // th, ch, sh, wh, gh, ph
+#define EN_PRONOUN_COMBOS   // I, I'm, I've I'd I'll etc.
+#define JP_MODE_ENABLE      // Add a JP layer,combos, etc.
+#define JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+
 #define COMMA_CAP     // , before alpha capitalizes that alpha
 
 #define my_ak_term 350 // behavior-adaptive-key trigger time window

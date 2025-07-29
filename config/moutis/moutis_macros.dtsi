@@ -1,4 +1,8 @@
- /*
+/*
+ * moutis_macros.dtsi
+ *
+ * SPDX-License-Identifier: MIT
+ *
  * t_  = type text
  * b_  = backspace then type text (often for "adaptive key")
  * m_  = macro (performs commands/behaviors, incl. typing).
@@ -17,7 +21,7 @@
             <&to l_jp>;     // make Japanese layer default
        )
 
-   ZMK_MACRO(AppSwitch,
+   ZMK_MACRO(SlAppy,
         wait-ms = <50>;
         tap-ms = <20>;
         bindings =
@@ -30,7 +34,7 @@
                   , <&macro_release &kp RGUI>  // release the previous hold
                   ;
         )
-    ZMK_MACRO(S_AppSwitch,
+    ZMK_MACRO(SlApBack,
         wait-ms = <50>;
         tap-ms = <20>;
         bindings =
@@ -48,7 +52,12 @@
         bindings = <&mt &bootloader &sys_reset>;
         )
 
-
+    ZMK_MACRO(m_selword,
+        tap-ms = <40>;
+        bindings = <&macro_tap &kp LA(LEFT)>
+                    , <&macro_tap &kp LS(LA(RIGHT))>
+                ;
+        )
     ZMK_MACRO(m_findsel,
         tap-ms = <40>;
         bindings = <&macro_tap &kp LG(C)>
@@ -56,13 +65,6 @@
                     , <&macro_tap &kp LG(V)>
                     , <&macro_tap &kp RETURN>
                     , <&macro_tap &kp LG(G)>
-                ;
-        )
-
-    ZMK_MACRO(m_selword,
-        tap-ms = <40>;
-        bindings = <&macro_tap &kp LA(LEFT)>
-                    , <&macro_tap &kp LS(LA(RIGHT))>
                 ;
         )
 

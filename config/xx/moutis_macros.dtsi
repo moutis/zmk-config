@@ -17,7 +17,7 @@
             <&to l_jp>;     // Romaji layer default (no adaptives)
        )
         
-   ZMK_MACRO(AppSwitch,
+   ZMK_MACRO(SlAppy,
         wait-ms = <50>;
         tap-ms = <20>;
         bindings =
@@ -30,7 +30,7 @@
                   , <&macro_release &kp RGUI>  // release the previous hold
                   ;
         )
-    ZMK_MACRO(S_AppSwitch,
+    ZMK_MACRO(SlApBack,
         wait-ms = <50>;
         tap-ms = <20>;
         bindings =
@@ -58,7 +58,6 @@
                     , <&macro_tap &kp LG(G)>
                 ;
         )
-
     ZMK_MACRO(m_selword,
         tap-ms = <40>;
         bindings = <&macro_tap &kp LA(LEFT)>

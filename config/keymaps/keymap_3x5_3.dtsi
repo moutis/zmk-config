@@ -24,7 +24,7 @@
                                 HD_LT               HD_RT
                                 HD_LM               HD_RM
                                 HD_LB               HD_RB
-                     &AppSwitch HD_LH               HD_RH &tog l_num
+                     &SlAppy    HD_LH               HD_RH &tog l_num
                 >;
             };
             l_jp {

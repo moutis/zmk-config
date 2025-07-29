@@ -1,4 +1,8 @@
 /*
+ * vf-adapt.h
+ *
+ * SPDX-License-Identifier: MIT
+ *
  * AdaptiveKey behaviors
  * (send a different behavior based on prior key)
  *
