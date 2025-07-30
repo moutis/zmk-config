@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 
-#include "keymaps/keynames_kyria.h"     // key name defs for this board topology
+#include "keymaps/keynames_kyria_3x5.h"     // key name defs for this board topology
 #include "handsdown/vf-config.h"        // HD alpha keymap, adapt, combo definitions
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
 
@@ -35,6 +35,6 @@
 
     };
 
-#include "keymaps/keymap_kyria.dtsi"    // consolidated keymap
+#include "keymaps/keymap_kyria_3x5.dtsi"    // consolidated keymap
 
 };

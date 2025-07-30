@@ -137,7 +137,7 @@
         SlshStar: SlshStar {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp STAR>;
+            bindings = <&ak_FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshStarJ: SlshStarJ { // no adaptive Japanese
@@ -223,7 +223,7 @@
         ak_FSLH: ak_FSLH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>;
+            bindings = <&kp FSLH>;
 
             ak_CMMA_E { trigger-keys = <DOT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
             ak_CMMA_Q { trigger-keys = <DQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
