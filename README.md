@@ -7,12 +7,12 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (Peak portable split)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (Portable unibody at the end of the world)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (Wafer thin unsplit)
-- [**Dust**](https://kbd.news/Dust-keyboard-1789.html) (Bad wings split)
+- [**Dust**](https://kbd.news/Dust-keyboard-1789.html) (Bad Wings re-split)
 - [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit) (Like [Planck](https://drop.com/buy/planck-mechanical-keyboard) Wide)
 - [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92)
-<!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) -->
 - [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5*)
-
+<!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
+-->
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
 │  X   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
@@ -44,7 +44,7 @@ Currently building only for Mac only (*hard coded for gui instead of ctrl, and s
 ## Thanks:
 - Of course, huge thanks to [Pete Johanson](https://github.com/petejohanson) *and contributors* for ZMK ([***why not consider sponsoring Pete***](https://github.com/sponsors/petejohanson)?)
 - and for the exquisite [Zaphod](https://github.com/petejohanson/zaphod-config) board design.
-- [urob](https://github.com/urob/) for the excellent [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module
+- [urob](https://github.com/urob/) for the excellent [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module.
 - [jcmkk3](https://github.com/jcmkk3) for the idea to implement adaptives via sticky layers that worked until proper solutions were made.
 - many others on the [**Hands Down** Discord](https://discord.gg/BC3fzb2E) for the endless creativity and support.
 - [Darryldh (lowprokb)](https://github.com/LOWPROKB) for the sublime [Corne-ish Zen](https://github.com/LOWPROKB/zmk-config-Corne-ish-Zen) board.
