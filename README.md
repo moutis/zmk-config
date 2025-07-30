@@ -22,18 +22,19 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 ```
 ### Hands Down variations
 
-|   Layout   | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim | Avail? |
+|   Layout   | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) | R | ~ | ~ | ✔ | ✔ |
-| [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z) | R | ~ | ~ | ✔ | ✔ |
-| [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c) | R | ~ | ~ | ✔ | ✔ |
-| [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) | R | ~ | ~ | ✔ | ✔ |
-| [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none | ~ | ~ | ✔ |   |
-| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | none | T | ~ | ✔ |   |
+| [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) | R |   |   | ✔ | ✔ |
+| [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z) | R |   |   | ✔ | ✔ |
+| [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c) | R | ✔ | ✔ |   | ✔ |
+| [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) | R | ✔ | ✔ |   | ✔ |
+| [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none |   | ✔ |   |   |
+| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ |   |   |   |
 
 <sup>[1]</sup> Requires split keyboard with at least 2 thumb keys. 
-<sup>[2]</sup> **`H` digraph combos** *(* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*), and pronouns (`I `, `I've `, `you'll`, `we'd`, etc. ).  
-<sup>[3]</sup> [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are now using urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*). `WM` becomes `LM`, `GM`/`MG` -> `GL`/`LG` (\**Magic* keys are a type of Adaptive, restricted to one key. I have, effectivey, many \**Magic* keys at strategic locations around the keyboard.)  
+<sup>[2]</sup> **`H`-digraph combos** (`TH`,`CH`,`WH`,`SH`,`GH`,`PH` bigrams) are expected in the design of this layout. It can be used without the H-digraph combos, but that would add more burden to the pinky. Layouts not designed expecting the H-digraphs can still work with them, and they are defined in the templates.
+<sup>[3]</sup> [*Adaptive Keys*](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are recommended for this layout. Adaptives in ZMK use urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*). `WM` becomes `LM`, `GM`/`MG` -> `GL`/`LG` (\**Magic* keys are a type of Adaptive, restricted to one key. I have, effectivey, many \**Magic* keys at strategic locations around the keyboard.)
+<sup>[4]</sup> *Vim Friendly* variations were designed with VIM in mind, especially the navigation letters. Other layouts can work with VIM, especially with a separate nav layer.
 
  - Many combos for less-used letters (`Qu`,`Z`,) editing (`Undo`, `Cut`, `Copy`, `Paste`, `Tab`, etc.), symbols and punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.).
  - [***Comma-cap***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy using Adaptive Keys. `Comma` immediately before an alpha will capitalize it (deleting the comma). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It's nearly perfect, and greatly reduces the need for home row shift (eliminating the most pesky HRM issue). It doesn't require a dedicated key for all this–It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter.
