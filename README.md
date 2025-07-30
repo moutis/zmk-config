@@ -38,11 +38,13 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 
  - Many combos for less-used letters (`Qu`,`Z`,) editing (`Undo`, `Cut`, `Copy`, `Paste`, `Tab`, etc.), symbols and punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.).
  - [***Comma Magic***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy way of using Adaptive Keys to eliminate the shift misfires with home row mods. Simply type `COMMA` immediately before an alpha to capitalize it (*deleting the comma*). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It doesn't require a dedicated key for all this. It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter. It's nearly perfect.
+
  - [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*via hold-tap behaviors and macros*) for things like paired symbols like `{([<>])}` and diacritics `éèôåō`, and more.
 
 Currently building only for Mac only (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
 
 ## Keyboards & form-factors:
+
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split 3x5+3*)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody 3x5+2 at the end of the world*)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit 3x5+3*)
