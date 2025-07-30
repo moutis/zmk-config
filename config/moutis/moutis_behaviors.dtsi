@@ -237,11 +237,12 @@
 
             ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
+/*
         CmmaMgc: CmmaMgc {
             my_lk_config;
             bindings = <&kp CAPSLOCK>, <&CmmaSemi>;
         };
-
+*/
 /*
  * lk_ linger key behaviors (approximated via hold-tap)
  * most require a combo to execute the multiple key taps
