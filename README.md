@@ -2,7 +2,7 @@
 
 ![zen pic](images/zen.jpg)
 
-<details><summary>My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards:</summary>
+My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards:
 
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (Peak portable split)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (Portable unibody at the end of the world)
@@ -12,7 +12,7 @@
 - [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92)
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) -->
 - [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5*)
-</details>
+
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
 │  X   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
