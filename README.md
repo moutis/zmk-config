@@ -24,10 +24,10 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 
 | HD variation | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) | R |   |   | ✔ | ✔ | 
-| [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z) | R |   |   |   | ✔ | 
-| [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c) | R | ✔ | ✔ |   | ✔ | 
-| [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (Vf,Vb,Vx,Vv) | R | ✔ | ✔ |   | ✔ | 
+| [***Promethium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/pm-config.h) | R |   |   | ✔ | ✔ | 
+| [***Rhodium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/rh-config.h) | R |   |   |   | ✔ | 
+| [***Titanium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/ti-config.h) | R | ✔ | ✔ |   | ✔ | 
+| [***Vibranium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h) ([Vf](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h),[Vb](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vb-config.h),[Vx](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vx-config.h),[Vv](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vv-config.h)) | R | ✔ | ✔ |   | ✔ | 
 | [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none |   | ✔ |   |   | 
 | [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ | ✔ |   |   | 
 
