@@ -42,7 +42,7 @@ In the works (*I test the builds on several boards, with adaptives & combos*):
 
 Currently building only for Mac only (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this too is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
 
-### Templates for many popular keyboards/form-factors**:
+### Templates for many popular keyboards/form-factors:
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split*)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody at the end of the world*)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit*)
@@ -53,7 +53,7 @@ Currently building only for Mac only (*hard coded for gui instead of ctrl, and s
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
 - [**Totem**]()
 -->
-** Mix and match any HD alpha layout with any supported board by editing just a few lines.**
+## Mix and match any HD alpha layout with any supported board by editing just a few lines.
 
 ## Thanks:
 - Of course, huge thanks to [**Pete Johanson**](https://github.com/petejohanson) *and contributors* for ZMK ([***why not consider sponsoring Pete***](https://github.com/sponsors/petejohanson)?)
