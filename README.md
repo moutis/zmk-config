@@ -1,4 +1,4 @@
-# [**Hands Down** *Layout*](http://handsdownlayout.com) on ![zen pic](images/zenlogo.png)
+# [**Hands Down**](http://handsdownlayout.com) on ![zen pic](images/zenlogo.png)
 My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards.
 ![zen pic](images/zen.jpg)
 
