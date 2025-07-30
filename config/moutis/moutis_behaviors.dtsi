@@ -36,6 +36,7 @@
             release-after-ms = <900>;
         };
 
+#define rst_btld reset_bootldr 0 0 // simple macro to keep the keymap uncluttered
          reset_bootldr: reset_bootldr { // tap for reset, hold for bootloader
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -43,7 +44,6 @@
             flavor = "tap-preferred";
             bindings = <&bootloader>, <&sys_reset>;
         };
-#define rst_btld reset_bootldr 0 0 // simple macro to keep the keymap uncluttered
 
 //
 // home row mods
@@ -237,6 +237,7 @@
             ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
 
+#define CommaMagic CmmaMgc CAPSLOCK 0 // simple macro to keep the keymap uncluttered
         CmmaMgc: CmmaMgc {
             my_lk_config;
             bindings = <&kp>, <&CmmaSemi>;
