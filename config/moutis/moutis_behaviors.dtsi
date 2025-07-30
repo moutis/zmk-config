@@ -131,13 +131,13 @@
         DotColnJ: DotColnJ { // no adaptive Japanese
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COLON>;
+            bindings = <&ak_DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshStar: SlshStar {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_FSLH>, <&kp STAR>;
+            bindings = <&kp FSLH>, <&kp STAR>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshStarJ: SlshStarJ { // no adaptive Japanese
@@ -161,7 +161,7 @@
         DqtLT: DqtLT { // "<
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp LT>;
+            bindings = <&ak_DQT>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DqtLbkt: DqtLbkt { // "[
@@ -220,13 +220,19 @@
 
             ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
-        ak_FSLH: ak_FSLH {
+        ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>;
+            bindings = <&kp DOT>;
 
-            ak_CMMA_E { trigger-keys = <DOT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
-            ak_CMMA_Q { trigger-keys = <DQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+            ak_CMMA_E { trigger-keys = <FLSH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
+        };
+        ak_DQT: ak_DQT {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>;
+
+            ak_CMMA_Q { trigger-keys = <FLSH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
         };
 
 /*
