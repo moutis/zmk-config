@@ -7,20 +7,20 @@
 //                                       Symbol & math (for Mac)
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|    Z   |    Q   |   ¶    |   §    |    ·    |                |   ¢    |    $   |    €   |    £   |   ¥    |
-//|    †   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
-//|    ‡   |    ]   |   )    |   }    |    °    |                |   ^    |    |   |    &   |    <   |   >    |
+//|    Z   |    Q   |   ¶    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |   ¥    |
+//|    §   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
+//|    ·   |    ]   |   )    |   }    |    °    |                |   ^    |    |   |    &   |    <   |   >    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  |    ¡   ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT &kp Z              &kp Q               &kp LA(N7)          LA(N5)              &kp LA(LS(N7))
+#define l_sym_LT &kp Z              &kp Q               &kp LA(N7)          &kp LA(LS(N5))      &kp LA(LS(N7))
 #define l_sym_RT &kp RA(N4)         &kp DLLR            &kp LA(LS(N2))      &kp LA(N3)          &kp RA(Y)
 
-#define l_sym_LM &kp LA(LS(N5))     &lk_bkt RBKT LBKT   &lk_par RPAR LPAR   &lk_brc RBRC LBRC   &kp LA(LS(N9))
+#define l_sym_LM &kp LA(N5)         &lk_bkt RBKT LBKT   &lk_par RPAR LPAR   &lk_brc RBRC LBRC   &kp LA(N8)
 #define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
 
-#define l_sym_LB &kp LA(N8)         &kp RBKT            &kp RPAR            &kp RBRC            &kp LA(LS(N8))
+#define l_sym_LB &kp LA(LS(N9))     &kp RBKT            &kp RPAR            &kp RBRC            &kp LA(LS(N8))
 #define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_ltgt GT LT      &kp GT
 
 #define l_sym_LH &kp LA(BSPC)       &kp LA(DEL)
