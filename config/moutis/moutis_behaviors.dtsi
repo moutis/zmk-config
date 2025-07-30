@@ -220,7 +220,15 @@
 
             ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
-        
+        ak_FSLH: ak_FSLH {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>;
+
+            ak_CMMA_E { trigger-keys = <DOT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
+            ak_CMMA_Q { trigger-keys = <DQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+        };
+
 /*
  * lk_ linger key behaviors (approximated via hold-tap)
  * most require a combo to execute the multiple key taps
@@ -300,3 +308,4 @@
             my_lk_config;
             bindings = <&pairLtGt>, <&kp>;
         };
+
