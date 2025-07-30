@@ -63,10 +63,10 @@
 #define LB1 23
 #define LB0 24
 
-#define LB0 25  // left extra keys
-#define LBA 26
+#define LBA 25  // left extra keys
+#define LBB 26
 
-#define RB0 27  // right extra keys
+#define RBB 27  // right extra keys
 #define RBA 28
 
 // right-bottom row
