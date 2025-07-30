@@ -207,24 +207,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
-/* Comma Magic */
-        CmmaMgc: CmmaMgc {
-            my_lk_config;
-            bindings = <&kp CAPSLOCK>, <&CmmaSemi>;
-        };
-
-        CmmaSemi: CmmaSemi {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&ak_CMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        ak_CMMA: ak_CMMA {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp COMMA>;
-
-            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
@@ -239,6 +221,25 @@
             bindings = <&kp DQT>;
 
             ak_CMMA_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+        };
+
+/* Comma Magic */
+        CmmaSemi: CmmaSemi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ak_CMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        ak_CMMA: ak_CMMA {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>;
+
+            ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
+        };
+        CmmaMgc: CmmaMgc {
+            my_lk_config;
+            bindings = <&kp CAPSLOCK>, <&CmmaSemi>;
         };
 
 /*
