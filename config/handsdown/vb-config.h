@@ -20,7 +20,7 @@
 #define HD_LH                                                 &lt_BspcDel     &lt_R l_nav R
 
 #define HD_RT &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
-#define HD_RM &CmmaSemi       &mt_A LSHFT A   &mt_E LGUI E    &mt_I LALT I    &mt_H LCTRL H
+#define HD_RM &CmmaMgc        &mt_A LSHFT A   &mt_E LGUI E    &mt_I LALT I    &mt_H LCTRL H
 #define HD_RB &MinusPlus      &ak_U           &ak_O           &ak_Y           &ak_F
 #define HD_RH &lt l_sym SPACE &lt l_nav RETURN
 
