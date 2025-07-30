@@ -12,7 +12,7 @@
  
      ZMK_MACRO(m_alpha,
         bindings =
-            <&kp LANG2>,    // switch to Roman/Latin script (m_henk)
+            <&kp LANG2>,    // switch to Roman/Latin script (n_henk)
             <&to l_alpha>; // make alpha layer default
        )
      ZMK_MACRO(m_japan,

@@ -1,10 +1,10 @@
 /*
     Assemble the keymap from the abstracted alpha layer and other layers
-    
+
     This is for a 3x5+2 (34 key) board
-    
+
     Works with Ferris/Sweep, Zaphod, etc.
-    
+
     Uses the core 3x5+2 alpha row defs and adds extra keys to fill out the keymap.
     The key (rows) values are defined in the corresponding HD-##.h file
     that should be included in the .keymap file before this.

@@ -20,21 +20,23 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 ╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 ```
-### Definitions exist for:
-- [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) (*Alan's "bottom heavy" mod*)
-- [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
-- [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c)
-- [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (mods *Vf, Vb, Vx, Vv*)
- 
-In the works (*I test the builds on several boards, with adaptives & combos*):
-- [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w)
-- [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx)
+### Hands Down variations
 
-**Nearly everything is working**:
+|   Layout   | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim | Avail? |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) | R | ~ | ~ | ✔ | ✔ |
+| [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z) | R | ~ | ~ | ✔ | ✔ |
+| [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c) | R | ~ | ~ | ✔ | ✔ |
+| [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) | R | ~ | ~ | ✔ | ✔ |
+| [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none | ~ | ~ | ✔ |   |
+| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | none | T | ~ | ✔ |   |
+
+<sup>[1]</sup> Requires split keyboard with at least 2 thumb keys. 
+<sup>[2]</sup> **`H` digraph combos** *(* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*), and pronouns (`I `, `I've `, `you'll`, `we'd`, etc. ).  
+<sup>[3]</sup> [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are now using urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*). `WM` becomes `LM`, `GM`/`MG` -> `GL`/`LG` (\**Magic* keys are a type of Adaptive, restricted to one key. I have, effectivey, many \**Magic* keys at strategic locations around the keyboard.)  
+
  - Many combos for less-used letters (`Qu`,`Z`,) editing (`Undo`, `Cut`, `Copy`, `Paste`, `Tab`, etc.), symbols and punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.).
- - **`H` digraph combos** *(* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*), and pronouns (`I `, `I've `, `you'll`, `we'd`, etc. ).
- - [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are now using urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*), 
- - [***Comma-cap***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy using Adaptive Keys. Comma immediately before a letter will capitalize it (deleting the comma). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It's nearly perfect, and greatly reduces the need for home row shift (eliminating the most pesky HRM issue). It doesn't require a dedicated key for all this–It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter.
+ - [***Comma-cap***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy using Adaptive Keys. `Comma` immediately before an alpha will capitalize it (deleting the comma). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It's nearly perfect, and greatly reduces the need for home row shift (eliminating the most pesky HRM issue). It doesn't require a dedicated key for all this–It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter.
  - [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*via hold-tap behaviors and macros*) for things like paired symbols like `{([<>])}` and diacritics `éèôåō`, and more.
 
 Currently building only for Mac only (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
