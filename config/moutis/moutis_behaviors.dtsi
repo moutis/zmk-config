@@ -239,7 +239,7 @@
 
         CmmaMgc: CmmaMgc {
             my_lk_config;
-            bindings = <&kp CAPSLOCK>, <&CmmaSemi>;
+            bindings = <&kp>, <&CmmaSemi>;
         };
 
 /*
