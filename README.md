@@ -24,12 +24,12 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 
 | HD variation | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| [***Promethium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/pm-config.h) | R |   |   | ✔ | ✔ | 
-| [***Rhodium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/rh-config.h) | R |   |   |   | ✔ | 
-| [***Titanium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/ti-config.h) | R | ✔ | ✔ |   | ✔ | 
-| [***Vibranium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h) ([Vf](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h),[Vb](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vb-config.h),[Vx](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vx-config.h),[Vv](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vv-config.h)) | R | ✔ | ✔ |   | ✔ | 
-| [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none |   | ✔ |   |   | 
-| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ | ✔ |   |   | 
+| [***Promethium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/pm-config.h) | R | opt. | opt. | ✔ | ✔ | 
+| [***Rhodium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/rh-config.h) | R | opt. | opt. |   | ✔ | 
+| [***Titanium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/ti-config.h) | R | rec. | rec. |   | ✔ | 
+| [***Vibranium***](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h) ([Vf](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vf-config.h),[Vb](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vb-config.h),[Vx](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vx-config.h),[Vv](https://github.com/moutis/zmk-config/blob/main/config/handsdown/vv-config.h)) | R | req. | req. |   | ✔ | 
+| [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none |   | opt. |   |   | 
+| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | rec. | rec. |   |   | 
 
  <sup>[1]</sup> Requires split keyboard with at least 2 thumb keys. <br>
  <sup>[2]</sup> **H-digraph combos** (`TH`,`CH`,`WH`,`SH`,`GH`,`PH` bigrams) are expected in the design of this layout. It can be used without the H-digraph combos, but that would add more burden to the pinky. Layouts not designed expecting the H-digraphs can still work with them, and they are defined in the templates. <br>
