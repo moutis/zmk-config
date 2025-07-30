@@ -46,7 +46,7 @@
 #define rst_btld reset_bootldr 0 0 // simple macro to keep the keymap uncluttered
 
 //
-// home row mods (hold-taps)
+// home row mods
 //
 
         hm: homerow_mods { // use on either hand
@@ -116,6 +116,12 @@
  * modmorph behaviors
  * identified by the camel case of each of the keycodes
  */
+        CmmaSemi: CmmaSemi {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ak_CMMA>, <&kp SEMI>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         DotColn: DotColn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -207,7 +213,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         
-        };
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
@@ -237,12 +242,12 @@
 
             ak_CMMA_cap { trigger-keys = <COMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &caps_word>; };
         };
-/*
+
         CmmaMgc: CmmaMgc {
             my_lk_config;
             bindings = <&kp CAPSLOCK>, <&CmmaSemi>;
         };
-*/
+
 /*
  * lk_ linger key behaviors (approximated via hold-tap)
  * most require a combo to execute the multiple key taps
