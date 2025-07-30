@@ -13,7 +13,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 - [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5*)
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
 -->
-          **Hands Down** *Vibranium-Vf*
+**Hands Down** *Vibranium-Vf*
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
 │  X   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
@@ -22,7 +22,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 ╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 ```
-              **Hands Down** *Promethium*
+**Hands Down** *Promethium*
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
 │  V   W   G   M   J  │ │  #$  .:  /*  "<  '>  │
