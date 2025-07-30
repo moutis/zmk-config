@@ -15,8 +15,6 @@ on:
       - config/handsdown/*.dtsi
       - config/moutis/*.h
       - config/moutis/*.dtsi
-      - config/xx/*.h
-      - config/xx/*.dtsi
       - build.yaml
 
 jobs:
