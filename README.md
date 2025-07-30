@@ -22,14 +22,14 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 ```
 ## [**Hands Down**](https://sites.google.com/alanreiser.com/handsdown) variations
 
-|   Layout   | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
+| HD variation | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) | R |   |   | ✔ | ✔ | 
-| [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z) | R |   |   | ✔ | ✔ | 
+| [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z) | R |   |   |   | ✔ | 
 | [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c) | R | ✔ | ✔ |   | ✔ | 
-| [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) | R | ✔ | ✔ |   | ✔ | 
+| [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (Vf,Vb,Vx,Vv) | R | ✔ | ✔ |   | ✔ | 
 | [***Neu***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.ze4kq734zl5w) | none |   | ✔ |   |   | 
-| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ |   |   |   | 
+| [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ | ✔ |   |   | 
 
  <sup>[1]</sup> Requires split keyboard with at least 2 thumb keys. <br>
  <sup>[2]</sup> **H-digraph combos** (`TH`,`CH`,`WH`,`SH`,`GH`,`PH` bigrams) are expected in the design of this layout. It can be used without the H-digraph combos, but that would add more burden to the pinky. Layouts not designed expecting the H-digraphs can still work with them, and they are defined in the templates. <br>
