@@ -125,7 +125,7 @@
         DotColn: DotColn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_dot>, <&kp COLON>;
+            bindings = <&ak_DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DotColnJ: DotColnJ { // no adaptive Japanese
@@ -223,16 +223,16 @@
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&kp DOT>;
+            bindings = <&sl_dot>;
 
-            ak_CMMA_E { trigger-keys = <FLSH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
+            ak_CMMA_E { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
         };
         ak_DQT: ak_DQT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp DQT>;
 
-            ak_CMMA_Q { trigger-keys = <FLSH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+            ak_CMMA_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
         };
 
 /*

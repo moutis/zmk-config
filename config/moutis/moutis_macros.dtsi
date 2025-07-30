@@ -93,24 +93,13 @@
                 ;
         )
 
-    ZMK_MACRO(ak_dot,
+    ZMK_MACRO(sl_dot,
         wait-ms = <50>; // need to slow this down for some systems.
         bindings = <&macro_tap &kp DOT>
                 , <&sl l_akDot>
                 ;
         )
 
-
-    ZMK_MACRO(b_EXCL,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp EXCL>
-            ;
-        )
-    ZMK_MACRO(b_QMARK,
-        tap-ms = <40>;
-        bindings = <&kp BSPC &kp QMARK>
-            ;
-        )
         
     ZMK_MACRO(t_Qu,
         tap-ms = <40>;
