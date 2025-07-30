@@ -208,7 +208,10 @@
         };
         
 /* Comma Magic */
-#define CmmaMgc lk &kp CAPSLOCK &CmmaSemi  // simple macro to keep the keymap uncluttered
+        CmmaMgc: CmmaMgc {
+            my_lk_config;
+            bindings = <&kp CAPSLOCK>, <&CmmaSemi>;
+        };
 
         CmmaSemi: CmmaSemi {
             compatible = "zmk,behavior-mod-morph";
