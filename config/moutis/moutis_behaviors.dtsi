@@ -116,12 +116,6 @@
  * modmorph behaviors
  * identified by the camel case of each of the keycodes
  */
-        CmmaSemi: CmmaSemi {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&ak_CMMA>, <&kp SEMI>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         DotColn: DotColn {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
