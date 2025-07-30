@@ -4,11 +4,11 @@
 
 My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small portable boards:
 
-- [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (Peak portable split)
-- [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (Portable unibody at the end of the world)
-- [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (Wafer thin unsplit)
-- [**Dust**](https://kbd.news/Dust-keyboard-1789.html) (Bad Wings re-split)
-- [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit) (Like [Planck](https://drop.com/buy/planck-mechanical-keyboard) Wide)
+- [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split*)
+- [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody at the end of the world*)
+- [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit*)
+- [**Dust**](https://kbd.news/Dust-keyboard-1789.html) (*Bad Wings re-split*)
+- [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit) (*Like [Planck](https://drop.com/buy/planck-mechanical-keyboard), but wide*)
 - [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92)
 - [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5*)
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
@@ -22,7 +22,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
        ╰──────────────╯ ╰───────────────╯
 ```
 ### Definitions exist for:
-- [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) (Alan's mod)
+- [***Promethium***](https://www.reddit.com/r/KeyboardLayouts/comments/1g66ivi/hands_down_promethium_snth_meets_hd_silverengram/) (*Alan's "bottom heavy" mod*)
 - [***Rhodium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.bv3bay1cp21z)
 - [***Titanium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.wc98dpulr54c)
 - [***Vibranium***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.eyvjpfoqjy65) (mods *Vf, Vb, Vx, Vv*)

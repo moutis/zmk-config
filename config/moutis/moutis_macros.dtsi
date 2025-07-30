@@ -100,7 +100,6 @@
                 ;
         )
 
-        
     ZMK_MACRO(t_Qu,
         tap-ms = <40>;
         bindings = <&ak_Q>
