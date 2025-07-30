@@ -13,11 +13,21 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 - [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5*)
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
 -->
+          **Hands Down** *Vibranium-Vf*
 ```
 ╭─────────────────────╮ ╭──────────────────────╮
 │  X   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
 │  S   C   N   T   K  | |  ,;   A   E   I   H  │
 │  F   P   L   D   V  │ │  -+   U   O   Y   B  │
+╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
+       ╰──────────────╯ ╰───────────────╯
+```
+              **Hands Down** *Promethium*
+```
+╭─────────────────────╮ ╭──────────────────────╮
+│  V   W   G   M   J  │ │  #$  .:  /*  "<  '>  │
+│  S   N   T   H   K  | |  ,;   A   E   I   C  │
+│  F   P   D   L   X  │ │  -+   U   O   Y   B  │
 ╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 ```
@@ -32,7 +42,7 @@ In the works (*I test the builds on several boards, with adaptives & combos*):
 - [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx)
 
 
- Nearly everything is working:
+**Nearly everything is working**:
  - Many combos for less-used letters (`Qu`,`Z`,) editing (`Undo`, `Cut`, `Copy`, `Paste`, `Tab`, etc.), symbols and punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.).
  - **`H` digraph combos** *(* `TH`,`CH`,`WH`,`SH`,`GH`,`PH` *bigrams*), and pronouns (`I `, `I've `, `you'll`, `we'd`, etc. ).
  - [***Adaptive Keys***](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are now using urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) to further improve an already great layout (*removing more SFBs, scissors, etc.*), 
@@ -42,7 +52,7 @@ In the works (*I test the builds on several boards, with adaptives & combos*):
 Currently building only for Mac only (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this too is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
 
 ## Thanks:
-- Of course, huge thanks to [Pete Johanson](https://github.com/petejohanson) *and contributors* for ZMK ([***why not consider sponsoring Pete***](https://github.com/sponsors/petejohanson)?)
+- Of course, huge thanks to [**Pete Johanson**](https://github.com/petejohanson) *and contributors* for ZMK ([***why not consider sponsoring Pete***](https://github.com/sponsors/petejohanson)?)
 - and for the exquisite [Zaphod](https://github.com/petejohanson/zaphod-config) board design.
 - [urob](https://github.com/urob/) for the excellent [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module.
 - [jcmkk3](https://github.com/jcmkk3) for the idea to implement adaptives via sticky layers that worked until proper solutions were made.
