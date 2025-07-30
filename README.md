@@ -53,7 +53,8 @@ Currently building only for Mac only (*hard coded for gui instead of ctrl, and s
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
 - [**Totem**]()
 -->
-### Mix and match any HD alpha layout with any supported board by editing just a few lines.
+ 
+ * Mix and match any supported HD alpha layout and keyboard by editing just a few lines.*
 
 ## Thanks:
 - Of course, huge thanks to [**Pete Johanson**](https://github.com/petejohanson) *and contributors* for ZMK ([***why not consider sponsoring Pete***](https://github.com/sponsors/petejohanson)?)
