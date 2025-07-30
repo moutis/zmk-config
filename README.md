@@ -20,7 +20,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 ╰──────╮  App BSP  R  │ │  SPC RET nLk  ╭──────╯
        ╰──────────────╯ ╰───────────────╯
 ```
-### Hands Down variations
+## [**Hands Down**](https://sites.google.com/alanreiser.com/handsdown) variations
 
 |   Layout   | Thumb Alpha<sup>[1]</sup> | H-Digraphs<sup>[2]</sup> | Adaptives<sup>[3]</sup> | Vim<sup>[4]</sup> | Avail? |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -32,7 +32,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 | [***Gold***](https://sites.google.com/alanreiser.com/handsdown/home/hands-down-neu#h.8i2msuo3butx) | T | ✔ |   |   |   | 
 
  <sup>[1]</sup> Requires split keyboard with at least 2 thumb keys. <br>
- <sup>[2]</sup> **`H`-digraph combos** (`TH`,`CH`,`WH`,`SH`,`GH`,`PH` bigrams) are expected in the design of this layout. It can be used without the H-digraph combos, but that would add more burden to the pinky. Layouts not designed expecting the H-digraphs can still work with them, and they are defined in the templates. <br>
+ <sup>[2]</sup> **H-digraph combos** (`TH`,`CH`,`WH`,`SH`,`GH`,`PH` bigrams) are expected in the design of this layout. It can be used without the H-digraph combos, but that would add more burden to the pinky. Layouts not designed expecting the H-digraphs can still work with them, and they are defined in the templates. <br>
  <sup>[3]</sup> [*Adaptive Keys*](https://sites.google.com/alanreiser.com/handsdown#h.ps4itorhjiq9) are recommended for this layout. Adaptives in ZMK use urob's slick [behavior-adaptive-key](https://github.com/urob/zmk-adaptive-key/) module to further improve an already great layout (*removing more SFBs, scissors, etc.*). `WM` becomes `LM`, `GM`/`MG` -> `GL`/`LG` (\**Magic* keys are a type of Adaptive, restricted to one key. I have, effectivey, many \**Magic* keys at strategic locations around the keyboard.) <br>
  <sup>[4]</sup> *Vim Friendly* variations were designed with VIM in mind, especially the navigation letters. Other layouts can work with VIM, especially with a separate nav layer. <br>
 
@@ -42,7 +42,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
 
 Currently building only for Mac only (*hard coded for gui instead of ctrl, and some Mac specific keycodes*), because I use this mainly with my iPads and phone when I'm on the road. My [***Semantic Keys***](https://sites.google.com/alanreiser.com/handsdown#h.7mehnxbqcx2s) feature for platform independence works on my QMK implementations, but isn't yet fully fleshed out and will require more invasive work for ZMK, so this is for later. *I'll probably deal with this with a separate platform layer and macro parameters…this will take time. I'm stupid busy currently.*
 
-### Templates for many popular keyboards & form-factors:
+## Keyboards & form-factors:
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split 3x5+3*)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody 3x5+2 at the end of the world*)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit 3x5+3*)
