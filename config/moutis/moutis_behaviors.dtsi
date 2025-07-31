@@ -153,14 +153,30 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+/*
+ * &DqtLT
+ *
+ * Double Quote key behaviors:
+ *      tap     = " double quote
+ *      shift   = < (less than)
+ *      alt     = « (French quote double chevron)
+ *      linger  = paired symbols w/insertion point between
+ *
+ * This set is used when the " appears to the left of ' in the keymap
+ * so the paired symbols <«  »> are spacially correct.
+ *
+ * To use, just put &DqtLT in the keymap. The other behaviors are
+ * referenced by this one.
+ *
+ * &SqtGT is the corresponding behavior.
+ *
+ */
+ 
+#define DqtLT lkDqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
 
-#define DqtLT lk &pairDquotLT &leftDquotLT  // simple macro to keep the keymap uncluttered
-
-        pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&t_pairDquo>, <&t_pairDchev>;
-            mods = <(MOD_LALT|MOD_RALT)>;
+        lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairDquotLT>, <&leftDquotLT>;
         };
         pairDquotLT: pairDquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
@@ -168,10 +184,10 @@
             bindings = <&pairDquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        leftDquotChev: leftDquotLChev {     // " or ALT for «
+        pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_DQT>, <&kp LA(BSLH)>;
+            bindings = <&t_pairDquo>, <&t_pairDchev>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         leftDquotLT: leftDquotLT {          // SHFT for <
@@ -180,37 +196,10 @@
             bindings = <&leftDquotChev>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
-            my_lk_config;
-            bindings = <&pairDquotLT>, <&leftDquotLT>;
-        };
-
-
-
-
-        DqtGT: DqtGT { // ">
+        leftDquotChev: leftDquotLChev {     // " or ALT for «
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp GT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        DqtRbkt: DqtRbkt { // "]
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&DqtGT>, <&kp LS(LA(BSLH))>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        SqtLT: SqtLT { // '<
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp LT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        SqtLbkt: SqtLbkt { // '[
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&SqtLT>, <&kp LA(BSLH)>;
+            bindings = <&ak_DQT>, <&kp LA(BSLH)>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         SqtGT: SqtGT { // '>
@@ -225,6 +214,75 @@
             bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
+/*
+ * end of Double Quote key behaviors
+ */
+
+/*
+ * &SqtLT
+ *
+ * Single Quote key behaviors:
+ *      tap     = ' single quote
+ *      shift   = < (less than)
+ *      alt     = « (French quote double chevron)
+ *      linger  = paired symbols w/insertion point between
+ *
+ * This set is used when the ' appears to the left of " in the keymap
+ * so the paired symbols <«  »> are spacially correct.
+ *
+ * To use, just put &SqtLT in the keymap. The other behaviors are
+ * referenced by this one.
+ *
+ * &DqtGT is the corresponding behavior.
+ *
+ */
+ 
+#define SqtLT lkSqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
+
+        lkSqt_lkLT: lkSqt_lkLT {            // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairSquotLT>, <&leftSquotLT>;
+        };
+        pairSquotLT: pairSquotLT {          // SHFT for <>
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&pairSquotDchev>, <&t_pairLtGt>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairSquotDchev: pairSquotDchev {    // '' or ALT for «»
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&t_pairSquo>, <&t_pairDchev>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        leftSquotLT: leftSquotLT {          // SHFT for <
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&leftSquotChev>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        leftSquotChev: leftSquotLChev {     // ' or ALT for «
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LT>, <&kp LA(BSLH)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        DqtGT: DqtGT { // ">
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&DqtGT>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        DqtRbkt: DqtRbkt { // "]
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DQT>, <&kp LS(LA(BSLH))>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+/*
+ * end of Single Quote key behaviors
+ */
+
         lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
