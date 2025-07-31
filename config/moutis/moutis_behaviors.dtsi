@@ -64,7 +64,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 //
-// these are really layout dependent, maybe should be separated? for now...
+// these are layout dependent, maybe should be separated? but for now...
 //
         mt_S: mt_S {
             my_hrm_config;
@@ -110,7 +110,6 @@
             my_lt_config;
             bindings = <&mo>, <&ak_R>;
         };
-
 
 /*
  * modmorph behaviors
@@ -202,16 +201,16 @@
             bindings = <&ak_DQT>, <&kp LA(BSLH)>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        SqtGT: SqtGT { // '>
+        SqtGT: SqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp GT>;
+            bindings = <&SqtRbkt>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtRbkt: SqtRbkt { // ']
+        SqtRbkt: SqtRbkt { // ' or ALT = ]
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtGT>, <&kp LS(LA(BSLH))>;
+            bindings = <&kp SQT>, <&kp LS(LA(BSLH))>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -267,13 +266,13 @@
             bindings = <&kp LT>, <&kp LA(BSLH)>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        DqtGT: DqtGT { // ">
+        DqtGT: DqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&DqtGT>, <&kp GT>;
+            bindings = <&DqtRbkt>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtRbkt: DqtRbkt { // "]
+        DqtRbkt: DqtRbkt { // " or ALT = ]
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DQT>, <&kp LS(LA(BSLH))>;
