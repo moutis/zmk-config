@@ -154,7 +154,7 @@
         };
 
 
-#define DqtLT lkDqt_lkLT 0 0  // simple macro to keep the keymap uncluttered
+#define DqtLT lk pairDquotLT leftDquotLT  // simple macro to keep the keymap uncluttered
 
         pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
             compatible = "zmk,behavior-mod-morph";
