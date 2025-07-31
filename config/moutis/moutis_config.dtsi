@@ -97,5 +97,5 @@
 // French Quotes / chevrons (pairs, single & double)
 #define LDCHEV LA(BACKSLASH)        // «
 #define RDCHEV LS(LA(BACKSLASH))    // «
-#define LSCHEV LA(LS((N3))          // ‹
-#define RSCHEV LA(LS((N4))          // ›
+#define LSCHEV LA(LS((N3)))         // ‹
+#define RSCHEV LA(LS((N4)))         // ›

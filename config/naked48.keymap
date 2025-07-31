@@ -12,7 +12,6 @@
 #include "keymaps/keynames_4x12_wide.h"      // key name defs for this board topology
 #include "moutis/moutis_config.dtsi"    // my add-on board independent feature defs
 #include "handsdown/vf-config.h"        // HD alpha keymap, adapt, combo definitions
-#define FnNum 1
 
 / {
 
