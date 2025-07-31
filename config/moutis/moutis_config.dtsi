@@ -47,6 +47,8 @@
 
 #define my_tapping_term 200
 #define my_quick_tapping_term 55
+#define my_typing_speed 100 // ms/tap (100 = 6 cps)
+
 
 &mt {
     tapping-term-ms = <my_tapping_term>;

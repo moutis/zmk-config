@@ -57,13 +57,13 @@
         )
 
     ZMK_MACRO(m_selword,
-        tap-ms = <40>;
+        tap-ms = <my_typing_speed>;
         bindings =  <&macro_tap &kp LA(LEFT)>
                 , <&macro_tap &kp LS(LA(RIGHT))>
                 ;
         )
     ZMK_MACRO(m_findsel,
-        tap-ms = <40>;
+        tap-ms = <my_typing_speed>;
         bindings =  <&macro_tap &kp LG(C)>
                 , <&macro_tap &kp LG(F)>
                 , <&macro_tap &kp LG(V)>
@@ -73,7 +73,7 @@
         )
 
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
+        tap-ms = <my_typing_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -88,7 +88,7 @@
                 ;
         )
     ZMK_MACRO(t_pairSquo,   // type '' put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
+        tap-ms = <my_typing_speed>;
         bindings =  RELEASE_ALL_MODS
                 , <&kp LSQUO>
                 , <&kp RSQUO>
@@ -96,15 +96,22 @@
                 ;
         )
     ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        tap-ms = <my_typing_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&kp LT>
                 , <&kp GT>
                 , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairPar,    // type () put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
+        tap-ms = <my_typing_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -119,24 +126,45 @@
                 ;
         )
     ZMK_MACRO(t_pairBrc,    // type {} put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        tap-ms = <my_typing_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&kp LBRC>
                 , <&kp RBRC>
                 , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBkt,    // type [] put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        tap-ms = <my_typing_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&kp LBKT>
                 , <&kp RBKT>
                 , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        tap-ms = <my_typing_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&kp LDCHEV>
                 , <&kp SPC>
                 , <&kp RDCHEV>
@@ -146,8 +174,15 @@
                 ;
         )
     ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
-        wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        tap-ms = <my_typing_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&kp LSCHEV>
                 , <&kp SPC>
                 , <&kp RSCHEV>
