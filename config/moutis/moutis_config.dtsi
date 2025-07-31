@@ -79,23 +79,31 @@
 /*
  * #define compound keycodes
  *
- * Avoid using hard-coded mod/keycodes.
+ * keycodes_macext_US.h
+ *
+ * Avoid using any hard-coded mod/keycodes.
  *
  * This really needs to be fully abstracted.
  * Maybe when proper platform independence is factored in
  * with something like my Symantic Keys in QMK.
  *
- * below is for Mac Intl keyboard layout
+ * below is for Mac US extended keyboard layout
  */
  
 // Smart Quotes (pairs, single & double)
-#define LSQUO LA(RBKT)              // “
-#define RSQUO LS(LA(RBKT))          // ”
-#define LDQUO LA(LBKT)              // ’
-#define RDQUO LS(LA(LBKT))          // ’
+#define LSQUO   LA(RBKT)             // “
+#define RSQUO   LS(LA(RBKT))         // ”
+#define LDQUO   LA(LBKT)             // ’
+#define RDQUO   LS(LA(LBKT))         // ’
 
 // French Quotes / chevrons (pairs, single & double)
-#define LDCHEV LA(BACKSLASH)        // «
-#define RDCHEV LS(LA(BACKSLASH))    // «
-#define LSCHEV LA(LS((N3)))         // ‹
-#define RSCHEV LA(LS((N4)))         // ›
+#define LDCHEV  LA(BACKSLASH)       // «
+#define RDCHEV  LA(LS(BACKSLASH))   // «
+#define LSCHEV  LA(LS((N3)))        // ‹
+#define RSCHEV  LA(LS((N4)))        // ›
+
+// Currency
+#define CEURO   LA(N2)              // €
+#define CBPND   LA(N3)              // £
+#define CJPY    LA(Y)               // ¥
+#define CCENT   LA(N4)              // ¢
