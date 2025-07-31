@@ -175,9 +175,9 @@
                 , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LDCHEV>
                 , <&macro_tap &kp SPC>
-                , <&macro_tap &kp SPC>
                 , <&macro_tap &kp RDCHEV>
-                , <&macro_tap &kp LEFT>
+                , <&macro_tap &kp LEFT>     // avoid dbl space interpreting by host
+                , <&macro_tap &kp SPC>
                 , <&macro_tap &kp LEFT>
                 ;
         )
@@ -193,9 +193,9 @@
                 , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LSCHEV>
                 , <&macro_tap &kp SPC>
+                , <&macro_tap &kp LEFT>     // avoid dbl space interpreting by host
                 , <&macro_tap &kp SPC>
                 , <&macro_tap &kp RSCHEV>
-                , <&macro_tap &kp LEFT>
                 , <&macro_tap &kp LEFT>
                 ;
         )

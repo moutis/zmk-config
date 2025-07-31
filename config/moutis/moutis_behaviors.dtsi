@@ -204,13 +204,13 @@
         SqtGT: SqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&t_pairSquo>, <&kp GT>;
+            bindings = <&SqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtRbkt: SqtRbkt { // ' or ALT = »
+        SqtRchev: SqtRchev { // ' or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp RDCHEV>;
+            bindings = <&t_pairSquo>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -269,13 +269,13 @@
         DqtGT: DqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&t_pairDquo>, <&kp GT>;
+            bindings = <&DqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtRbkt: DqtRbkt { // " or ALT = »
+        DqtRchev: DqtRchev { // " or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp RDCHEV>;
+            bindings = <&t_pairDquo>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
