@@ -168,7 +168,7 @@
             bindings = <&pairDquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        LeftDquotChev: LeftDquotLChev {     // " or ALT for «
+        leftDquotChev: leftDquotLChev {     // " or ALT for «
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&ak_DQT>, <&kp LA(BSLH)>;
@@ -177,13 +177,13 @@
         leftDquotLT: leftDquotLT {          // SHFT for <
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&LeftDquotChev>, <&kp LT>;
+            bindings = <&leftDquotChev>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
             my_lk_config;
-            bindings = <&pairDquotLT>, <&LeftDquotLT>;
+            bindings = <&pairDquotLT>, <&leftDquotLT>;
         };
 
 
