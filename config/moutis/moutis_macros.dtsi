@@ -10,13 +10,16 @@
  *
  */
  
- #define RELEASE_ALL_MODS <&macro_release &kp LSHFT> \  // need to lift mods
-                , <&macro_release &kp RSHFT> \          // to ensure
-                , <&macro_release &kp LALT> \           // the correct keycode
-                , <&macro_release &kp RALT> \           // is sent
+ #define RELEASE_ALL_MODS <&macro_release &kp LSHFT> \
+                        , <&macro_release &kp RSHFT> \
+                        , <&macro_release &kp LALT> \
+                        , <&macro_release &kp RALT> \
+                        , <&macro_release &kp LCTL> \
+                        , <&macro_release &kp RCTL> \
+                        , <&macro_release &kp LGUI> \
+                        , <&macro_release &kp RGUI> \
 
- 
- 
+
      ZMK_MACRO(m_alpha,
         bindings =
             <&kp LANG2>,    // switch to Roman/Latin script (m_henk/latin)
