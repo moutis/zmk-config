@@ -166,7 +166,7 @@
  * so the paired symbols <«  »> are spacially correct.
  *
  * To use, just put &DqtLT in the keymap. The other behaviors are
- * referenced by this one.
+ * so the paired symbols <«  »> are spacially correct.
  *
  * &SqtGT is the corresponding behavior.
  *
@@ -228,7 +228,7 @@
  *      linger  = paired symbols w/insertion point between
  *
  * This set is used when the ' appears to the left of " in the keymap
- * so the paired symbols <«  »> are spacially correct.
+ * so the paired symbols <«  »> are spacially correct. (i.e. Rhodium)
  *
  * To use, just put &SqtLT in the keymap. The other behaviors are
  * referenced by this one.

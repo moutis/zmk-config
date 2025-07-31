@@ -92,14 +92,14 @@
         bindings = <&kp LBKT &kp RBKT &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairDchev,  // type «» put insertion between
+    ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LA(BSLH) &kp LS(LA(BSLH)) &kp LEFT>
+        bindings = <&kp LA(BSLH) &kp SPC &kp LS(LA(BSLH)) &kp SPC &kp LEFT &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairSchev,  // type ‹› put insertion between
+    ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LA(LS((N3))) &kp LA(LS(N4)) &kp LEFT>
+        bindings = <&kp LA(LS((N3))) &kp SPC &kp &kp LA(LS(N4)) &kp SPC &kp &kp LEFT &kp LEFT>
                 ;
         )
 
