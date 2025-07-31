@@ -180,8 +180,7 @@
         pairDquotLT: pairDquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp Q>, <&t_pairLtGt>;
-//            bindings = <&pairDquotDchev>, <&t_pairLtGt>;
+            bindings = <&pairDquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
