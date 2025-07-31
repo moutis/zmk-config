@@ -10,6 +10,13 @@
  *
  */
  
+ #define RELEASE_ALL_MODS <&macro_release &kp LSHFT> \  // need to lift mods
+                , <&macro_release &kp RSHFT> \          // to ensure
+                , <&macro_release &kp LALT> \           // the correct keycode
+                , <&macro_release &kp RALT> \           // is sent
+
+ 
+ 
      ZMK_MACRO(m_alpha,
         bindings =
             <&kp LANG2>,    // switch to Roman/Latin script (m_henk/latin)
@@ -64,73 +71,49 @@
 
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LDQUO &kp RDQUO &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSquo,   // type '' put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LSQUO &kp RSQUO &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LT &kp GT &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairPar,    // type () put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LPAR &kp RPAR &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBrc,    // type {} put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LBRC &kp RBRC &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBkt,    // type [] put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LBKT &kp RBKT &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LDCHEV &kp SPC &kp RDCHEV &kp SPC &kp LEFT &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  <&macro_release &kp LSHFT>  //
-                , <&macro_release &kp RSHFT>    //
-                , <&macro_release &kp LALT>     //
-                , <&macro_release &kp RALT>     //
+        bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
                 , <&kp LSCHEV &kp SPC &kp RSCHEV &kp SPC &kp LEFT &kp LEFT>
                 ;
         )
