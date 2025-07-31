@@ -152,18 +152,42 @@
             bindings = <&kp MINUS>, <&kp PLUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtLT: DqtLT { // "<
+
+
+#define DqtLT lkDqt_lkLT &pairDquotLT &LeftDquotLT  // simple macro to keep the keymap uncluttered
+/*
+        lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairDqtLT>, <&LeftDqtLbkt>;
+        };
+*/
+        pairDquotLT: pairDquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_DQT>, <&kp LT>;
+            bindings = <&pairDquotDchev>, <&pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtLbkt: DqtLbkt { // "[
+        pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&DqtLT>, <&kp LA(BSLH)>;
+            bindings = <&pairDquo>, <&pairDchev>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
+        leftDquotLT: leftDquotLT {          // SHFT for <
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&LeftDquotChev>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        LeftDquotChev: LeftDquotLChev {     // " or ALT for «
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&ak_DQT>, <&kp LA(BSLH)>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+
+
+
         DqtGT: DqtGT { // ">
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -302,24 +326,25 @@
             my_lk_config;
             bindings = <&t_ght>, <&t_Gh>;
         };
+
         lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
             my_lk_config;
-            bindings = <&pairDquo>, <&kp>;
+            bindings = <&t_pairDquo>, <&kp>;
         };
         lk_par: lk_par { // ( on tap, () on "linger"
             my_lk_config;
-            bindings = <&pairPar>, <&kp>;
+            bindings = <&t_pairPar>, <&kp>;
         };
         lk_bkt: lk_bkt { // [ on tap, [] on "linger"
             my_lk_config;
-            bindings = <&pairBkt>, <&kp>;
+            bindings = <&t_pairBkt>, <&kp>;
         };
         lk_brc: lk_brc {
             my_lk_config;
-            bindings = <&pairBrc>, <&kp>;
+            bindings = <&t_pairBrc>, <&kp>;
         };
         lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
             my_lk_config;
-            bindings = <&pairLtGt>, <&kp>;
+            bindings = <&t_pairLtGt>, <&kp>;
         };
 
