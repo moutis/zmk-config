@@ -75,49 +75,71 @@
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LDQUO &kp RDQUO &kp LEFT>
+                , <&kp LDQUO>
+                , <&kp RDQUO>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSquo,   // type '' put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LSQUO &kp RSQUO &kp LEFT>
+                , <&kp LSQUO>
+                , <&kp RSQUO>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LT &kp GT &kp LEFT>
+                , <&kp LT>
+                , <&kp GT>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairPar,    // type () put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LPAR &kp RPAR &kp LEFT>
+                , <&kp LPAR>
+                , <&kp RPAR>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBrc,    // type {} put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LBRC &kp RBRC &kp LEFT>
+                , <&kp LBRC>
+                , <&kp RBRC>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBkt,    // type [] put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LBKT &kp RBKT &kp LEFT>
+                , <&kp LBKT>
+                , <&kp RBKT>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LDCHEV &kp SPC &kp RDCHEV &kp SPC &kp LEFT &kp LEFT>
+                , <&kp LDCHEV>
+                , <&kp SPC>
+                , <&kp RDCHEV>
+                , <&kp SPC>
+                , <&kp LEFT>
+                , <&kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings =  RELEASE_ALL_MODS // to ensure correct keycode & nav
-                , <&kp LSCHEV &kp SPC &kp RSCHEV &kp SPC &kp LEFT &kp LEFT>
+                , <&kp LSCHEV>
+                , <&kp SPC>
+                , <&kp RSCHEV>
+                , <&kp SPC>
+                , <&kp LEFT>
+                , <&kp LEFT>
                 ;
         )
 
