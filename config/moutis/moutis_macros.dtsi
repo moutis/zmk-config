@@ -54,7 +54,7 @@
         )
     ZMK_MACRO(m_findsel,
         tap-ms = <40>;
-        bindings = <&macro_tap &kp LG(C)>
+        bindings =  <&macro_tap &kp LG(C)>
                     , <&macro_tap &kp LG(F)>
                     , <&macro_tap &kp LG(V)>
                     , <&macro_tap &kp RETURN>
@@ -64,42 +64,74 @@
 
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LDQUO &kp RDQUO &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LDQUO &kp RDQUO &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSquo,   // type '' put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LSQUO &kp RSQUO &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LSQUO &kp RSQUO &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LT &kp GT &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LT &kp GT &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairPar,    // type () put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LPAR &kp RPAR &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LPAR &kp RPAR &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBrc,    // type {} put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LBRC &kp RBRC &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LBRC &kp RBRC &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBkt,    // type [] put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LBKT &kp RBKT &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LBKT &kp RBKT &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LDCHEV &kp SPC &kp RDCHEV &kp SPC &kp LEFT &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LDCHEV &kp SPC &kp RDCHEV &kp SPC &kp LEFT &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LSCHEV &kp SPC &kp RSCHEV &kp SPC &kp LEFT &kp LEFT>
+        bindings =  <&macro_release &kp LSHFT>  //
+                , <&macro_release &kp RSHFT>    //
+                , <&macro_release &kp LALT>     //
+                , <&macro_release &kp RALT>     //
+                , <&kp LSCHEV &kp SPC &kp RSCHEV &kp SPC &kp LEFT &kp LEFT>
                 ;
         )
 
