@@ -154,7 +154,7 @@
         };
 
 
-#define DqtLT lkDqt_lkLT &pairDquotLT &LeftDquotLT  // simple macro to keep the keymap uncluttered
+#define DqtLT lk &pairDquotLT &LeftDquotLT  // simple macro to keep the keymap uncluttered
 /*
         lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -164,13 +164,13 @@
         pairDquotLT: pairDquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&pairDquotDchev>, <&pairLtGt>;
+            bindings = <&pairDquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&pairDquo>, <&pairDchev>;
+            bindings = <&t_pairDquo>, <&t_pairDchev>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         leftDquotLT: leftDquotLT {          // SHFT for <

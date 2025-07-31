@@ -62,42 +62,42 @@
                 ;
         )
 
-    ZMK_MACRO(t_pairDquo,     // type "" put insertion between
+    ZMK_MACRO(t_pairDquo,   // type "" put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LA(LBKT) &kp LS(LA(LBKT)) &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairSquo,     // type '' put insertion between
+    ZMK_MACRO(t_pairSquo,   // type '' put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LA(RBKT) &kp LS(LA(RBKT)) &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairLtGt,     // type <> put insertion between
+    ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LT &kp GT &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairPar,      // type () put insertion between
+    ZMK_MACRO(t_pairPar,    // type () put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LPAR &kp RPAR &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairBrc,      // type {} put insertion between
+    ZMK_MACRO(t_pairBrc,    // type {} put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LBRC &kp RBRC &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairBkt,      // type [] put insertion between
+    ZMK_MACRO(t_pairBkt,    // type [] put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LBKT &kp RBKT &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairDchev,     // type «» put insertion between
+    ZMK_MACRO(t_pairDchev,  // type «» put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LA(BSLH) &kp LS(LA(BSLH)) &kp LEFT>
                 ;
         )
-    ZMK_MACRO(t_pairSch/v,     // type ‹› put insertion between
+    ZMK_MACRO(t_pairSchev,  // type ‹› put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
         bindings = <&kp LA(LS((N3))) &kp LA(LS(N4)) &kp LEFT>
                 ;
