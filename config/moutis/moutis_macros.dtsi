@@ -10,6 +10,7 @@
  *
  */
  
+ // What am I doing wrong here? This doesn't seem to work.
  #define RELEASE_ALL_MODS <&macro_release &kp LSHFT> \
                         , <&macro_release &kp RSHFT> \
                         , <&macro_release &kp LALT> \
@@ -89,7 +90,14 @@
         )
     ZMK_MACRO(t_pairSquo,   // type '' put insertion between
         tap-ms = <my_tapping_speed>;
-        bindings =  RELEASE_ALL_MODS
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LSQUO>
                 , <&macro_tap &kp RSQUO>
                 , <&macro_tap &kp LEFT>
@@ -167,8 +175,8 @@
                 , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LDCHEV>
                 , <&macro_tap &kp SPC>
-                , <&macro_tap &kp RDCHEV>
                 , <&macro_tap &kp SPC>
+                , <&macro_tap &kp RDCHEV>
                 , <&macro_tap &kp LEFT>
                 , <&macro_tap &kp LEFT>
                 ;
@@ -185,8 +193,8 @@
                 , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LSCHEV>
                 , <&macro_tap &kp SPC>
-                , <&macro_tap &kp RSCHEV>
                 , <&macro_tap &kp SPC>
+                , <&macro_tap &kp RSCHEV>
                 , <&macro_tap &kp LEFT>
                 , <&macro_tap &kp LEFT>
                 ;

@@ -204,7 +204,7 @@
         SqtGT: SqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SqtRbkt>, <&kp GT>;
+            bindings = <&t_pairSquo>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SqtRbkt: SqtRbkt { // ' or ALT = »
@@ -269,7 +269,7 @@
         DqtGT: DqtGT { // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&DqtRbkt>, <&kp GT>;
+            bindings = <&t_pairDquo>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         DqtRbkt: DqtRbkt { // " or ALT = »
