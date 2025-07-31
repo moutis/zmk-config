@@ -8,9 +8,9 @@
 ---
 include:
 #  - board: zaphod
-  - board: nice_nano_v2
+#  - board: nice_nano_v2
   - board: sparkfun_pro_micro_rp2040
-#    shield: naked48
+    shield: naked48
 #  - board: seeeduino_xiao_ble
 #    shield: bad_wings_slim
 #  - board: corneish_zen_v1_left
