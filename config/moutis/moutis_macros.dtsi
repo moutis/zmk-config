@@ -57,13 +57,13 @@
         )
 
     ZMK_MACRO(m_selword,
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_tap &kp LA(LEFT)>
                 , <&macro_tap &kp LS(LA(RIGHT))>
                 ;
         )
     ZMK_MACRO(m_findsel,
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_tap &kp LG(C)>
                 , <&macro_tap &kp LG(F)>
                 , <&macro_tap &kp LG(V)>
@@ -73,7 +73,7 @@
         )
 
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -84,19 +84,19 @@
                 , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LDQUO>
                 , <&macro_tap &kp RDQUO>
-                , <&kp LEFT>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSquo,   // type '' put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  RELEASE_ALL_MODS
-                , <&kp LSQUO>
-                , <&kp RSQUO>
-                , <&kp LEFT>
+                , <&macro_tap &kp LSQUO>
+                , <&macro_tap &kp RSQUO>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairLtGt,   // type <> put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -105,13 +105,13 @@
                 , <&macro_release &kp RCTL>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp RGUI>
-                , <&kp LT>
-                , <&kp GT>
-                , <&kp LEFT>
+                , <&macro_tap &kp LT>
+                , <&macro_tap &kp GT>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairPar,    // type () put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -120,13 +120,13 @@
                 , <&macro_release &kp RCTL>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp RGUI>
-                , <&kp LPAR>
-                , <&kp RPAR>
-                , <&kp LEFT>
+                , <&macro_tap &kp LPAR>
+                , <&macro_tap &kp RPAR>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBrc,    // type {} put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -135,13 +135,13 @@
                 , <&macro_release &kp RCTL>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp RGUI>
-                , <&kp LBRC>
-                , <&kp RBRC>
-                , <&kp LEFT>
+                , <&macro_tap &kp LBRC>
+                , <&macro_tap &kp RBRC>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairBkt,    // type [] put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -150,13 +150,13 @@
                 , <&macro_release &kp RCTL>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp RGUI>
-                , <&kp LBKT>
-                , <&kp RBKT>
-                , <&kp LEFT>
+                , <&macro_tap &kp LBKT>
+                , <&macro_tap &kp RBKT>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairDchev,  // type «  » put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -165,16 +165,16 @@
                 , <&macro_release &kp RCTL>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp RGUI>
-                , <&kp LDCHEV>
-                , <&kp SPC>
-                , <&kp RDCHEV>
-                , <&kp SPC>
-                , <&kp LEFT>
-                , <&kp LEFT>
+                , <&macro_tap &kp LDCHEV>
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp RDCHEV>
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp LEFT>
+                , <&macro_tap &kp LEFT>
                 ;
         )
     ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
-        tap-ms = <my_typing_speed>;
+        tap-ms = <my_tapping_speed>;
         bindings =  <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_release &kp LALT>
@@ -183,12 +183,12 @@
                 , <&macro_release &kp RCTL>
                 , <&macro_release &kp LGUI>
                 , <&macro_release &kp RGUI>
-                , <&kp LSCHEV>
-                , <&kp SPC>
-                , <&kp RSCHEV>
-                , <&kp SPC>
-                , <&kp LEFT>
-                , <&kp LEFT>
+                , <&macro_tap &kp LSCHEV>
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp RSCHEV>
+                , <&macro_tap &kp SPC>
+                , <&macro_tap &kp LEFT>
+                , <&macro_tap &kp LEFT>
                 ;
         )
 
