@@ -99,7 +99,7 @@
         )
     ZMK_MACRO(t_pairSchev,  // type ‹  › put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings = <&kp LA(LS((N3))) &kp SPC &kp &kp LA(LS(N4)) &kp SPC &kp &kp LEFT &kp LEFT>
+        bindings = <&kp LA(LS((N3))) &kp SPC &kp LA(LS(N4)) &kp SPC &kp &kp LEFT &kp LEFT>
                 ;
         )
 
