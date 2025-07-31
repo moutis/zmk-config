@@ -156,27 +156,16 @@
 
 #define DqtLT lkDqt_lkLT &pairDquotLT &LeftDquotLT  // simple macro to keep the keymap uncluttered
 
-        lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
-            my_lk_config;
-            bindings = <&pairDquotLT>, <&LeftDquotLT>;
-        };
-
-        pairDquotLT: pairDquotLT {          // SHFT for <>
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&pairDquotDchev>, <&t_pairLtGt>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         pairDquotDchev: pairDquotDchev {    // "" or ALT for «»
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&t_pairDquo>, <&t_pairDchev>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
-        leftDquotLT: leftDquotLT {          // SHFT for <
+        pairDquotLT: pairDquotLT {          // SHFT for <>
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&LeftDquotChev>, <&kp LT>;
+            bindings = <&pairDquotDchev>, <&t_pairLtGt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         LeftDquotChev: LeftDquotLChev {     // " or ALT for «
@@ -185,6 +174,17 @@
             bindings = <&ak_DQT>, <&kp LA(BSLH)>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
+        leftDquotLT: leftDquotLT {          // SHFT for <
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&LeftDquotChev>, <&kp LT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
+            my_lk_config;
+            bindings = <&pairDquotLT>, <&LeftDquotLT>;
+        };
+
 
 
 
