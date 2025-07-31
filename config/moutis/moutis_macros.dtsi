@@ -74,7 +74,14 @@
 
     ZMK_MACRO(t_pairDquo,   // type "" put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&macro_tap &kp LDQUO>
                 , <&macro_tap &kp RDQUO>
                 , <&kp LEFT>
@@ -98,7 +105,14 @@
         )
     ZMK_MACRO(t_pairPar,    // type () put insertion between
         wait-ms = <50>;     // need to slow this down for some systems.
-        bindings =  RELEASE_ALL_MODS
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
                 , <&kp LPAR>
                 , <&kp RPAR>
                 , <&kp LEFT>
