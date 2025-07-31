@@ -3,7 +3,7 @@
 /*      Base (alpha) Layer Hands Down Rhodium
                     34 keys (core)
  ╭─────────────────────╮ ╭──────────────────────╮
- │  '   B   H   G   "  │ │  #$  .:  /*   J   X  │
+ │ '<   B   H   G  ">  │ │  #$  .:  /*   J   X  │
  │  C   S   N   T   K  | |  ,;   A   E   I   M  │
  │  P   F   L   D   V  │ │  -+   U   O   Y   W  │
  ╰──────────╮  BSP  R  │ │  SPC RET  ╭──────────╯
@@ -14,7 +14,7 @@
 #define HD_combo_file "handsdown/rh-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Rh"
-#define HD_LT &SqtRbkt        &ak_B           &ak_H           &ak_G           &DqtLbkt
+#define HD_LT &SqtLT          &ak_B           &ak_H           &ak_G           &DqtGT
 #define HD_LM &mt_C RCTRL C   &mt_S RALT S    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
 #define HD_LB &ak_P           &ak_F           &ak_L           &ak_D           &ak_V
 #define HD_LH                                                 &lt_BspcDel     &lt_R l_nav R
@@ -29,7 +29,7 @@
 #define JP_LT &kp LBKT        &kp G           &kp M           &kp P           &kp RBKT
 #define JP_LM &hml RCTRL Z    &hml RALT S     &hml RGUI N     &hml RSHFT T    &kp K
 #define JP_LB &kp P           &kp F           &t_nn           &kp D           &kp V
-#define JP_LH                                                 _______         _______
+#define JP_LH                                                 _______         &lt l_nav R
 
 #define JP_RT _______         &DotColnJ       &SlshStarJ      &kp J           &kp MINUS
 #define JP_RM _______         &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL M

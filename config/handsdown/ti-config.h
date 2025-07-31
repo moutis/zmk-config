@@ -19,7 +19,7 @@
 #define HD_LB &ak_W           &ak_P           &ak_L           &ak_D           &ak_V
 #define HD_LH                                                 &lt_BspcDel     &lt_R l_nav R
 
-#define HD_RT &HashDllr       &DotColn        &SlshStar       &DqtLbkt        &SqtRbkt
+#define HD_RT &HashDllr       &DotColn        &SlshStar       &DqtLT          &SqtGT
 #define HD_RM &CommaMagic     &mt_A LSHFT A   &mt_E LGUI E    &mt_I LALT I    &mt_H LCTRL H
 #define HD_RB &MinusPlus      &ak_U           &ak_O           &ak_Y           &ak_B
 #define HD_RH &lt l_sym SPACE &lt l_nav RETURN
@@ -29,7 +29,7 @@
 #define JP_LT &kp MINUS       &kp G           &kp M           &kp P           &kp J
 #define JP_LM &hml RCTRL Z    &hml RALT S     &hml RGUI N     &hml RSHFT T    &kp K
 #define JP_LB &kp W           &kp F           &t_nn           &kp D           &kp V
-#define JP_LH                                                 _______         _______
+#define JP_LH                                                 _______         &lt l_nav R
 
 #define JP_RT _______         &DotColnJ       &SlshStarJ      &kp LBKT        &kp RBKT
 #define JP_RM _______         &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL H
