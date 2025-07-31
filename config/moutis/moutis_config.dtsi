@@ -27,7 +27,9 @@
 // xr = weird test-bed (R on thumb)
 
 
-
+/*
+ * optional features
+ */
 #define H_DIGRAPH_COMBOS    // th, ch, sh, wh, gh, ph
 #define EN_PRONOUN_COMBOS   // I, I'm, I've I'd I'll etc.
 #define JP_MODE_ENABLE      // Add a JP layer,combos, etc.
@@ -35,23 +37,16 @@
 
 #define COMMA_CAP     // , before alpha capitalizes that alpha
 
+/*
+ * global constants/configuration settings
+ */
+
 #define my_ak_term 350 // behavior-adaptive-key trigger time window
 #define my_ak_delay 50 // behavior-adaptive-key typing speed
 #define my_sticky_term 1100 // for sticky keys and sticky layers
 
 #define my_tapping_term 200
 #define my_quick_tapping_term 55
-
-// my layers
-#define l_any   -1
-#define l_alpha 0 // main HD alpha layer (Mac centric)
-#define l_jp    1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
-#define l_akDot 2 // funky holdover ak layer (used for comma cap/expansions)
-#define l_sym   3 // symbols, punctuation, off-map alphas
-#define l_num   4 // function & number rows
-#define l_fun   5 // numpad (right); navpad (left)
-#define l_nav   6 // nav pad (right); meta keys (left)
-#define l_cfg   7 // Media/Consumer controls; Keyboard settings
 
 &mt {
     tapping-term-ms = <my_tapping_term>;
@@ -66,3 +61,41 @@
 &caps_word {
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
 };
+
+/*
+ * my layers
+ */
+#define l_any   -1
+#define l_alpha 0 // main HD alpha layer (Mac centric)
+#define l_jp    1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
+#define l_akDot 2 // funky holdover ak layer (used for comma cap/expansions)
+#define l_sym   3 // symbols, punctuation, off-map alphas
+#define l_num   4 // function & number rows
+#define l_fun   5 // numpad (right); navpad (left)
+#define l_nav   6 // nav pad (right); meta keys (left)
+#define l_cfg   7 // Media/Consumer controls; Keyboard settings
+
+
+/*
+ * #define compound keycodes
+ *
+ * Avoid using hard-coded mod/keycodes.
+ *
+ * This really needs to be fully abstracted.
+ * Maybe when proper platform independence is factored in
+ * with something like my Symantic Keys in QMK.
+ *
+ * below is for Mac Intl keyboard layout
+ */
+ 
+// Smart Quotes (pairs, single & double)
+#define LSQUO LA(RBKT)              // “
+#define RSQUO LS(LA(RBKT))          // ”
+#define LDQUO LA(LBKT)              // ’
+#define RDQUO LS(LA(LBKT))          // ’
+
+// French Quotes / chevrons (pairs, single & double)
+#define LDCHEV LA(BACKSLASH)        // «
+#define RDCHEV LS(LA(BACKSLASH))    // «
+#define LSCHEV LA(LS((N3))          // ‹
+#define RSCHEV LA(LS((N4))          // ›

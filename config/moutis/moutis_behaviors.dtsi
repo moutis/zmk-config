@@ -198,7 +198,7 @@
         leftDquotChev: leftDquotLChev {     // " or ALT for «
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_DQT>, <&kp LA(BSLH)>;
+            bindings = <&ak_DQT>, <&kp LDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         SqtGT: SqtGT { // SHIFT = >
@@ -207,10 +207,10 @@
             bindings = <&SqtRbkt>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        SqtRbkt: SqtRbkt { // ' or ALT = ]
+        SqtRbkt: SqtRbkt { // ' or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp LS(LA(BSLH))>;
+            bindings = <&kp SQT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
@@ -263,7 +263,7 @@
         leftSquotChev: leftSquotLChev {     // ' or ALT for «
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LT>, <&kp LA(BSLH)>;
+            bindings = <&kp LT>, <&kp LDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         DqtGT: DqtGT { // SHIFT = >
@@ -272,10 +272,10 @@
             bindings = <&DqtRbkt>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        DqtRbkt: DqtRbkt { // " or ALT = ]
+        DqtRbkt: DqtRbkt { // " or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DQT>, <&kp LS(LA(BSLH))>;
+            bindings = <&kp DQT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
