@@ -1,5 +1,5 @@
 /*
- * vx-config.h
+ * Vx-config.h
  *
  * SPDX-License-Identifier: MIT
  *
@@ -7,9 +7,7 @@
  *
  */
 
-#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HD_LAYOUT vx    // HD variation 2 letter code from handsdown.h
-#endif
+#define HD_LAYOUT Vx    // HD variation 2 letter code from handsdown.h
 #include "handsdown.h"  // common HD defs
 
 #define _______  &trans
@@ -24,7 +22,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label "HD-Vx"
+#define HD_Layer_label stringy(HD- HD_LAYOUT)
 #define HD_LT &ak_V           &ak_W           &ak_M           &ak_G           &ak_J
 #define HD_LM &mt_S RCTRL S   &mt_C RALT C    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
 #define HD_LB &ak_X           &ak_P           &ak_L           &ak_D           &ak_B

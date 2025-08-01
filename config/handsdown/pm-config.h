@@ -1,5 +1,5 @@
 /*
- * pm-config.h
+ * Pm-config.h
  *
  * SPDX-License-Identifier: MIT
  *
@@ -7,9 +7,7 @@
  *
  */
 
-#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HD_LAYOUT rh    // HD variation 2 letter code from handsdown.h
-#endif
+#define HD_LAYOUT Pm    // HD variation 2 letter code from handsdown.h
 #include "handsdown.h"  // common HD defs
 
 #define _______  &trans

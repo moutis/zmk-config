@@ -1,5 +1,5 @@
 /*
- * ti-config.h
+ * Ti-config.h
  *
  * SPDX-License-Identifier: MIT
  *
@@ -7,9 +7,7 @@
  *
  */
 
-#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HD_LAYOUT ti    // HD variation 2 letter code from handsdown.h
-#endif
+#define HD_LAYOUT Ti    // HD variation 2 letter code from handsdown.h
 #include "handsdown.h"  // common HD defs
 
 #define _______  &trans
@@ -24,7 +22,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label "HD-Ti"
+#define HD_Layer_label stringy(HD- HD_LAYOUT)
 #define HD_LT &ak_X           &ak_G           &ak_M           &ak_P           &ak_J
 #define HD_LM &mt_C RCTRL C   &mt_S RALT S    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
 #define HD_LB &ak_W           &ak_P           &ak_L           &ak_D           &ak_V

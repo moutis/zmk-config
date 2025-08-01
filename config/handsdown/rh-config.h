@@ -1,5 +1,5 @@
 /*
- * rh-config.h
+ * Rh-config.h
  *
  * SPDX-License-Identifier: MIT
  *
@@ -7,9 +7,7 @@
  *
  */
 
-#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HD_LAYOUT rh    // HD variation 2 letter code from handsdown.h
-#endif
+#define HD_LAYOUT Rh    // HD variation 2 letter code from handsdown.h
 #include "handsdown.h"  // common HD defs
 
 #define _______  &trans
@@ -24,7 +22,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label "HD-Rh"
+#define HD_Layer_label stringy(HD- HD_LAYOUT)
 #define HD_LT &SqtLT          &ak_B           &ak_H           &ak_G           &DqtGT
 #define HD_LM &mt_C RCTRL C   &mt_S RALT S    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
 #define HD_LB &ak_P           &ak_F           &ak_L           &ak_D           &ak_V

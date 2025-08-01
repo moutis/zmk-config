@@ -9,26 +9,25 @@
  *
  *  which HD alpha variation are we using?
  *
- *  nu = neu (no thumb alpha)    * RSNT does not use thumb
- *  au = gold (T on thumb)       * RSND most inward rolling
- *  ag = silver (L on thumb)     * RSNT LOW sfbs, but high repeat on thumb
- *  bz = bronze (H on thumb)     * RSNT lightest thumb use w/H-digraph combos
- *  cr = chromium (C on thumb)   * RSNT typically doesn't use H-digraph combos
- *  cs = cesium (C on thumb)     * RSNT lowest scissors, – lowest thumb w/o H-digraph combos
- *  pm = promethium (R on thumb) * SNTH typically doesn't require H-digraph combos
- *  rh = rhodium (R on thumb)    * SCNT typically doesn't require H-digraph combos
- *  ti = titanium (R on thumb)   * SCNT predecessor to vibranium. Better pinky balance.
- *  vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical" best overall V#
- *  vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs, more inner column/scissors
- *  vx = vibranium (R on thumb, x in lower left, f on right) - SCNT best pinky balancing, more inner column/scissors
- *  vb = vibranium (R on thumb, b in lower left, f on right) - CSNT good pinky, mb is a problem
- *  mi = mithril (R on thumb)
+ *  Nu = neu (no thumb alpha)    * RSNT does not use thumb
+ *  Au = gold (T on thumb)       * RSND most inward rolling
+ *  Ag = silver (L on thumb)     * RSNT LOW sfbs, but high repeat on thumb
+ *  Bz = bronze (H on thumb)     * RSNT lightest thumb use w/H-digraph combos
+ *  Cr = chromium (C on thumb)   * RSNT typically doesn't use H-digraph combos
+ *  Cs = cesium (C on thumb)     * RSNT lowest scissors, – lowest thumb w/o H-digraph combos
+ *  Pm = promethium (R on thumb) * SNTH typically doesn't require H-digraph combos
+ *  Rh = rhodium (R on thumb)    * SCNT typically doesn't require H-digraph combos
+ *  Ti = titanium (R on thumb)   * SCNT predecessor to vibranium. Better pinky balance.
+ *  Vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical" best overall V#
+ *  Vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs, more inner column/scissors
+ *  Vx = vibranium (R on thumb, x in lower left, f on right) - SCNT best pinky balancing, more inner column/scissors
+ *  Vb = vibranium (R on thumb, b in lower left, f on right) - CSNT good pinky, mb is a problem
+ *  Mi = mithril (R on thumb)
  *  xx = experimental
  *
  */
-
 #ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HD_LAYOUT pm    // HD layout variation 2 letter code from above
+#define HD_LAYOUT Pm    // the default HD variation (currently most popular?)
 #endif
 
 #define HD_DIR handsdown/
