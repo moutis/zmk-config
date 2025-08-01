@@ -47,6 +47,7 @@ Currently building only for Mac only (*hard coded for gui instead of ctrl, and s
 
 - [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split 3x5+3*)
 - [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody 3x5+2 at the end of the world*)
+- [**Ahokore**](https://store.dez.li/product/ahokore/) (*Sweet unibody 3x5+3 from down underS*)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit 3x5+3*)
 - [**Dust**](https://kbd.news/Dust-keyboard-1789.html) (*Bad Wings re-split 3x5+3*)
 - [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit) (*Like [Planck](https://drop.com/buy/planck-mechanical-keyboard), 4x12 but wide*)

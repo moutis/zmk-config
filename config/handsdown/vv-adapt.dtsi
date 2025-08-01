@@ -51,7 +51,7 @@
             bindings = <&kp F>;
 
             akF_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(F)>; };
-            akF_t_s { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; };
+            akF_t_g { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp G>; };
             akF_t_s { trigger-keys = <P>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp S>; };
             akF_b_s { trigger-keys = <V>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S>; };
         };
