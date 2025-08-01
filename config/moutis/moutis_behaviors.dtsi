@@ -66,15 +66,16 @@
 //
 // maybe should be separated? but for now...
 //
+/*
         mt_S: mt_S {
             my_hrm_config;
             bindings = <&kp>, <&ak_S>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-        mt_C: mt_C {
+        mt_C: mt_C {  // C is on RIGHT hand in Pm, so it has no restriction
             my_hrm_config;
             bindings = <&kp>, <&ak_C>;
-            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+//            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
         mt_N: mt_N {
             my_hrm_config;
@@ -86,7 +87,7 @@
             bindings = <&kp>, <&ak_T>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
-        mt_D: mt_D {
+        mt_D: mt_D {  // Onldy AU (Gold) has D on home
             my_hrm_config;
             bindings = <&kp>, <&ak_D>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
@@ -115,7 +116,7 @@
             my_lt_config;
             bindings = <&mo>, <&ak_R>;
         };
-
+*/
 /*
  * modmorph behaviors
  * identified by the camel case of each of the keycodes
