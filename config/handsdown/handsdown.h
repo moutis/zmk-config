@@ -26,9 +26,8 @@
  *  xx = experimental
  *
  */
-#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
+#ifndef HD_LAYOUT       // this may have been defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
 #define HD_LAYOUT Pm    // the default HD variation (currently most popular?)
-#define HD_load_config_file TRUE
 #endif
 
 #define HD_DIR handsdown/
@@ -42,7 +41,8 @@
 #define HD_config_file   stringy(HD_DIR HD_LAYOUT HD_CONF)
 #define HD_adapt_file    stringy(HD_DIR HD_LAYOUT HD_ADPT)
 #define HD_combo_file    stringy(HD_DIR HD_LAYOUT HD_CMBO)
- 
-#ifdef HD_load_config_file
-#include HD_config_file
+
+#define HD_head_loaded      // tell config we're loaded
+#ifndef HD_CONF_loaded      // CONF loaded? (#included directly)
+#include HD_config_file     // No, so load it now
 #endif
