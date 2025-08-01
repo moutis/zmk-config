@@ -28,6 +28,7 @@
  */
 #ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
 #define HD_LAYOUT Pm    // the default HD variation (currently most popular?)
+#define HD_load_config_file TRUE
 #endif
 
 #define HD_DIR handsdown/
@@ -42,3 +43,6 @@
 #define HD_adapt_file    stringy(HD_DIR HD_LAYOUT HD_ADPT)
 #define HD_combo_file    stringy(HD_DIR HD_LAYOUT HD_CMBO)
  
+#ifdef HD_load_config_file
+#include HD_config_file
+#endif
