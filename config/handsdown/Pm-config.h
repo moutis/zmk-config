@@ -28,7 +28,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label stringy(HD-HD_LAYOUT)
+#define HD_Layer_label (#(HD-HD_LAYOUT))
 #define HD_LT &ak_V           &ak_W           &ak_G           &ak_M           &ak_J
 #define HD_LM &mt_S LCTRL S   &mt_N LALT N    &mt_T LGUI T    &mt_H LSHFT H   &ak_K
 #define HD_LB &ak_F           &ak_P           &ak_D           &ak_L           &ak_X
