@@ -64,7 +64,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
 //
-// these are layout dependent, maybe should be separated? but for now...
+// maybe should be separated? but for now...
 //
         mt_S: mt_S {
             my_hrm_config;
@@ -84,6 +84,11 @@
         mt_T: mt_T {
             my_hrm_config;
             bindings = <&kp>, <&ak_T>;
+            hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
+        };
+        mt_D: mt_D {
+            my_hrm_config;
+            bindings = <&kp>, <&ak_D>;
             hold-trigger-key-positions = <KEYS_R THUMBS>; // right hand allowed
         };
         mt_A: mt_A {
