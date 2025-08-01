@@ -37,8 +37,8 @@
 #define HD_CMBO "-combo.dtsi"
 
 #define stringy(s) #s
-#define HD_FILENAME(dir, hd, file) stringy(dir hd file)
+#define xstringy(s) stringy(s)
 
-#define HD_config_file   HD_DIR HD_LAYOUT HD_CONF
-#define HD_adapt_file    HD_DIR HD_LAYOUT HD_ADPT
-#define HD_combo_file    HD_DIR HD_LAYOUT HD_CMBO
+#define HD_config_file   HD_DIR xstringy(HD_LAYOUT) HD_CONF
+#define HD_adapt_file    HD_DIR xstringy(HD_LAYOUT) HD_ADPT
+#define HD_combo_file    HD_DIR xstringy(HD_LAYOUT) HD_CMBO
