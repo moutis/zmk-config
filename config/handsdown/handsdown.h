@@ -15,9 +15,9 @@
  *  bz = bronze (H on thumb)     * RSNT lightest thumb use w/H-digraph combos
  *  cr = chromium (C on thumb)   * RSNT typically doesn't use H-digraph combos
  *  cs = cesium (C on thumb)     * RSNT lowest scissors, – lowest thumb w/o H-digraph combos
- *  pm = promethium (R on thumb) * SNTH typically doesn't use H-digraph combos
- *  rh = rhodium (R on thumb)    * SCNT typically doesn't use H-digraph combos
- *  ti = titanium (R on thumb)   * SCNT typically doesn't use H-digraph combos
+ *  pm = promethium (R on thumb) * SNTH typically doesn't require H-digraph combos
+ *  rh = rhodium (R on thumb)    * SCNT typically doesn't require H-digraph combos
+ *  ti = titanium (R on thumb)   * SCNT predecessor to vibranium. Better pinky balance.
  *  vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical" best overall V#
  *  vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs, more inner column/scissors
  *  vx = vibranium (R on thumb, x in lower left, f on right) - SCNT best pinky balancing, more inner column/scissors
@@ -34,6 +34,6 @@
 #define stringy(s) #s
 #define HD_FILENAME(dir, hd, file) stringy(##dir ##hd ##file)
 
-#define HD_config_file   HD_FILENAME(handsdown/, #HANDSDOWN, -config.dtsi)
-#define HD_adapt_file    HD_FILENAME(handsdown/, #HANDSDOWN, -adapt.dtsi)
-#define HD_combo_file    HD_FILENAME(handsdown/, #HANDSDOWN, -combos.dtsi)
+#define HD_config_file   HD_FILENAME(handsdown/, HANDSDOWN, -config.dtsi)
+#define HD_adapt_file    HD_FILENAME(handsdown/, HANDSDOWN, -adapt.dtsi)
+#define HD_combo_file    HD_FILENAME(handsdown/, HANDSDOWN, -combos.dtsi)
