@@ -7,8 +7,11 @@
  *
  */
 
-#define HD_LAYOUT Vx    // HD variation 2 letter code from handsdown.h
-#include "handsdown.h"  // common HD defs
+#ifdef
+#undef HD_LAYOUT
+#define HD_LAYOUT Vx                // HD variation 2 letter code from handsdown.h
+#endif
+#include "handsdown.h"              // common HD defs
 
 #define _______  &trans
 
