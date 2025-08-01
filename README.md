@@ -57,7 +57,7 @@ Currently building only for Mac only (*hard coded for gui instead of ctrl, and s
 - [**Totem**]()
 -->
  
- *Mix and match any supported HD alpha layout and keyboard by editing just a few lines.*
+ *Select any HD alpha layout by editing just one line.*
 
 ## Thanks:
 - Of course, huge thanks to [**Pete Johanson**](https://github.com/petejohanson) *and contributors* for ZMK ([***why not consider sponsoring Pete***](https://github.com/sponsors/petejohanson)?)
