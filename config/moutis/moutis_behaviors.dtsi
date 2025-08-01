@@ -66,7 +66,6 @@
 //
 // maybe should be separated? but for now...
 //
-/*
         mt_S: mt_S {
             my_hrm_config;
             bindings = <&kp>, <&ak_S>;
@@ -116,7 +115,7 @@
             my_lt_config;
             bindings = <&mo>, <&ak_R>;
         };
-*/
+
 /*
  * modmorph behaviors
  * identified by the camel case of each of the keycodes
