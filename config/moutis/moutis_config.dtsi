@@ -48,7 +48,7 @@
  * my layers
  */
 #define l_any   -1
-#define l_alpha 0 // main HD alpha layer (Mac centric)
+#define l_hd    0 // main HD alpha layer (Mac centric)
 #define l_jp    1 // alternate Japanese base layer (XCL="-Zん", no adaptives)
 #define l_akDot 2 // funky holdover ak layer (used for comma cap/expansions)
 #define l_sym   3 // symbols, punctuation, off-map alphas
