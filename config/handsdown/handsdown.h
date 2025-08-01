@@ -32,9 +32,10 @@
 #endif
 
 #define stringy(s) #s
+#define sstingy(s) stringy(s)
 #define exp_str(s) stringy(s)
-#define HD_FILENAME(dir, hd, file) stringy(##dir ##hd ##file)
+#define HD_FILENAME(dir, hd, file) stringy(##dir hd ##file)
 
-#define HD_config_file   \" handsdown/ exp_str(HANDSDOWN) -config.dtsi \"
-#define HD_adapt_file    \" handsdown/ exp_str(HANDSDOWN) -adapt.dtsi \"
-#define HD_combo_file    \" handsdown/ exp_str(HANDSDOWN) -combos.dtsi \"
+#define HD_config_file   HD_FILENAME(handsdown/ HANDSDOWN -config.dtsi)
+#define HD_adapt_file    HD_FILENAME(handsdown/ HANDSDOWN -adapt.dtsi)
+#define HD_combo_file    HD_FILENAME(handsdown/ HANDSDOWN -combos.dtsi)
