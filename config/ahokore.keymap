@@ -1,1 +1,41 @@
-#include "bad_wings_slim.keymap"
+/*
+ * Copyright (c) 2022 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+
+#include "hosts/keycodes_mac_ABCext.h"  // extended keycodes for host OS/Layout
+#include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
+#include "handsdown/pm-config.h"        // HD alpha keymap, adapt, combo definitions
+#include "moutis/moutis_config.dtsi"    // my add-on feature defs
+
+/ {
+    behaviors { // separating these allows us to add board specific behaviors here (if any)
+
+#include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
+#include HD_adapt_file                  // HDalpha/mnemonic based adaptives
+
+    };
+
+    macros {    // separating these allows us to add board specific macros here (if any)
+    
+#include "moutis/moutis_macros.dtsi"    // common macros (superset)
+
+    };
+
+    combos {    // separating these allows us to add board specific combos here (if any)
+        compatible = "zmk,combos";
+
+#include "moutis/moutis_combos.dtsi"    // common/location based combos (cut/copy/paste, esc, app, etc.)
+#include HD_combo_file                  // HD alpha/mnemonic based combos (h-digraphs, etc.)
+
+    };
+
+#include "keymaps/keymap_3x5_3.dtsi"    // consolidated keymap
+
+};
