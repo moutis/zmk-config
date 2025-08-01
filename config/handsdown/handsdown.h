@@ -20,10 +20,10 @@
 // pm = promethium (R on thumb) * SNTH typically doesn't use H-digraph combos
 // rh = rhodium (R on thumb)    * SCNT typically doesn't use H-digraph combos
 // ti = titanium (R on thumb)   * SCNT typically doesn't use H-digraph combos
-// vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical"
-// vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs
-// vx = vibranium (R on thumb, x in lower left, f on right) - SCNT better pinky balancing
-// vb = vibranium (R on thumb, b in lower left, f on right) - CSNT
+// vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical" best overall V#
+// vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs, more inner column/scissors
+// vx = vibranium (R on thumb, x in lower left, f on right) - SCNT best pinky balancing, more inner column/scissors
+// vb = vibranium (R on thumb, b in lower left, f on right) - CSNT good pinky, mb is a problem
 // mi = mithril (R on thumb)
 // xx = experimental
 //
@@ -34,6 +34,6 @@
 #define HANDSDOWN pm    // HD layout variation 2 letter code
 #endif
 
-#define HD_config_file   HD_FILENAME(handsdown/ HANDSDOWN, -config.dtsi)
-#define HD_adapt_file    HD_FILENAME(handsdown/ HANDSDOWN, -adapt.dtsi)
-#define HD_combo_file    HD_FILENAME(handsdown/ HANDSDOWN, -combos.dtsi)
+#define HD_config_file   HD_FILENAME(handsdown/, HANDSDOWN, -config.dtsi)
+#define HD_adapt_file    HD_FILENAME(handsdown/, HANDSDOWN, -adapt.dtsi)
+#define HD_combo_file    HD_FILENAME(handsdown/, HANDSDOWN, -combos.dtsi)
