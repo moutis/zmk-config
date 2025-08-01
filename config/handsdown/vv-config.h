@@ -11,7 +11,7 @@
 */
 
 #define HD_adapt_file "handsdown/vv-adapt.dtsi"  // the related adaptive keys file
-#define HD_combo_file "handsdown/vv-combos.dtsi" // the related combo file
+#define HD_combo_file "handsdown/vb-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Vv"
 #define HD_LT &ak_X           &ak_W           &ak_M           &ak_G           &DqtLT

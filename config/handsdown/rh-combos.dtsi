@@ -47,7 +47,7 @@ COMBO_LAYER(ph,     &t_Ph,          LB3 LB1, l_hd)       // Ph
 //
 
 COMBO_LAYER(pnI,     &t_PnI,        RM3 RM4, l_hd) // "I "
-//COMBO_LAYER(pnIm,    &t_PnIm,       RM3 LT2, l_hd) // "I'm "
+//COMBO_LAYER(pnIm,    &t_PnIm,     RM3 LT2, l_hd) // "I'm "
 COMBO_LAYER(pnIll,   &t_PnIll,      RM3 LB2, l_hd) // "I'll "
 COMBO_LAYER(pnId,    &t_PnId,       RM3 LB1, l_hd) // "I'd "
 COMBO_LAYER(pnIve,   &t_PnIve,      RM3 LB0, l_hd) // "I've "
