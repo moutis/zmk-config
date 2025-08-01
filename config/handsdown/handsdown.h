@@ -27,13 +27,18 @@
  *
  */
 
-#ifndef HANDSDOWN       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HANDSDOWN vf    // HD layout variation 2 letter code from above
+#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
+#define HD_LAYOUT vf    // HD layout variation 2 letter code from above
 #endif
+
+#define HD_DIR "handsdown/"
+#define HD_CONF "-config.dtsi"
+#define HD_ADPT "-adapt.dtsi"
+#define HD_CMBO "-combo.dtsi"
 
 #define stringy(s) #s
 #define HD_FILENAME(dir, hd, file) stringy(dir hd file)
 
-#define HD_config_file   HD_FILENAME(handsdown/, HANDSDOWN, -config.dtsi)
-#define HD_adapt_file    HD_FILENAME(handsdown/, HANDSDOWN, -adapt.dtsi)
-#define HD_combo_file    HD_FILENAME(handsdown/, HANDSDOWN, -combos.dtsi)
+#define HD_config_file   HD_DIR HD_LAYOUT HD_CONF
+#define HD_adapt_file    HD_DIR HD_LAYOUT HD_ADPT
+#define HD_combo_file    HD_DIR HD_LAYOUT HD_CMBO
