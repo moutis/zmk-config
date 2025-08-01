@@ -33,6 +33,6 @@
 #endif
 
 #define stringy(s) #s
-#define HD_config_file  "handsdown/" HANDSDOWN "-config.dtsi"
-#define HD_adapt_file   "handsdown/" HANDSDOWN "-adapt.dtsi"
-#define HD_combo_file   "handsdown/" HANDSDOWN "-combos.dtsi"
+#define HD_config_file  "handsdown/" #HANDSDOWN "-config.dtsi"
+#define HD_adapt_file   "handsdown/" #HANDSDOWN "-adapt.dtsi"
+#define HD_combo_file   "handsdown/" #HANDSDOWN "-combos.dtsi"
