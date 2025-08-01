@@ -28,12 +28,12 @@
 // xx = experimental
 //
 #define stringy(s) #s
-#define HD_FILENAME(dir, hd, file) stringy(dir hd file)
+#define HD_FILENAME(dir, hd, file) stringy(" dir hd file ")
 
 #ifndef HANDSDOWN       // this may have be defined in build.yml i.e. cmake-args: -HANDSDOWN=Pm
 #define HANDSDOWN pm    // HD layout variation 2 letter code
 #endif
 
-#define HD_config_file  \" HD_FILENAME(handsdown/ HANDSDOWN, -config.dtsi) \"
-#define HD_adapt_file   \" HD_FILENAME(handsdown/ HANDSDOWN, -adapt.dtsi) \"
-#define HD_combo_file   \" HD_FILENAME(handsdown/ HANDSDOWN, -combos.dtsi) \"
+#define HD_config_file   HD_FILENAME(handsdown/ HANDSDOWN, -config.dtsi)
+#define HD_adapt_file    HD_FILENAME(handsdown/ HANDSDOWN, -adapt.dtsi)
+#define HD_combo_file    HD_FILENAME(handsdown/ HANDSDOWN, -combos.dtsi)
