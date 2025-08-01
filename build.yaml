@@ -8,6 +8,7 @@
 ---
 include:
   - board: ahokore
+    shield: settings_reset
 #    cmake-args: -DHD_LAYOUT=Pm
 
 #  - board: zaphod
