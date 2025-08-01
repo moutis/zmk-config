@@ -28,7 +28,7 @@
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label stringy(HD- HD_LAYOUT)
+#define HD_Layer_label "HD-Vb"
 #define HD_LT &ak_X           &ak_W           &ak_M           &ak_G           &ak_J
 #define HD_LM &mt_S RCTRL S   &mt_C RALT C    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
 #define HD_LB &ak_B           &ak_P           &ak_L           &ak_D           &ak_V
