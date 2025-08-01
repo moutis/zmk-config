@@ -31,14 +31,14 @@
 #define HD_LAYOUT vf    // HD layout variation 2 letter code from above
 #endif
 
-#define HD_DIR handsdown/
-#define HD_CONF -config.dtsi
-#define HD_ADPT -adapt.dtsi
-#define HD_CMBO -combo.dtsi
+#define HD_DIR "handsdown/"
+#define HD_CONF "-config.dtsi"
+#define HD_ADPT "-adapt.dtsi"
+#define HD_CMBO "-combo.dtsi"
 
 #define stringy(s) #s
 #define xstringy(s) stringy(s)
 
-#define HD_config_file   xstringy(HD_DIR HD_LAYOUT HD_CONF)
+#define HD_config_file   HD_DIR stringy(HD_LAYOUT) HD_CONF
 #define HD_adapt_file    stringy(HD_DIR xstringy(HD_LAYOUT) HD_ADPT)
 #define HD_combo_file    stringy(HD_DIR xstringy(HD_LAYOUT) HD_CMBO)
