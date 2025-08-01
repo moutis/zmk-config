@@ -17,10 +17,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#include "hosts/keycodes_mac_ABCext.h"  // extended keycodes for host OS/Layout
-#include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
-#include "handsdown/vf-config.h"        // HD alpha keymap, adapt, combo definitions
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
+
+#include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
+#include "handsdown/vv-config.h"        // HD alpha keymap, adapt, and combo definitions
 
 / {
     behaviors { // separating these allows us to add board specific behaviors here (if any)

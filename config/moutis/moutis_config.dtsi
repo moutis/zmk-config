@@ -5,6 +5,7 @@
  *
  */
 
+#include "hosts/keycodes_mac_ABCext.h"  // extended keycodes for host OS/Layout
 
 /*
  * optional features
