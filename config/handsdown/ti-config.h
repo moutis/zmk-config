@@ -7,11 +7,14 @@
  *
  */
 
-#ifdef
+#ifdef HD_LAYOUT
 #undef HD_LAYOUT
-#define HD_LAYOUT Ti                // HD variation 2 letter code from handsdown.h
+#define HD_LAYOUT Ti        // HD variation 2 letter code from handsdown.h
 #endif
-#include "handsdown.h"              // common HD defs
+#define HD_CONF_loaded TRUE // tell the header this is loaded
+#ifndef HD_head_loaded      // no header? (this file was #included directly in keymap)
+#include "handsdown.h"      // load header now for HD common defs
+#endif
 
 #define _______  &trans
 
