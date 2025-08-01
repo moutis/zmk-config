@@ -39,6 +39,7 @@
 #define __xstr(s) #s
 #define stringy(s) __xstr(s)
 
-#define HD_config_file   __xstr(HD_DIR HD_LAYOUT HD_CONF)
-#define HD_adapt_file    __xstr(HD_DIR HD_LAYOUT HD_ADPT)
-#define HD_combo_file    __xstr(HD_DIR HD_LAYOUT HD_CMBO)
+#define HD_config_file   "\"" HD_DIR HD_LAYOUT HD_CONF "\""
+#define HD_adapt_file    "\"" stringy(HD_DIR HD_LAYOUT HD_ADPT) "\""
+#define HD_combo_file    "\"" stringy(HD_DIR HD_LAYOUT HD_CMBO) "\""
+ 
