@@ -8,7 +8,7 @@
 ---
 include:
   - board: ahokore
-    cmake-args: - HANDSDOWN=pm
+    cmake-args: -DHANDSDOWN=pm
 
 #  - board: zaphod
 #  - board: sparkfun_pro_micro_rp2040
