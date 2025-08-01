@@ -26,6 +26,7 @@
             bindings = <&kp C>;
 
             akC_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp LS(C)>; };
+            akC_t_t { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; };
             akC_t_ch { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp C &kp H>; };
         };
         ak_D: ak_D {
