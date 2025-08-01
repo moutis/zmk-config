@@ -28,7 +28,7 @@
 // xx = experimental
 //
 #define stringy(s) #s
-#define _FILENAME_(hd, file) stringy("handsdown/" ## hd ## file)
+#define _FILENAME_(hd, file) stringy("handsdown/" hd file)
 
 #ifndef HANDSDOWN // this may have be defined in build.yml i.e. cmake-args: -HANDSDOWN=Pm
 #define HANDSDOWN pm // HD layout variation 2 letter code
