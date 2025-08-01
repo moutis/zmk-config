@@ -57,24 +57,3 @@
 #define l_nav   6 // nav pad (right); meta keys (left)
 #define l_cfg   7 // Media/Consumer controls; Keyboard settings
 
-
-//
-// which HD alpha variation are we using?
-//
-//
-// nu = neu (no thumb alpha)    * RSNT does not use thumb
-// au = gold (T on thumb)       * RSND most inward rolling
-// ag = silver (L on thumb)     * RSNT LOW sfbs, but high repeat on thumb
-// bz = bronze (H on thumb)     * RSNT lightest thumb use w/H-digraph combos
-// cr = chromium (C on thumb)   * RSNT typically doesn't use H-digraph combos
-// cs = cesium (C on thumb)     * RSNT lowest scissors, – lowest thumb w/o H-digraph combos
-// pm = promethium (R on thumb) * SNTH typically doesn't use H-digraph combos
-// rh = rhodium (R on thumb)    * SCNT typically doesn't use H-digraph combos
-// ti = titanium (R on thumb)   * SCNT typically doesn't use H-digraph combos
-// vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical"
-// vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs
-// vx = vibranium (R on thumb, x in lower left, f on right) - SCNT better pinky balancing
-// vb = vibranium (R on thumb, b in lower left, f on right) - CSNT
-// mi = mithril (R on thumb)
-// xx = experimental
-//

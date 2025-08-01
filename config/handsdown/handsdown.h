@@ -7,8 +7,33 @@
  *
  *
  */
+//
+// which HD alpha variation are we using?
+//
+//
+// nu = neu (no thumb alpha)    * RSNT does not use thumb
+// au = gold (T on thumb)       * RSND most inward rolling
+// ag = silver (L on thumb)     * RSNT LOW sfbs, but high repeat on thumb
+// bz = bronze (H on thumb)     * RSNT lightest thumb use w/H-digraph combos
+// cr = chromium (C on thumb)   * RSNT typically doesn't use H-digraph combos
+// cs = cesium (C on thumb)     * RSNT lowest scissors, – lowest thumb w/o H-digraph combos
+// pm = promethium (R on thumb) * SNTH typically doesn't use H-digraph combos
+// rh = rhodium (R on thumb)    * SCNT typically doesn't use H-digraph combos
+// ti = titanium (R on thumb)   * SCNT typically doesn't use H-digraph combos
+// vf = vibranium (R on thumb, f in lower left, b on right) - SCNT "canonical"
+// vv = vibranium (R on thumb, v in lower left, f on right) - SCNT lowest SFBs
+// vx = vibranium (R on thumb, x in lower left, f on right) - SCNT better pinky balancing
+// vb = vibranium (R on thumb, b in lower left, f on right) - CSNT
+// mi = mithril (R on thumb)
+// xx = experimental
+//
 
-#define HD_config_file  "handsdown/##HD_layout##-config.dtsi"  // get the HD variation file
-#define HD_adapt_file   "handsdown/##HD_layout##-adapt.dtsi"   // the related adaptive keys file
-#define HD_combo_file   "handsdown/##HD_layout##-combos.dtsi"  // the related combo file
+#ifndef HANDSDOWN // this may have be defined in build.yml i.e. cmake-args: -HANDSDOWN=Pm
 
+#define HANDSDOWN Vf // Use mixed case. (filenames and display titles are the same)
+#endif
+
+#define stringy(s) #s
+#define HD_config_file  "handsdown/" ##HANDSDOWN## "-config.dtsi"  // get the HD variation file
+#define HD_adapt_file   "handsdown/" ##HANDSDOWN## "-adapt.dtsi"   // the related adaptive keys file
+#define HD_combo_file   "handsdown/" ##HANDSDOWN## "-combos.dtsi"  // the related combo file
