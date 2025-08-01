@@ -8,7 +8,7 @@
 ---
 include:
   - board: ahokore
-    cmake-args: -DHD_LAYOUT=pm
+#    cmake-args: -DHD_LAYOUT=Pm
 
 #  - board: zaphod
 #  - board: sparkfun_pro_micro_rp2040
