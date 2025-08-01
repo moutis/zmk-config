@@ -31,7 +31,7 @@
 #define HD_LAYOUT vf    // HD layout variation 2 letter code from above
 #endif
 
-#define HD_DIR handsdown/
+#define HD_DIR ../handsdown/
 #define HD_CONF -config.dtsi
 #define HD_ADPT -adapt.dtsi
 #define HD_CMBO -combo.dtsi
