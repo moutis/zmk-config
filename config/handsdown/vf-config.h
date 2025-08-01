@@ -1,3 +1,17 @@
+/*
+ * vf-config.h
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * See handsdown/handsdown.h for HD variation codes
+ *
+ */
+
+#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
+#define HD_LAYOUT vf    // HD variation 2 letter code from handsdown.h
+#endif
+#include "handsdown/handsdown.h"    // common HD defs
+
 #define _______  &trans
 
 /*      Base (alpha) Layer Hands Down Vibranium-vf
@@ -9,9 +23,6 @@
  ╰──────────╮  BSP  R  │ │  SPC RET  ╭──────────╯
             ╰──────────╯ ╰───────────╯
 */
-
-#define HD_adapt_file "handsdown/vf-adapt.dtsi"  // the related adaptive keys file
-#define HD_combo_file "handsdown/vf-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Vf"
 #define HD_LT &ak_X           &ak_W           &ak_M           &ak_G           &ak_J

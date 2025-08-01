@@ -28,7 +28,7 @@
  */
 
 #ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
-#define HD_LAYOUT vf    // HD layout variation 2 letter code from above
+#define HD_LAYOUT pm    // HD layout variation 2 letter code from above
 #endif
 
 #define HD_DIR handsdown/

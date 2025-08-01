@@ -1,3 +1,17 @@
+/*
+ * pm-config.h
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ * See handsdown/handsdown.h for HD variation codes
+ *
+ */
+
+#ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
+#define HD_LAYOUT rh    // HD variation 2 letter code from handsdown.h
+#endif
+#include "handsdown/handsdown.h"    // common HD defs
+
 #define _______  &trans
 
 /*  Base (alpha) Layer(s) Hands Down Promethium-Pm
@@ -9,9 +23,6 @@
  ╰──────────╮  BSP  R  │ │  SPC RET  ╭──────────╯
             ╰──────────╯ ╰───────────╯
 */
-
-#define HD_adapt_file "handsdown/pm-adapt.dtsi"  // the related adaptive keys file
-#define HD_combo_file "handsdown/pm-combos.dtsi" // the related combo file
 
 #define HD_Layer_label "HD-Pm"
 #define HD_LT &ak_V           &ak_W           &ak_G           &ak_M           &ak_J
