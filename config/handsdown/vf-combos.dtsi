@@ -1,18 +1,13 @@
 /*
- * vf-combos.h
- *
- * SPDX-License-Identifier: MIT
- *
- *
- */
+*
+* SPDX-License-Identifier: MIT
+*
+*/
 
 
 /*
  Some combos need to be in specific places depending on
  the underlying alpha, esp H-Digraph combos. They are defined here.
- 
- BE_CAREFUL: Don't let any of these combos conflict with any of
-    the common combos defined in moutis_combos.dtsi
 */
 
 
@@ -29,9 +24,9 @@
  *      LH5 LH4 LH3 ╰────────╯                  ╰────────╯ RH3 RH4 LH5
 */
 
-
-
-/* type a glyph (tiny board accommodation) */
+//
+// type a glyph (tiny board accommodation)
+//
 
 COMBO_LAYER(t_Q,     &lk_qu Q U,    LT3 LT1, l_hd)       // type Qu, linger deletes u
 COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off map
