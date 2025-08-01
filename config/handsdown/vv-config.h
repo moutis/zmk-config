@@ -10,7 +10,7 @@
 #ifndef HD_LAYOUT       // this may have be defined in build.yml i.e. cmake-args: -DHANDSDOWN=Pm
 #define HD_LAYOUT vv    // HD variation 2 letter code from handsdown.h
 #endif
-#include "handsdown/handsdown.h"    // common HD defs
+#include "handsdown.h"  // common HD defs
 
 #define _______  &trans
 
