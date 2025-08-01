@@ -45,14 +45,14 @@ Currently building only for Mac only (*hard coded for gui instead of ctrl, and s
 
 ## Keyboards & form-factors:
 
-- [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split 3x5+3*)
-- [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody 3x5+2 at the end of the world*)
-- [**Ahokore**](https://store.dez.li/product/ahokore/) (*Sweet unibody 3x5+3 from down underS*)
+- [**Ahokore**](https://store.dez.li/product/ahokore/) (*Sweet unibody 3x5+3 from down under*)
 - [**Bad Wings** *Slim*](https://www.reddit.com/r/ErgoMechKeyboards/comments/16huy9s/thin_is_in/) (*Wafer thin unsplit 3x5+3*)
+- [**Corne-ish** *Zen*](https://www.reddit.com/r/ErgoMechKeyboards/comments/reyulp/my_new_zen/) (*Sublime portable split 3x5+3*)
 - [**Dust**](https://kbd.news/Dust-keyboard-1789.html) (*Bad Wings re-split 3x5+3*)
-- [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit) (*Like [Planck](https://drop.com/buy/planck-mechanical-keyboard), 4x12 but wide*)
-- [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92) (3x5+3)
 - [**Kyria**](https://splitkb.com/products/kyria-rev3) (*3x5+5*)
+- [**Microdox**](https://old.boardsource.xyz/store/5f2e7e4a2902de7151494f92) (3x5+3)
+- [**Naked48**](https://www.littlekeyboards.com/products/naked48led-keyboard-kit) (*Like [Planck](https://drop.com/buy/planck-mechanical-keyboard), 4x12 but wide*)
+- [**Zaphod**](https://www.reddit.com/r/ErgoMechKeyboards/comments/1130oor/zaphod_in_café_society/) (*Peak unibody 3x5+2 at the end of the world*)
 <!-- - [**KLOR**](https://github.com/GEIGEIGEIST/KLOR) 
 - [**Totem**]()
 -->
