@@ -29,11 +29,10 @@
 //
 
 #ifndef HANDSDOWN // this may have be defined in build.yml i.e. cmake-args: -HANDSDOWN=Pm
-
 #define HANDSDOWN Vf // Use mixed case. (filenames and display titles are the same)
 #endif
 
 #define stringy(s) #s
-#define HD_config_file  "handsdown/" ##HANDSDOWN## "-config.dtsi"  // get the HD variation file
-#define HD_adapt_file   "handsdown/" ##HANDSDOWN## "-adapt.dtsi"   // the related adaptive keys file
-#define HD_combo_file   "handsdown/" ##HANDSDOWN## "-combos.dtsi"  // the related combo file
+#define HD_config_file  "handsdown/" HANDSDOWN "-config.dtsi"
+#define HD_adapt_file   "handsdown/" HANDSDOWN "-adapt.dtsi"
+#define HD_combo_file   "handsdown/" HANDSDOWN "-combos.dtsi"
