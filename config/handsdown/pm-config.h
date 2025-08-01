@@ -10,7 +10,6 @@
             ╰──────────╯ ╰───────────╯
 */
 
-
 #define HD_adapt_file "handsdown/pm-adapt.dtsi"  // the related adaptive keys file
 #define HD_combo_file "handsdown/pm-combos.dtsi" // the related combo file
 
