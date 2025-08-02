@@ -37,8 +37,6 @@
 #define NDTOP   LG(UP)              // Top of document
 #define NDBOT   LG(DOWN)            // Bottom of document
 
-
-
 // Smart Quotes (pairs, single & double)
 #define LSQUO   LA(RBKT)            // “ left double quote
 #define RSQUO   LS(LA(RBKT))        // ” right double quote
@@ -52,12 +50,14 @@
 #define RSCHEV  LA(LS((N4)))        // ›
 
 // Currency
-#define CEURO   LA(N2)              // €
+#define CEURO   LA(LS(N2))          // €
 #define CBPND   LA(N3)              // £
 #define CJPY    LA(Y)               // ¥
 #define CCENT   LA(N4)              // ¢
 
 // Typographical symbols
+#define SNDSH   LA(MINUS)           // – N Dash
+#define SMDSH   LA(LS(MINUS))       // — M Dash
 #define SPARA   LA(N7)              // ¶
 #define SCROS   LA(LS(N5))          // †
 #define SDCRS   LA(LS(N7))          // ‡
@@ -65,4 +65,11 @@
 #define SBBLT   LA(N8)              // • Bold Bullet
 #define SDEGR   LA(LS(N8))          // ° Degree
 #define SSBLT   LA(LS(N9))          // · Small Bullet
+#define STM     LA(N2)              // ™ Trademark
+#define SREG    LA(R)               // ® Registered
+
+// Math Symbols
+#define SNEQL   LA(EQUAL)           // ≠ Not Equal
+#define SPLMN   LA(LS(MINUS))       // ± Plus/Minus
+#define SDPCT   LA(LS(R))           // ‰ Double zero Percent
 
