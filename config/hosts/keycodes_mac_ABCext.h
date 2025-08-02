@@ -51,8 +51,8 @@
 #define NPARD   LA(DOWN)            // Paragraph Down
 #define NDTOP   LG(UP)              // Top of document
 #define NDBOT   LG(DOWN)            // Bottom of document
-#define Bback   LG(LBKT)            // Browser Back
-#define Bfwd    LG(RBKT)            // Browser Forward
+#define B_BACK  LG(LBKT)            // Browser Back
+#define B_NEXT  LG(RBKT)            // Browser Forward
 #define ZOOMIN  LG(MINUS)           // Zoom In
 #define ZOOMOUT LG(EQUAL)           // Zoom Out
 #define ZOOMRST LG(N0)              // Zoom Reset
