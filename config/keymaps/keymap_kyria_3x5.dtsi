@@ -26,7 +26,7 @@
                                         HD_LB   _______ _______  _______ _______    HD_RB
                 &kp C_MUTE  &SlAppy     HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))      HD_RH   &tog l_num &kp C_PP
                 >;
-            sensor-bindings = <&e_ALL C_VOL_UP C_VOL_DN &e_ALL PG_UP PG_DN>;
+            sensor-bindings = <&e_VolApp &inc_dec_kp PG_UP PG_DN>;
             };
             l_jp {
                 label = JP_Layer_label;
