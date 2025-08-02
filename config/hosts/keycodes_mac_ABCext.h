@@ -41,8 +41,8 @@
 #define QUIT    RG(Q)               // Quit
 #define FIND    RG(F)               // Find
 #define FAGN    RG(G)               // Find Again
-#define ScrCp   LG(LS(N4))          // capture screen to clipboard
-#define SelCp   LG(LS(LC(N4)))      // capture selection to clipboard
+#define ScrCp   LG(LS(N4))          // copy screen to clipboard
+#define SelCp   LG(LS(LC(N4)))      // copy screen selection to clipboard
 
 // Navigation
 #define NWRDL   LA(LEFT)            // Word left
@@ -51,11 +51,13 @@
 #define NPARD   LA(DOWN)            // Paragraph Down
 #define NDTOP   LG(UP)              // Top of document
 #define NDBOT   LG(DOWN)            // Bottom of document
-#define Bback   LG(LBKT)            // browser back
-#define Bfwd    LG(RBKT)            // browser forward
-#define ZOOMIN  LG(MINUS)
-#define ZOOMOUT LG(EQUAL)
-#define ZOOMRST LG(N0)
+#define Bback   LG(LBKT)            // Browser Back
+#define Bfwd    LG(RBKT)            // Browser Forward
+#define ZOOMIN  LG(MINUS)           // Zoom In
+#define ZOOMOUT LG(EQUAL)           // Zoom Out
+#define ZOOMRST LG(N0)              // Zoom Reset
+#define AppNxt  LG(TAB)             // APP switcher Next (last used)
+#define AppPrv  LG(LS(TAB))         // APP switcher Prev (least recently used)
 
 // Smart Quotes (pairs, single & double)
 #define LSQUO   LA(RBKT)            // “ left double quote
