@@ -8,13 +8,13 @@
         C_VOL_UPApp: C_VOL_UPApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp AppNxt>;
+            bindings = <&kp C_VOL_UP>, <&kp TAB>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
         C_VOL_DNSApp: C_VOL_DNSApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp AppPrv>;
+            bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
