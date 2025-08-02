@@ -89,7 +89,6 @@
                                         l_nav_LB _______ _______    _______ _______ l_nav_RB
                 _______     _______     l_nav_LH _______                    _______ l_nav_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp ZOOMOUT ZOOMIN &inc_dec_kp B_BACK B_NEXT>;
             };
 
             l_cfg {
