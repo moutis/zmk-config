@@ -15,7 +15,7 @@
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
 &sensors {
-        triggers-per-rotation = <32>;
+        triggers-per-rotation = <36>;
 };
 
 / {
