@@ -1,0 +1,26 @@
+/*
+ * moutis_sensors.dtsi
+ *
+ * SPDX-License-Identifier: MIT
+ *
+ */
+
+        SlAppyC_VOL_UP: SlAppyC_VOL_UP {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&SlApBack>, <&kp C_VOL_DN>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+        SlApBackC_VOL_DN: SlApBackC_VOL_DN {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&SlApBack>, <&kp C_VOL_DN>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+
+        Lenc_l_HD: Lenc_l_HD {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&SlApBackC_VOL_DN>, <&SlAppyC_VOL_UP>;
+        };
+
