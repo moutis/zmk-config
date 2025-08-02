@@ -27,22 +27,22 @@
             bindings = <&C_VOL_DNSApp>, <&C_VOL_UPApp>;
         };
 
-        PG_UPApp: PG_UPApp {
+        PG_DNApp: PG_DNApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PG_UP>, <&kp TAB>;
+            bindings = <&kp PG_DN>, <&kp TAB>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        PG_DNSApp: PG_DNSApp {
+        PG_UPSApp: PG_UPSApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PG_DN>, <&kp LS(TAB)>;
+            bindings = <&kp PG_UP>, <&kp LS(TAB)>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
         e_PGApp: e_PGApp {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&PG_DNSApp>, <&PG_UPApp>;
+            bindings = <&PG_UPSApp>, <&PG_UPApp>;
         };
