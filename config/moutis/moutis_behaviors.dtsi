@@ -134,7 +134,7 @@
         DotColnJ: DotColnJ { // no adaptive Japanese
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&ak_DOT>, <&kp COLON>;
+            bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         SlshStar: SlshStar {

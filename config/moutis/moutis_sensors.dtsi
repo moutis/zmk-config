@@ -5,22 +5,22 @@
  *
  */
 
-        SlAppyC_VOL_UP: SlAppyC_VOL_UP {
+        C_VOL_UPSlAppy: C_VOL_UPSlAppy {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SlApBack>, <&kp C_VOL_DN>;
+            bindings = <&kp C_VOL_UP>, <&SlAppy>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        SlApBackC_VOL_DN: SlApBackC_VOL_DN {
+        C_VOL_DNSlApBack: C_VOL_DNSlApBack {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SlApBack>, <&kp C_VOL_DN>;
+            bindings = <&kp C_VOL_DN>, <&SlApBack>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
         enc_VolApp: enc_VolApp {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&SlApBackC_VOL_DN>, <&SlAppyC_VOL_UP>;
+            bindings = <&C_VOL_DNSlApBack>, <&C_VOL_UPSlAppy>;
         };
 
