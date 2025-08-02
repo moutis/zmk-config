@@ -25,7 +25,7 @@
 #define my_ak_delay 50 // behavior-adaptive-key typing speed
 #define my_sticky_term 1100 // for sticky keys and sticky layers
 
-#define my_tapping_term 200         //
+#define my_tapping_term 200         // hold-tap threshhold
 #define my_quick_tapping_term 55    //
 #define my_tapping_speed 55         // ms/tap (100 = 6 cps)
 
@@ -41,6 +41,7 @@
     release-after-ms = <my_sticky_term>;
 };
 &caps_word {
+    mods = <(MOD_LSFT | MOD_LALT)>;
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
 };
 
