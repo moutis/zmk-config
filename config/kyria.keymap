@@ -14,6 +14,10 @@
 #include "keymaps/keynames_kyria_3x5.h"     // key name defs for this board topology
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
+&sensors {
+        triggers-per-rotation = <30>;
+};
+
 / {
     behaviors { // separating these allows us to add board specific behaviors here (if any)
 
