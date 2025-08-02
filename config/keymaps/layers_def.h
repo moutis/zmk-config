@@ -1,29 +1,31 @@
 /*
- 
-    Core/common layer defs for 3x5_2 (34) keys.
-
+ *
+ *  Core/common layer defs for 3x5_2 (34) keys.
+ *
+ * extended keycodes found in "hosts" folder
+ *
  */
 
-//                                       Symbol & math (for Mac)
+//                                                Symbol & math
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|    Z   |    Q   |   ¶    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |   ¥    |
-//|    §   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
-//|    ·   |    ]   |   )    |   }    |    °    |                |   ^    |    |   |    &   |    <   |   >    |
+//|    Z   |    Q   |   ¶    |   §    |    ·    |                |   ¢    |    $   |    €   |    £   |   ¥    |
+//|    †   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
+//|    ‡   |    ]   |   )    |   }    |    °    |                |   ^    |    |   |    &   |    <   |   >    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  |    ¡   ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT &kp Z              &kp Q               &kp LA(N7)          &kp LA(LS(N5))      &kp LA(LS(N7))
-#define l_sym_RT &kp RA(N4)         &kp DLLR            &kp LA(LS(N2))      &kp LA(N3)          &kp RA(Y)
+#define l_sym_LT &kp Z              &kp Q               &kp SPARA           &kp SSECT           &kp SSBLT
+#define l_sym_RT &kp CCENT          &kp DLLR            &kp CEURO           &kp CBPND           &kp CJPY
 
-#define l_sym_LM &kp LA(N5)         &lk_bkt RBKT LBKT   &lk_par RPAR LPAR   &lk_brc RBRC LBRC   &kp LA(N8)
+#define l_sym_LM &kp SCROS          &lk_bkt RBKT LBKT   &lk_par RPAR LPAR   &lk_brc RBRC LBRC   &kp SBBLT
 #define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
 
-#define l_sym_LB &kp LA(LS(N9))     &kp RBKT            &kp RPAR            &kp RBRC            &kp LA(LS(N8))
+#define l_sym_LB &kp SDCRS          &kp RBKT            &kp RPAR            &kp RBRC            &kp SDEGR
 #define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_ltgt GT LT      &kp GT
 
-#define l_sym_LH &kp LA(BSPC)       &kp LA(DEL)
+#define l_sym_LH &kp DWRDL          &kp DWRDR
 #define l_sym_RH &none              &kp LA(N1)
 
 //                                        Nav & NumPad (standard)
@@ -35,13 +37,13 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_num_label "l_num"
 
-#define l_num_LT &kp LG(UP)         &kp HOME            &kp UP              &kp PG_UP           &kp LA(UP)
+#define l_num_LT &kp NDTOP          &kp HOME            &kp UP              &kp PG_UP           &kp NPARU
 #define l_num_RT &kp KP_DIVIDE      &kp KP_N7           &kp KP_N8           &kp KP_N9           &kp KP_SUBTRACT
 
-#define l_num_LM &kp LA(LEFT)       &kp LEFT            &kp DOWN            &kp RIGHT           &kp LA(RIGHT)
+#define l_num_LM &kp NWRDL          &kp LEFT            &kp DOWN            &kp RIGHT           &kp NWRDR
 #define l_num_RM &kp KP_MULTIPLY    &mt RSHFT KP_N4     &mt RGUI KP_N5      &mt RALT KP_N6      &mt LCTRL KP_PLUS
 
-#define l_num_LB &kp LG(DOWN)       &kp END             &kp SPACE           &kp PG_DN           &kp LA(DOWN)
+#define l_num_LB &kp NDBOT          &kp END             &kp SPACE           &kp PG_DN           &kp NPARD
 #define l_num_RB &kp KP_COMMA       &kp KP_N1           &kp KP_N2           &kp KP_N3           &kp KP_EQUAL
 
 #define l_num_LH &lt l_fun BSPC     &lt l_nav KP_ENTER

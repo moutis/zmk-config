@@ -9,12 +9,12 @@
 include:
   - board: ahokore
   - board: zaphod
+  - board: corneish_zen_v1_left
+  - board: corneish_zen_v1_right
   - board: sparkfun_pro_micro_rp2040
     shield: naked48
   - board: seeeduino_xiao_ble
     shield: bad_wings_slim
-  - board: corneish_zen_v1_left
-  - board: corneish_zen_v1_right
   - board: nice_nano_v2
     shield: kyria_left
   - board: nice_nano_v2
@@ -45,7 +45,7 @@ include:
 #  - board: nice_nano_v2
 #    shield: rollow
 
-#  - board: nice_nano_v2
+#  - board: sparkfun_pro_micro_rp2040
 #    shield: ffkb
 
 #    - board: seeeduino_xiao_ble
