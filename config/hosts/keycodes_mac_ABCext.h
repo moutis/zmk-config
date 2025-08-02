@@ -25,17 +25,37 @@
  * Below is for Mac US extended (ABC - Extended) keyboard layout
  */
  
+//
+#define KILL_M  LG(LA(ESCAPE))      // KILL app (Mac)
+#define KILL_W  LC(LA(DEL))         // KILL (win)
+
 // Editing commands
 #define DWRDL   LA(BSPC)            // delete word left
 #define DWRDR   LA(DEL)             // delete word right
+#define UNDO    RG(Z)               // Undo
+#define CUT     RG(X)               // Cut
+#define COPY    RG(C)               // Copy
+#define PASTE   RG(V)               // Paste
+#define PSTEM   RG(RA(RS(V)))       // Paste-Match
+#define CLOSE   RG(W)               // Close Window
+#define QUIT    RG(Q)               // Quit
+#define FIND    RG(F)               // Find
+#define FAGN    RG(G)               // Find Again
+#define ScrCp   LG(LS(N4))          // capture screen to clipboard
+#define SelCp   LG(LS(LC(N4)))      // capture selection to clipboard
 
 // Navigation
 #define NWRDL   LA(LEFT)            // Word left
 #define NWRDR   LA(RIGHT)           // Word right
 #define NPARU   LA(UP)              // Paragraph Up
-#define NPARD   LA(UP)              // Paragraph Down
+#define NPARD   LA(DOWN)            // Paragraph Down
 #define NDTOP   LG(UP)              // Top of document
 #define NDBOT   LG(DOWN)            // Bottom of document
+#define Bback   LG(LBKT)            // browser back
+#define Bfwd    LG(RBKT)            // browser forward
+#define ZOOMIN  LG(MINUS)
+#define ZOOMOUT LG(EQUAL)
+#define ZOOMRST LG(N0)
 
 // Smart Quotes (pairs, single & double)
 #define LSQUO   LA(RBKT)            // “ left double quote

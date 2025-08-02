@@ -79,17 +79,17 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_nav_label "l_nav"
 
-#define l_nav_LT &kp RG(Q)          &kp RG(W)           &kp LG(LS(N4))      &kp LG(LS(LC(N4)))  &kp ESC
-#define l_nav_RT &kp LG(UP)         &kp HOME            &kp UP              &kp PG_UP           &kp LA(UP)
+#define l_nav_LT &kp QUIT           &kp CLOSE           &kp ScrCp           &kp SelCp           &kp PSTEM
+#define l_nav_RT &kp LG(UP)         &kp HOME            &kp UP              &kp PG_UP           &kp NPARU
 
-#define l_nav_LM &kp LCTRL          &kp LALT            &kp LGUI            &kp LSHFT           &kp RG(F)
-#define l_nav_RM &kp LA(LEFT)       &kp LEFT            &kp DOWN            &kp RIGHT           &kp LA(RIGHT)
+#define l_nav_LM &kp LCTRL          &kp LALT            &kp LGUI            &kp LSHFT           &kp FIND
+#define l_nav_RM &kp NWRDL          &kp LEFT            &kp DOWN            &kp RIGHT           &kp NWRDR
 
-#define l_nav_LB &kp RG(Z)          &kp RG(X)           &kp RG(C)           &kp RG(V)           &kp RG(G)
-#define l_nav_RB &kp LG(DOWN)       &kp END             &kp DOWN            &kp PG_DN           &kp LA(DOWN)
+#define l_nav_LB &kp UNDO           &kp CUT             &kp COPY            &kp PASTE           &kp FAGN
+#define l_nav_RB &kp NDBOT          &kp END             &kp DOWN            &kp PG_DN           &kp NPARD
 
 #define l_nav_LH &SlApBack          &SlAppy
-#define l_nav_RH &kp LG(LBKT)       &kp LG(RBKT)
+#define l_nav_RH &kp Bback          &kp Bfwd
 
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
@@ -101,14 +101,14 @@
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_cfg_label "l_cfg"
 
-#define l_cfg_LT &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
-#define l_cfg_RT &kp LG(N0)         &none               &none               &kp LC(LA(DEL))     &kp LG(LA(ESCAPE))
+#define l_cfg_LT &bt BT_SEL 3        &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
+#define l_cfg_RT &kp ZOOMRST         &none               &none               &kp KILL_W         &kp KILL_M
 
 #define l_cfg_LM &none              &kp C_NEXT          &kp C_PP            &kp C_VOL_UP        &kp C_BRI_UP
-#define l_cfg_RM &kp LG(EQUAL)      &kp C_VOL_UP        &kp C_MUTE          &kp C_NEXT          &none
+#define l_cfg_RM &kp ZOOMOUT        &kp C_VOL_UP        &kp C_MUTE          &kp C_NEXT          &none
 
 #define l_cfg_LB &rst_btld          &kp C_PREV          &kp C_MUTE          &kp C_VOL_DN        &kp C_BRI_DN
-#define l_cfg_RB &kp LG(MINUS)      &kp C_VOL_DN        &kp C_PP            &kp C_PREV          &rst_btld
+#define l_cfg_RB &kp ZOOMIN         &kp C_VOL_DN        &kp C_PP            &kp C_PREV          &rst_btld
 
-#define l_cfg_LH &kp LG(EQUAL)      &kp LG(MINUS)
-#define l_cfg_RH &kp LG(MINUS)      &kp LG(EQUAL)
+#define l_cfg_LH &kp ZOOMOUT        &kp ZOOMIN
+#define l_cfg_RH &kp ZOOMIN         &kp ZOOMOUT
