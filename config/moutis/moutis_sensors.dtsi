@@ -3,24 +3,42 @@
  *
  * SPDX-License-Identifier: MIT
  *
+ * e_ = EC11 sensor behavior
+ *
  */
 
         C_VOL_UPApp: C_VOL_UPApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp TAB>;
+            bindings = <&kp C_VOL_UP>, <&macro_tap &kp TAB>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
         C_VOL_DNSApp: C_VOL_DNSApp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
+            bindings = <&kp C_VOL_DN>, <&macro_tap &kp LS(TAB)>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-
         e_VolApp: e_VolApp {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&C_VOL_DNSApp>, <&C_VOL_UPApp>;
         };
 
+        PG_UPApp: PG_UPApp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PG_UP>, <&macro_tap &kp TAB>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+        PG_DNSApp: PG_DNSApp {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PG_DN>, <&macro_tap &kp LS(TAB)>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+        e_PGApp: e_PGApp {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&PG_DNSApp>, <&PG_UPApp>;
+        };

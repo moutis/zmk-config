@@ -30,12 +30,12 @@
 
 #define HD_Layer_label "HD-Ti"
 #define HD_LT &SqtLT          &ak_B           &ak_H           &ak_G           &DqtGT
-#define HD_LM &mt_C RCTRL C   &mt_S RALT S    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
+#define HD_LM &mt_C LCTRL C   &mt_S LALT S    &mt_N LGUI N    &mt_T LSHFT T   &ak_K
 #define HD_LB &ak_P           &ak_F           &ak_L           &ak_D           &ak_V
 #define HD_LH                                                 &lt_BspcDel     &lt_R l_nav R
 
 #define HD_RT &HashDllr       &DotColn        &SlshStar       &ak_J           &ak_X
-#define HD_RM &CommaMagic     &mt_A LSHFT A   &mt_E LGUI E    &mt_I LALT I    &mt_M LCTRL M
+#define HD_RM &CommaMagic     &mt_A RSHFT A   &mt_E RGUI E    &mt_I RALT I    &mt_M RCTRL M
 #define HD_RB &MinusPlus      &ak_U           &ak_O           &ak_Y           &ak_W
 #define HD_RH &lt l_sym SPACE &lt l_nav RETURN
 
