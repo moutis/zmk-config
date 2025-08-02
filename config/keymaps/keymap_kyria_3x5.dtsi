@@ -100,6 +100,6 @@
                                         l_cfg_LB _______ _______    _______ _______ l_cfg_RB
                 _______     _______     l_cfg_LH _______                    _______ l_cfg_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp S_ZMIN S_ZMOUT  &inc_dec_kp S_ZMIN S_ZMOUT >;
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN  &inc_dec_kp S_ZMIN S_ZMOUT >;
             };
     };
