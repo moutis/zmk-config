@@ -5,22 +5,22 @@
  *
  */
 
-        C_VOL_UPApp: C_VOL_UPApp {
+        enc_App: enc_App {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_UP>, <&kp TAB>;
+            #binding-cells = <2>;
+            bindings = <&kp TAB>, <&kp>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        C_VOL_DNSApp: C_VOL_DNSApp {
+        enc_AppBack: enc_App {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
+            #binding-cells = <2>;
+            bindings = <&kp LS(TAB)>, <&kp>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
 
-        enc_VolApp: enc_VolApp {
+        e_ALL: e_ALL {
             compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&C_VOL_DNSApp>, <&C_VOL_UPApp>;
+            #sensor-binding-cells = <2>;
+            bindings = <&e_AppBack &kp>, <&e_App &kp>;
         };
 
