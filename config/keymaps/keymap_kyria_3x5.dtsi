@@ -26,7 +26,7 @@
                                         HD_LB   _______ _______  _______ _______    HD_RB
                 &kp C_MUTE  &SlAppy     HD_LH   &kp LS(LC(N3))  &kp LS(LC(N4))      HD_RH   &tog l_num &kp C_PP
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
             l_jp {
                 label = JP_Layer_label;
@@ -36,7 +36,7 @@
                                         JP_LB   _______ _______     _______ _______ JP_RB
                 _______     _______     JP_LH   _______                  _______    JP_RH   _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
             l_akDOT {
                 label = l_akDOT_label;
@@ -56,7 +56,7 @@
                                         l_sym_LB _______ _______    _______ _______ l_sym_RB
                 _______     _______     l_sym_LH _______                    _______ l_sym_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
 
             l_num {
@@ -67,7 +67,7 @@
                                         l_num_LB _______ _______    _______ _______ l_num_RB
                 _______     _______     l_num_LH _______                    _______ l_num_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
 
             l_fun {
@@ -78,7 +78,7 @@
                                         l_fun_LB _______ _______    _______ _______ l_fun_RB
                 _______     _______     l_fun_LH _______                    _______ l_fun_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
 
             l_nav {
@@ -89,7 +89,7 @@
                                         l_nav_LB _______ _______    _______ _______ l_nav_RB
                 _______     _______     l_nav_LH _______                    _______ l_nav_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp C_NEXT C_PREV>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
             };
 
             l_cfg {
