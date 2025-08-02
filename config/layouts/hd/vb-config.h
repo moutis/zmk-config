@@ -1,5 +1,5 @@
 /*
- * Vx-config.h
+ * Vb-config.h
  *
  * SPDX-License-Identifier: MIT
  *
@@ -9,7 +9,7 @@
 
 #ifdef HD_LAYOUT
 #undef HD_LAYOUT
-#define HD_LAYOUT Vx        // HD variation 2 letter code from handsdown.h
+#define HD_LAYOUT vb        // HD variation 2 letter code from handsdown.h
 #endif
 #define HD_CONF_loaded      // tell the header this is loaded
 #ifndef HD_head_loaded      // no header? (this file was #included directly in keymap)
@@ -18,20 +18,20 @@
 
 #define _______  &trans
 
-/*      Base (alpha) Layer Hands Down Vibranium-vx
+/*      Base (alpha) Layer Hands Down Vibranium-Vb
                     34 keys (core)
  ╭─────────────────────╮ ╭──────────────────────╮
- │  V   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
+ │  X   W   M   G   J  │ │  #$  .:  /*  "<  '>  │
  │  S   C   N   T   K  | |  ,;   A   E   I   H  │
- │  X   P   L   D   B  │ │  -+   U   O   Y   F  │
+ │  B   P   L   D   V  │ │  -+   U   O   Y   F  │
  ╰──────────╮  BSP  R  │ │  SPC RET  ╭──────────╯
             ╰──────────╯ ╰───────────╯
 */
 
-#define HD_Layer_label "HD-Vx"
-#define HD_LT &ak_V           &ak_W           &ak_M           &ak_G           &ak_J
+#define HD_Layer_label "HD-Vb"
+#define HD_LT &ak_X           &ak_W           &ak_M           &ak_G           &ak_J
 #define HD_LM &mt_S RCTRL S   &mt_C RALT C    &mt_N RGUI N    &mt_T RSHFT T   &ak_K
-#define HD_LB &ak_X           &ak_P           &ak_L           &ak_D           &ak_B
+#define HD_LB &ak_B           &ak_P           &ak_L           &ak_D           &ak_V
 #define HD_LH                                                 &lt_BspcDel     &lt_R l_nav R
 
 #define HD_RT &HashDllr       &DotColn        &SlshStar       &DqtLT          &SqtGT
@@ -43,12 +43,12 @@
 #define JP_Layer_label "HD-JP"
 #define JP_LT &kp MINUS       &kp W           &kp M           &kp G           &kp J
 #define JP_LM &hml RCTRL S    &hml RALT Z     &hml RGUI N     &hml RSHFT T    &kp K
-#define JP_LB &kp X           &kp P           &t_nn           &kp D           &kp B
+#define JP_LB &kp B           &kp P           &t_nn           &kp D           &kp V
 #define JP_LH                                                 _______         &lt l_nav R
 
 #define JP_RT _______         &DotColnJ       &SlshStarJ      &kp LBKT        &kp RBKT
 #define JP_RM _______         &hmr LSHFT A    &hmr LGUI E     &hmr LALT I     &hmr LCTRL H
-#define JP_RB _______         &kp U           &kp O           &kp Y           &kp
+#define JP_RB _______         &kp U           &kp O           &kp Y           &kp F
 #define JP_RH _______         _______
 
 

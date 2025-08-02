@@ -9,7 +9,7 @@
 
 #ifdef HD_LAYOUT
 #undef HD_LAYOUT
-#define HD_LAYOUT Vf        // HD variation 2 letter code from handsdown.h
+#define HD_LAYOUT vf        // HD variation 2 letter code from handsdown.h
 #endif
 #define HD_CONF_loaded      // tell the header this is loaded
 #ifndef HD_head_loaded      // no header? (this file was #included directly in keymap)

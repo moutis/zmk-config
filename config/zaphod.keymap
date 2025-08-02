@@ -13,8 +13,8 @@
 
 #include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
 #define HD_LAYOUT Pm                    // HD variation 2 letter code from handsdown.h
-#include "handsdown/handsdown.h"        // include common HD defs after defining layout
-//#include "handsdown/vf-config.h"        // HD alpha keymap, adapt, and combo definitions
+#include "layouts/hd/handsdown.h"       // include common HD defs after defining layout
+//#include "layouts/vf-config.h"        // HD alpha keymap, adapt, and combo definitions
 
 / {
     behaviors { // separating these allows us to add board specific behaviors here (if any)
