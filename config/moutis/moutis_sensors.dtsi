@@ -7,13 +7,13 @@
 
         enc_App: enc_App {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <2>;
+            #binding-cells = <1>;
             bindings = <&kp TAB>, <&kp>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
-        enc_AppBack: enc_App {
+        enc_AppBack: enc_AppBack {
             compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <2>;
+            #binding-cells = <1>;
             bindings = <&kp LS(TAB)>, <&kp>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
         };
