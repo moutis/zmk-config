@@ -89,7 +89,7 @@
                                         l_nav_LB _______ _______    _______ _______ l_nav_RB
                 _______     _______     l_nav_LH _______                    _______ l_nav_RH    _______     _______
                 >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp S_ZMOUT S_ZMIN &inc_dec_kp S_BBACK S_BFWD>;
             };
 
             l_cfg {
