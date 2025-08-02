@@ -10,7 +10,11 @@
  *
  */
  
- // What am I doing wrong here? This doesn't seem to work.
+ //
+ // What am I doing wrong here? This doesn't seem to work. Why?
+ // copying all these into the macro def works, but no as a
+ // preprocessor macro? What gives?
+ //
  #define RELEASE_ALL_MODS <&macro_release &kp LSHFT> \
                         , <&macro_release &kp RSHFT> \
                         , <&macro_release &kp LALT> \

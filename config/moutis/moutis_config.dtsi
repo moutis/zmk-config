@@ -41,7 +41,7 @@
     release-after-ms = <my_sticky_term>;
 };
 &caps_word {
-    mods = <(MOD_LSFT | MOD_LALT)>;
+    mods = <(MOD_LSFT | MOD_RSFT)>;
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
 };
 
