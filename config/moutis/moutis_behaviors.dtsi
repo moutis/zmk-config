@@ -221,7 +221,7 @@
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
-        lkSqt_GT: lkSqt_GT {                // Hold for paired symbols
+        lkSqt_GT: lkSqt_GT {                // Hold for paired ’’
             my_lk_config;
             bindings = <&pairSquotGT>, <&rightSquotGT>;
         };
@@ -304,7 +304,7 @@
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 
-        lkDqt_GT: lkDqt_GT {                // Hold for paired symbols
+        lkDqt_GT: lkDqt_GT {                // Hold for paired “”
             my_lk_config;
             bindings = <&pairDquotGT>, <&rightDqtGT>;
         };
@@ -314,22 +314,10 @@
             bindings = <&pairDquotChev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        pairDquotChev: pairDquotChev {          // SHIFT = >
+        pairDquotChev: pairDquotChev {          // ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&t_pairDquo>, <&kp RDCHEV>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-        };
-        rightDqtGT: leftDqtGT {              // SHIFT = >
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&pairDquotChev>, <&kp GT>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        pairDquotChev: pairDquotChev {          // SHIFT = >
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
         rightDqtGT: leftDqtGT {              // SHIFT = >
@@ -341,7 +329,7 @@
         DqtRchev: DqtRchev {                // " or ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp GT>, <&kp RDCHEV>;
+            bindings = <&ak_DQT>, <&kp RDCHEV>;
             mods = <(MOD_LALT|MOD_RALT)>;
         };
 /*
