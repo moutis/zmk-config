@@ -231,7 +231,7 @@
             bindings = <&pairSquotChev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        pairSquotChev: pairSquotChev {          // SHIFT = >
+        pairSquotChev: pairSquotChev {          // ALT = »
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&t_pairSquo>, <&kp RDCHEV>;
@@ -356,13 +356,6 @@
             bindings = <&kp DQT>;
 
             ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
-        };
-        ak_SQT: ak_SQT {
-            compatible = "zmk,behavior-adaptive-key";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>;
-
-            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
         ak_SQT: ak_SQT {
             compatible = "zmk,behavior-adaptive-key";
