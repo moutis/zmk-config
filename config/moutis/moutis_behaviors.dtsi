@@ -323,6 +323,18 @@
         rightDqtGT: leftDqtGT {              // SHIFT = >
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
+            bindings = <&pairDquotChev>, <&kp GT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        pairDquotChev: pairDquotChev {          // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GT>, <&kp RDCHEV>;
+            mods = <(MOD_LALT|MOD_RALT)>;
+        };
+        rightDqtGT: leftDqtGT {              // SHIFT = >
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
             bindings = <&DqtRchev>, <&kp GT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -356,6 +368,13 @@
             bindings = <&kp DQT>;
 
             ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
+        };
+        ak_SQT: ak_SQT {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>;
+
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
         ak_SQT: ak_SQT {
             compatible = "zmk,behavior-adaptive-key";
