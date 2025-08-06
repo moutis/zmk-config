@@ -24,7 +24,7 @@
 #define my_ak_term 350 // behavior-adaptive-key trigger time window
 #define my_ak_delay 50 // behavior-adaptive-key typing speed
 #define my_sticky_term 1100 // for sticky keys and sticky layers
-#define my_cc_term (my_ak_term * 2) // CommaCap trigger time window
+#define my_cc_term (my_ak_term * 4) // CommaCap trigger time window
 
 #define my_tapping_term 200         // hold-tap threshhold
 #define my_quick_tapping_term 55    //

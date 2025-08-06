@@ -48,7 +48,7 @@
 
 
 #define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
-#define DOT_LT _______        &kp L           &kp L           &kp L           _______
+#define DOT_LT &kp T          &kp L           &kp L           &kp L           _______
 #define DOT_LM _______        _______         _______         _______         _______
 #define DOT_LB _______        _______         _______         &b_wd           _______
 #define DOT_LH                                                _______         _______
