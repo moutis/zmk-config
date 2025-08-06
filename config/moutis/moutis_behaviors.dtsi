@@ -362,14 +362,14 @@
             #binding-cells = <0>;
             bindings = <&kp SQT>;
 
-            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &lk_Ques>; };
         };
         ak_HASH: ak_HASH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp HASH>;
 
-        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &lk_Excl>; };
         };
 
 
@@ -420,13 +420,23 @@
             my_lk_config;
             bindings = <&t_pairBkt>, <&kp>;
         };
-        lk_brc: lk_brc {
+        lk_brc: lk_brc { // { on tap, {} on "linger"
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
         lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
+        };
+#define lk_Ques lk_QuesMrk 0 0
+        lk_QuesMrk: lk_QuesMrk { // ¿ on tap, ¿|? on "linger"
+            my_lk_config;
+            bindings = <&t_pairQmark>, <&kp QMARK>;
+        };
+#define lk_Excl lk_ExclMrk 0 0
+        lk_ExclMrk: lk_ExclMrk { // ¡ on tap, ¡|! on "linger"
+            my_lk_config;
+            bindings = <&t_pairExcl>, <&kp EXCL>;
         };
 
         lk_E_accent: lk_E_accent { // ´, é on "linger"

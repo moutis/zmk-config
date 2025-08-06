@@ -222,6 +222,36 @@
                 , <&macro_tap &kp LEFT>
                 ;
         )
+    ZMK_MACRO(t_pairQmark,    // type ¿? put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp S_INVQ>
+                , <&macro_tap &kp QUOT>
+                , <&macro_tap &kp LEFT>
+                ;
+        )
+    ZMK_MACRO(t_pairExcl,    // type ¡! put insertion between
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_release &kp LALT>
+                , <&macro_release &kp RALT>
+                , <&macro_release &kp LCTL>
+                , <&macro_release &kp RCTL>
+                , <&macro_release &kp LGUI>
+                , <&macro_release &kp RGUI>
+                , <&macro_tap &kp S_INVX>
+                , <&macro_tap &kp EXCL>
+                , <&macro_tap &kp LEFT>
+                ;
+        )
 
     ZMK_MACRO(sl_dot,
         bindings = <&macro_tap &kp DOT>

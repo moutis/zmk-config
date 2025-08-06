@@ -41,7 +41,7 @@
 #define JP_LB &kp F           &kp P           &kp D           &t_nn           &kp MINUS
 #define JP_LH                                                 _______         &lt l_nav R
 
-#define JP_RT _______         &DotColnJ       &SlshStarJ      &kp LBKT        &kp RBKT
+#define JP_RT _______         &DotColnJ       &SlshStarJ      &lk_bkt         &kp RBKT
 #define JP_RM _______         &hmr RSHFT A    &hmr RGUI E     &hmr RALT I     &hmr RCTRL Z
 #define JP_RB _______         &kp U           &kp O           &kp Y           &kp B
 #define JP_RH _______         _______
