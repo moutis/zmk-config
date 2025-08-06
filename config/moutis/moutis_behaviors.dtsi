@@ -189,8 +189,8 @@
  *
  */
  
-#define DqtLT lkDqt_lkLT 0 0  // simple macros to keep the keymap uncluttered
-#define SqtGT lkSqt_GT 0 0
+#define DqtLT lkDqt_lkLT 0 0    // simple macros to keep the keymap uncluttered
+#define SqtGT lkSqt_GT 0 0      // simply put &DqtLT or &SqtGT in the keymap
 
         lkDqt_lkLT: lkDqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -272,8 +272,8 @@
  *
  */
  
-#define SqtLT lkSqt_lkLT 0 0  // simple macros to keep the keymap uncluttered
-#define DqtGT lkDqt_GT 0 0
+#define SqtLT lkSqt_lkLT 0 0    // simple macros to keep the keymap uncluttered
+#define DqtGT lkDqt_GT 0 0      // simply put &SqtLT or &DqtGT in the keymap
 
         lkSqt_lkLT: lkSqt_lkLT {            // Hold for paired symbols
             my_lk_config;
@@ -362,14 +362,14 @@
             #binding-cells = <0>;
             bindings = <&kp SQT>;
 
-            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &lk_QuMrk S_INVQ QMARK>; };
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
         };
         ak_HASH: ak_HASH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp HASH>;
 
-        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &lk_Excl>; };
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
         };
 
 
@@ -408,33 +408,38 @@
             bindings = <&kp>, <&t_Qu>;
         };
 
-        lk_quote: lk_quote { // " on tap, “” on "linger" (curly quotes)
+#define lk_quote lk_LLDquot RBRC LBRC   // simply put &lk_quote in the keymap
+        lk_LLDquot: lk_LLDquot {        // " on tap, “” on "linger" (curly quotes)
             my_lk_config;
             bindings = <&t_pairDquo>, <&kp>;
         };
-        lk_par: lk_par { // ( on tap, () on "linger"
+#define lk_par lk_LRpar RPAR LPAR       // simply put &lk_par in the keymap
+        lk_LRpar: lk_LRpar {            // ( on tap, () on "linger"
             my_lk_config;
             bindings = <&t_pairPar>, <&kp>;
         };
-        lk_bkt: lk_bkt { // [ on tap, [] on "linger"
+#define lk_bkt lk_LRbkt RBKT LBKT       // simply put &lk_bkt in the keymap
+        lk_LRbkt: lk_LRbkt {            // [ on tap, [] on "linger"
             my_lk_config;
             bindings = <&t_pairBkt>, <&kp>;
         };
-        lk_brc: lk_brc {
+#define lk_brc lk_LRbrc RBRC LBRC       // simply put &lk_brc in the keymap
+        lk_LRbrc: lk_LRbrc {            // 
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
-        lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
+#define lk_gtlt lk_LRltgt GT LT         // simply put &lk_gtlt in the keymap
+        lk_LRltgt: lk_LRltgt {          // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
         };
-//#define lk_Ques lk_QuMrk S_INVQ QMARK  // simple macro to keep the keymap uncluttered
-        lk_QuMrk: lk_QuMrk { // ¿ on tap, ¿|? on "linger"
+#define lk_Ques lk_QuMrk S_INVQ QMARK   // simply put &lk_Ques in the keymap
+        lk_QuMrk: lk_QuMrk {            // ¿ on tap, ¿|? on "linger"
             my_lk_config;
             bindings = <&t_pairQmark>, <&kp>;
         };
-//#define lk_Excl lk_ExMrk S_INVX EXCL  // simple macro to keep the keymap uncluttered
-        lk_ExMrk: lk_ExMrk { // ¡ on tap, ¡|! on "linger"
+#define lk_Excl lk_ExMrk S_INVX EXCL    // simply put &lk_Excl in the keymap
+        lk_ExMrk: lk_ExMrk {            // ¡ on tap, ¡|! on "linger"
             my_lk_config;
             bindings = <&t_pairExcl>, <&kp>;
         };
