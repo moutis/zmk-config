@@ -428,7 +428,7 @@
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
-#define lk_gtlt lk_LRltgt GT LT         // simply put &lk_gtlt in the keymap
+#define lk_ltgt lk_LRltgt GT LT         // simply put &lk_gtlt in the keymap
         lk_LRltgt: lk_LRltgt {          // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
