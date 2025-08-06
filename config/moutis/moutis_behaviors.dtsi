@@ -420,13 +420,23 @@
             my_lk_config;
             bindings = <&t_pairBkt>, <&kp>;
         };
-        lk_brc: lk_brc { // { on tap, {} on "linger"
+        lk_brc: lk_brc {
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
         lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
+        };
+#define lk_Ques lk_QuMrk S_INVQ QMARK  // simple macro to keep the keymap uncluttered
+        lk_QuMrk: lk_QuMrk { // ¿ on tap, ¿|? on "linger"
+            my_lk_config;
+            bindings = <&t_pairQmark>, <&kp>;
+        };
+#define lk_Excl lk_ExMrk S_INVX EXCL  // simple macro to keep the keymap uncluttered
+        lk_ExMrk: lk_ExMrk { // ¡ on tap, ¡|! on "linger"
+            my_lk_config;
+            bindings = <&t_pairExcl>, <&kp>;
         };
 
         lk_E_accent: lk_E_accent { // ´, é on "linger"
