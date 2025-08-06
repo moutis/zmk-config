@@ -428,15 +428,15 @@
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
         };
-#define lk_Ques lk_QuesMrk 0 0
+//#define lk_Ques lk_QuesMrk INVQ QMARK  // simple macro to keep the keymap uncluttered
         lk_QuesMrk: lk_QuesMrk { // ¿ on tap, ¿|? on "linger"
             my_lk_config;
-            bindings = <&t_pairQmark>, <&kp QMARK>;
+            bindings = <&t_pairQmark>, <&kp>;
         };
-#define lk_Excl lk_ExclMrk 0 0
+//#define lk_Excl lk_ExclMrk INVX EXCL  // simple macro to keep the keymap uncluttered
         lk_ExclMrk: lk_ExclMrk { // ¡ on tap, ¡|! on "linger"
             my_lk_config;
-            bindings = <&t_pairExcl>, <&kp EXCL>;
+            bindings = <&t_pairExcl>, <&kp>;
         };
 
         lk_E_accent: lk_E_accent { // ´, é on "linger"
