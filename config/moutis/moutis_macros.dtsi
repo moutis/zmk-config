@@ -276,11 +276,13 @@
         )
 
         ZMK_MACRO(lk_Ques,      //  macro for bindings that can't take it
-            bindings = <&lk_QuesMrk>;
-        };
+            bindings = <&lk_QuesMrk INVQ QMARK>
+            ;
+        )
         ZMK_MACRO(lk_Excl,      //  macro for bindings that can't take it
-            bindings = <&lk_ExclMrk>;
-        };
+            bindings = <&lk_ExclMrk INVX EXCL>
+            ;
+        )
 
 
 
