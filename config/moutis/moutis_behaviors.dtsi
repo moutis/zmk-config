@@ -369,7 +369,7 @@
             #binding-cells = <0>;
             bindings = <&kp HASH>;
 
-        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &lk_LRexcl>; };
         };
 
 
@@ -428,18 +428,18 @@
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
-#define lk_LRltgt lk_LRltgt GT LT       // simply put &lk_LRltgt in the keymap
-        lk_LRltgt: lk_LRltgt {          // < on tap, <|> on "linger"
+#define lk_LRltgt lk_ltgt GT LT         // simply put &lk_LRltgt in the keymap
+        lk_ltgt: lk_ltgt {              // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
         };
-#define lk_LRQues lk_QuMrk S_INVQ QMARK // simply put &lk_LRQues in the keymap
-        lk_QuMrk: lk_QuMrk {            // ¿ on tap, ¿|? on "linger"
+#define lk_LRques lk_QMARK S_INVQ QMARK // simply put &lk_LRques in the keymap
+        lk_QMARK: lk_QMARK {            // ¿ on tap, ¿|? on "linger"
             my_lk_config;
             bindings = <&t_pairQmark>, <&kp>;
         };
-#define lk_LRExcl lk_ExMrk S_INVX EXCL  // simply put &lk_LRExcl in the keymap
-        lk_ExMrk: lk_ExMrk {            // ¡ on tap, ¡|! on "linger"
+#define lk_LRexcl lk_EXCL S_INVX EXCL   // simply put &lk_LRexcl in the keymap
+        lk_EXCL: lk_EXCL {              // ¡ on tap, ¡|! on "linger"
             my_lk_config;
             bindings = <&t_pairExcl>, <&kp>;
         };
