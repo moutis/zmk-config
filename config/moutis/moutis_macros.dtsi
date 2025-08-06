@@ -252,6 +252,14 @@
                 , <&macro_tap &kp LEFT>
                 ;
         )
+    ZMK_MACRO(lk_Ques,  // simple macro to keep the keymap uncluttered
+        tap-ms = <my_tapping_speed>;
+            bindings = <&lk_QuMrk S_INVQ QMARK>;
+        )
+    ZMK_MACRO(lk_Excl,  // simple macro to keep the keymap uncluttered
+        tap-ms = <my_tapping_speed>;
+            bindings = <&lk_ExMrk S_INVX EXCL>;
+        )
 
     ZMK_MACRO(sl_dot,
         bindings = <&macro_tap &kp DOT>
