@@ -64,7 +64,7 @@
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
                 , <&macro_tap &kp H>
-                , <&sl ak_DOT> // to pick up T later?
+                , <&sl l_akDot> // to pick up T later?
                 ;
         )
     ZMK_MACRO(t_ght,
