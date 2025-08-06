@@ -275,17 +275,6 @@
                 ;
         )
 
-    ZMK_MACRO(lk_Ques,      //  macro for bindings that can't take it
-        bindings = <&lk_QuesMrk 0 0>
-        ;
-    )
-    ZMK_MACRO(lk_Excl,      //  macro for bindings that can't take it
-        bindings = <&lk_ExclMrk 0 0>
-        ;
-    )
-
-
-
     ZMK_MACRO(t_Qu,
         tap-ms = <my_tapping_speed>;
         bindings = <&ak_Q>

@@ -362,14 +362,14 @@
             #binding-cells = <0>;
             bindings = <&kp SQT>;
 
-            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &lk_Ques>; };
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp INVQ>; };
         };
         ak_HASH: ak_HASH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp HASH>;
 
-        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &lk_Excl>; };
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp INVX>; };
         };
 
 
@@ -427,16 +427,6 @@
         lk_ltgt: lk_ltgt { // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
-        };
-//#define lk_Ques lk_QuesMrk INVQ QMARK  // simple macro to keep the keymap uncluttered
-        lk_QuesMrk: lk_QuesMrk { // ¿ on tap, ¿|? on "linger"
-            my_lk_config;
-            bindings = <&t_pairQmark>, <&kp QMARK>;
-        };
-//#define lk_Excl lk_ExclMrk INVX EXCL  // simple macro to keep the keymap uncluttered
-        lk_ExclMrk: lk_ExclMrk { // ¡ on tap, ¡|! on "linger"
-            my_lk_config;
-            bindings = <&t_pairExcl>, <&kp EXCL>;
         };
 
         lk_E_accent: lk_E_accent { // ´, é on "linger"
