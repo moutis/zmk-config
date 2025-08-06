@@ -230,6 +230,13 @@
                 ;
         )
 
+    ZMK_MACRO(sl_p,
+        wait-ms = <50>; // need to slow this down for some systems.
+        bindings = <&macro_tap &kp P>
+                , <&sl l_akDot>
+                ;
+        )
+
     ZMK_MACRO(t_Qu,
         tap-ms = <my_tapping_speed>;
         bindings = <&ak_Q>
