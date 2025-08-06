@@ -114,7 +114,7 @@
             bindings = <&kp M>;
 
             akM_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(M)>; };
-            akM_t_l { trigger-keys = <X G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
+            akM_t_l { trigger-keys = <X P G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; };
             akM_b_l { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp L &kp M>; };
         };
         ak_N: ak_N {
