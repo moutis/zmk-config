@@ -47,10 +47,10 @@
 #define JP_RH _______         _______
 
 
-#define l_akDOT_label "l_akDOT"
-#define DOT_LT _______        _______         _______         _______         _______
+#define l_akDOT_label "l_akDOT" // adaptive grabbag sticky layer.
+#define DOT_LT _______        &kp L           &kp L           &kp L           _______
 #define DOT_LM _______        _______         _______         _______         _______
-#define DOT_LB _______        _______         _______         _______         _______
+#define DOT_LB _______        _______         _______         &b_wd           _______
 #define DOT_LH                                                _______         _______
 
 #define DOT_RT &kp DLLR       &kp DOT         &t_dotcom       &t_dotedu       &t_dotorg

@@ -224,15 +224,18 @@
         )
 
     ZMK_MACRO(sl_dot,
-        wait-ms = <50>; // need to slow this down for some systems.
         bindings = <&macro_tap &kp DOT>
                 , <&sl l_akDot>
                 ;
         )
 
-    ZMK_MACRO(sl_p,
-        wait-ms = <50>; // need to slow this down for some systems.
+    ZMK_MACRO(sl_P,
         bindings = <&macro_tap &kp P>
+                , <&sl l_akDot>
+                ;
+        )
+    ZMK_MACRO(sl_L,
+        bindings = <&macro_tap &kp L>
                 , <&sl l_akDot>
                 ;
         )
@@ -294,6 +297,10 @@
     ZMK_MACRO(t_pg,
         tap-ms = <my_tapping_speed>;
         bindings = <&kp P &kp G>;
+        )
+    ZMK_MACRO(b_wd,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp BSPC &kp W &kp D>;
         )
     ZMK_MACRO(t_dotcom,
         wait-ms = <50>; // need to slow this down for some systems.
