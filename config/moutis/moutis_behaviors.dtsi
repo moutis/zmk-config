@@ -420,7 +420,7 @@
             my_lk_config;
             bindings = <&t_pairBkt>, <&kp>;
         };
-        lk_brc: lk_brc { // { on tap, {} on "linger"
+        lk_brc: lk_brc { //
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
