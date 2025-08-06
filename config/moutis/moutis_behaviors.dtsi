@@ -362,7 +362,7 @@
             #binding-cells = <0>;
             bindings = <&kp SQT>;
 
-            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &lk_Ques>; };
+            ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &lk_QuMrk S_INVQ QMARK>; };
         };
         ak_HASH: ak_HASH {
             compatible = "zmk,behavior-adaptive-key";
