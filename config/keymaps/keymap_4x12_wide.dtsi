@@ -24,7 +24,7 @@
                 label = HD_Layer_label;
                 bindings = <
                                     HD_LT   &kp TAB                         &tog l_num      HD_RT
-                                    HD_LM   &lk_bkt                         &kp LS(LC(N4))  HD_RM
+                                    HD_LM   &lk_LRbkt                       &kp LS(LC(N4))  HD_RM
                                     HD_LB   &kp LG(F)                       &kp LG(G)       HD_RB
                 &kp LEFT &kp RIGHT  HD_LH   &kp LS(LC(N3)) &kp C_MUTE  &kp C_PP  &kp SPACE  HD_RH   &kp UP  &kp DOWN
                 >;

@@ -19,11 +19,11 @@
 #define l_sym_LT &kp Z              &kp Q               &kp S_PARA          &kp S_SECT          &kp S_SBLT
 #define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND          &kp C_JPY
 
-#define l_sym_LM &kp S_CROS         &lk_bkt             &lk_par             &lk_brc             &kp S_SBLT
+#define l_sym_LM &kp S_CROS         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_SBLT
 #define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
 
 #define l_sym_LB &kp S_DCRS         &kp RBKT            &kp RPAR            &kp RBRC            &kp S_DEGR
-#define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_ltgt            &kp GT
+#define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
 
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
 #define l_sym_RH &none              &kp LA(N1)

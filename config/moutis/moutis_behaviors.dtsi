@@ -408,37 +408,37 @@
             bindings = <&kp>, <&t_Qu>;
         };
 
-#define lk_quote lk_LLDquot RBRC LBRC   // simply put &lk_quote in the keymap
-        lk_LLDquot: lk_LLDquot {        // " on tap, “” on "linger" (curly quotes)
+#define lk_LRDquote lk_Dquot RBRC LBRC   // simply put &lk_LRDquote in the keymap
+        lk_Dquot: lk_Dquot {            // " on tap, “” on "linger" (curly quotes)
             my_lk_config;
             bindings = <&t_pairDquo>, <&kp>;
         };
-#define lk_par lk_LRpar RPAR LPAR       // simply put &lk_par in the keymap
-        lk_LRpar: lk_LRpar {            // ( on tap, () on "linger"
+#define lk_LRpar lk_par RPAR LPAR       // simply put &lk_LRpar in the keymap
+        lk_par: lk_par {                // ( on tap, () on "linger"
             my_lk_config;
             bindings = <&t_pairPar>, <&kp>;
         };
-#define lk_bkt lk_LRbkt RBKT LBKT       // simply put &lk_bkt in the keymap
-        lk_LRbkt: lk_LRbkt {            // [ on tap, [] on "linger"
+#define lk_LRbkt lk_bkt RBKT LBKT       // simply put &lk_LRbkt in the keymap
+        lk_bkt: lk_bkt {                // [ on tap, [] on "linger"
             my_lk_config;
             bindings = <&t_pairBkt>, <&kp>;
         };
-#define lk_brc lk_LRbrc RBRC LBRC       // simply put &lk_brc in the keymap
-        lk_LRbrc: lk_LRbrc {            // 
+#define lk_LRbrc lk_brc RBRC LBRC       // simply put &lk_LRbrc in the keymap
+        lk_brc: lk_brc {                //
             my_lk_config;
             bindings = <&t_pairBrc>, <&kp>;
         };
-#define lk_ltgt lk_LRltgt GT LT         // simply put &lk_gtlt in the keymap
+#define lk_LRltgt lk_LRltgt GT LT       // simply put &lk_LRltgt in the keymap
         lk_LRltgt: lk_LRltgt {          // < on tap, <|> on "linger"
             my_lk_config;
             bindings = <&t_pairLtGt>, <&kp>;
         };
-#define lk_Ques lk_QuMrk S_INVQ QMARK   // simply put &lk_Ques in the keymap
+#define lk_LRQues lk_QuMrk S_INVQ QMARK // simply put &lk_LRQues in the keymap
         lk_QuMrk: lk_QuMrk {            // ¿ on tap, ¿|? on "linger"
             my_lk_config;
             bindings = <&t_pairQmark>, <&kp>;
         };
-#define lk_Excl lk_ExMrk S_INVX EXCL    // simply put &lk_Excl in the keymap
+#define lk_LRExcl lk_ExMrk S_INVX EXCL  // simply put &lk_LRExcl in the keymap
         lk_ExMrk: lk_ExMrk {            // ¡ on tap, ¡|! on "linger"
             my_lk_config;
             bindings = <&t_pairExcl>, <&kp>;
