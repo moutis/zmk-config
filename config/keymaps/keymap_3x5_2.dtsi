@@ -56,16 +56,6 @@
                 >;
             };
 
-            l_num {
-                label = l_num_label;
-                bindings = <
-                                l_num_LT            l_num_RT
-                                l_num_LM            l_num_RM
-                                l_num_LB            l_num_RB
-                                l_num_LH            l_num_RH
-                >;
-            };
-
             l_fun {
                 label = l_fun_label;
                 bindings = <
@@ -73,6 +63,16 @@
                                 l_fun_LM            l_fun_RM
                                 l_fun_LB            l_fun_RB
                                 l_fun_LH            l_fun_RH
+                >;
+            };
+
+            l_num {
+                label = l_num_label;
+                bindings = <
+                                l_num_LT            l_num_RT
+                                l_num_LM            l_num_RM
+                                l_num_LB            l_num_RB
+                                l_num_LH            l_num_RH
                 >;
             };
 

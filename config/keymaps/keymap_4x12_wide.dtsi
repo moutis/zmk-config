@@ -58,16 +58,6 @@
                 >;
             };
 
-            l_num {
-                label = l_num_label;
-                bindings = <
-                                    l_num_LT   _______                      _______     l_num_RT
-                                    l_num_LM   _______                      _______     l_num_RM
-                                    l_num_LB   _______                      _______     l_num_RB
-                _______ _______     l_num_LH   _______ _______      _______ _______     l_num_RH    _______ _______
-                >;
-            };
-
             l_fun {
                 label = l_fun_label;
                 bindings = <
@@ -75,6 +65,16 @@
                                     l_fun_LM    _______                     _______     l_fun_RM
                                     l_fun_LB    _______                     _______     l_fun_RB
                 _______ _______     l_fun_LH    _______ _______     _______ _______     l_fun_RH    _______ _______
+                >;
+            };
+
+            l_num {
+                label = l_num_label;
+                bindings = <
+                                    l_num_LT   _______                      _______     l_num_RT
+                                    l_num_LM   _______                      _______     l_num_RM
+                                    l_num_LB   _______                      _______     l_num_RB
+                _______ _______     l_num_LH   _______ _______      _______ _______     l_num_RH    _______ _______
                 >;
             };
 

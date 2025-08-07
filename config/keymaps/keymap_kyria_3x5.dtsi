@@ -59,17 +59,6 @@
                 sensor-bindings = <&inc_dec_kp S_WRDL S_WRDR &inc_dec_kp PG_UP PG_DN>;
             };
 
-            l_num {
-                label = l_num_label;
-                bindings = <
-                                        l_num_LT                                    l_num_RT
-                                        l_num_LM                                    l_num_RM
-                                        l_num_LB _______ _______    _______ _______ l_num_RB
-                _______     _______     l_num_LH _______                    _______ l_num_RH    _______     _______
-                >;
-                sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
-            };
-
             l_fun {
                 label = l_fun_label;
                 bindings = <
@@ -79,6 +68,17 @@
                 _______     _______     l_fun_LH _______                    _______ l_fun_RH    _______     _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
+            };
+
+            l_num {
+                label = l_num_label;
+                bindings = <
+                                        l_num_LT                                    l_num_RT
+                                        l_num_LM                                    l_num_RM
+                                        l_num_LB _______ _______    _______ _______ l_num_RB
+                _______     _______     l_num_LH _______                    _______ l_num_RH    _______     _______
+                >;
+                sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
 
             l_nav {
