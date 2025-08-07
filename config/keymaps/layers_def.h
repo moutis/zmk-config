@@ -9,24 +9,24 @@
 //                                                Symbol & math
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//|    Z   |    Q   |   ¶    |   §    |    ·    |                |   ¢    |    $   |    €   |    £   |   ¥    |
-//|    †   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
-//|    ‡   |    ]   |   )    |   }    |    °    |                |   ^    |    |   |    &   |    <   |   >    |
+//|    Z   |    Q   |   ¶    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |   ¥    |
+//|    §   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
+//|    °   |    ]   |   )    |   }    |    ·    |                |   ^    |    |   |    &   |    <   |   >    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  |    ¡   ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
 
-#define l_sym_LT &kp Z              &kp Q               &kp S_PARA          &kp S_SECT          &kp S_SBLT
+#define l_sym_LT &kp Z              &kp Q               &kp S_PARA          &kp S_CROS          &kp S_DCRS
 #define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND          &kp C_JPY
 
-#define l_sym_LM &kp S_CROS         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_SBLT
+#define l_sym_LM &kp S_SECT         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_BBLT
 #define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
 
-#define l_sym_LB &kp S_DCRS         &kp RBKT            &kp RPAR            &kp RBRC            &kp S_DEGR
+#define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            &kp S_SBLT
 #define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
 
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
-#define l_sym_RH &none              &kp LA(N1)
+#define l_sym_RH &none              &kp S_INVX
 
 //                                        Nav & NumPad (standard)
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
@@ -75,8 +75,8 @@
 //|  close |   quit  | ScrCp | SelCp |  pstmtch |                |   Top   |  HOME  |   UP   |  PG_UP | ¶up   |
 //|  ctrl  |   alt   |  gui  |  shft |   Find   |                |  Lword  |  LEFT  |  DOWN  |   RGT  | Rword |
 //|  undo  |   cut   |  copy |  pste |  findAgn |                |   Botm  |   END  |  DOWN  |  PG_DN | ¶dn   |
-//╰──────────────────────────╮ APPSW |   APPSW  |                |  back   |  fwd  ╭──────────────────────────╯
-//                           ╰──────────────────╯                ╰─────────────────╯
+//╰──────────────────────────╮ APPSW |   APPSW  |                |   back  |   fwd  ╭─────────────────────────╯
+//                           ╰──────────────────╯                ╰──────────────────╯
 #define l_nav_label "l_nav"
 
 #define l_nav_LT &kp S_QUIT         &kp S_CLOSE         &kp S_ScrCp         &kp S_SelCp         &kp S_PSTM

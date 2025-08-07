@@ -84,10 +84,10 @@
 #define S_SECT  LA(N5)              // §
 #define S_PARA  LA(N7)              // ¶
 #define S_BBLT  LA(N8)              // • Bold Bullet
+#define S_SBLT  LA(LS(N9))          // · Small Bullet
+#define S_DEGR  LA(LS(N8))          // ° Degree
 #define S_CROS  LA(LS(N5))          // †
 #define S_DCRS  LA(LS(N7))          // ‡
-#define S_DEGR  LA(LS(N8))          // ° Degree
-#define S_SBLT  LA(LS(N9))          // · Small Bullet
 #define S_TM    LA(N2)              // ™ Trademark
 #define S_REG   LA(R)               // ® Registered
 #define S_INVQ  LA(LS(FSLH))        // ¿ inverted Question
