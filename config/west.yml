@@ -24,6 +24,9 @@ manifest:
     - name: zmk-adaptive-key
       remote: urob
       revision: main # set to same as ZMK version above
+    - name: zmk-auto-layer # used in &num_word
+      remote: urob
+      revision: main # set to same as ZMK version above
 #    - name: zmk-antecedent-morph
 #      remote: ssbb
 #      revision: v1

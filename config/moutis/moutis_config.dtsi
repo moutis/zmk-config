@@ -45,6 +45,9 @@
     mods = <(MOD_LSFT | MOD_RSFT)>;
     continue-list = <UNDER MINUS BSPC DEL LEFT RIGHT>;
 };
+&num_word {
+  continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL LPRN RPRN>;
+};
 
 /*
  * my layers
