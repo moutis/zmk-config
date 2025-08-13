@@ -15,8 +15,6 @@
 #include "keymaps/keynames_4x12_wide.h" // key name defs for this board topology
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
-&num_word l_fun
-
 / {
 /*
  * Behaviors

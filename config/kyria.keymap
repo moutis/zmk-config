@@ -20,8 +20,6 @@
         triggers-per-rotation = <36>;
 };
 
-&num_word l_fun
-
 / {
 /*
  * Behaviors

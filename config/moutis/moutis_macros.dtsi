@@ -67,6 +67,13 @@
                 , <&macro_release &sk RGUI>   // now release the previous hold
                 ;
         )
+
+    ZMK_MACRO(m_numword,
+        tap-ms = <my_tapping_speed>;
+        bindings =  <&num_word l_fun>
+                ;
+        )
+
 /*
  *
  * basic editing macros
