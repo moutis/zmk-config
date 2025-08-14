@@ -1,28 +1,27 @@
 /*
- * Copyright (c) 2021 Darryl deHaan
+ * Copyright (c) 2022 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
 
-#include "boards/arm/corneish_zen/corneish_zen_flash0.dtsi" // override &flash0 settings
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors/num_word.dtsi>      // urob's num_word module
 
+
 / {
   chosen {
-    //zmk,matrix_transform = &default_transform;
     zmk,matrix_transform = &five_column_transform;
   };
 };
 
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
-
-#include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
-#include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
+#include "keymaps/keynames_ffkb.h"     // key name defs for this board topology
+#include "layouts/hd/pm-config.h"       // HD alpha keymap, adapt, and combo definitions
 
 / {
 /*
@@ -58,6 +57,6 @@
  * Keymap (all layers w/references to all the above)
  */
 
-#include "keymaps/keymap_3x5_3.dtsi"    // consolidated keymap
+#include "keymaps/keymap_ffkb.dtsi"    // consolidated keymap
 
 };
