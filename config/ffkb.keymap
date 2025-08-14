@@ -13,15 +13,19 @@
 #include <behaviors/num_word.dtsi>      // urob's num_word module
 
 
+#include "moutis/moutis_config.dtsi"    // my add-on feature defs
+#include "keymaps/keynames_ffkb.h"     // key name defs for this board topology
+#include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
+
+&sensors {
+        triggers-per-rotation = <36>;
+};
 / {
   chosen {
     zmk,matrix_transform = &five_column_transform;
   };
 };
 
-#include "moutis/moutis_config.dtsi"    // my add-on feature defs
-#include "keymaps/keynames_ffkb.h"     // key name defs for this board topology
-#include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
 / {
 /*
@@ -29,6 +33,7 @@
  */
     behaviors {
 
+#include "moutis/moutis_sensors.dtsi"   // EC11 & other sensor behaviors
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)
 
