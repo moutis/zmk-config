@@ -38,7 +38,7 @@ include:
 #  - board: nice_nano_v2
 #    shield: rollow
 
-  - board: sparkfun_pro_micro_rp2040
+  - board: nice_nano_v2
     shield: ffkb
 
 #    - board: seeeduino_xiao_ble
