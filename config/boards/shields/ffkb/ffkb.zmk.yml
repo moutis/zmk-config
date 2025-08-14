@@ -6,7 +6,6 @@ url: https://github.com/sadekbaroudi/ffkb/
 requires:
   - pro_micro
 exposes:
-  - i2c_oled
 features:
   - keys
   - encoder
