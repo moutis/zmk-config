@@ -78,7 +78,6 @@
                                 l_num_LM  _______   l_num_RM
                                 l_num_LB            l_num_RB
                 _______ _______ l_num_LH            l_num_RH _______    _______
-                sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
                 >;
                 sensor-bindings = <&inc_dec_kp S_ZMIN S_ZMOUT &inc_dec_kp S_BBACK S_BFWD>;
             };
