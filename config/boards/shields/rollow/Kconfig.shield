@@ -1,8 +1,8 @@
-# Copyright (c) 2022 The ZMK Contributors
+# Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-config SHIELD_DUST_LEFT
-    def_bool $(shields_list_contains,dust_left)
+config SHIELD_ROLLOW_LEFT
+    def_bool $(shields_list_contains,rollow_left)
 
-config SHIELD_DUST_RIGHT
-    def_bool $(shields_list_contains,dust_right)
+config SHIELD_ROLLOW_RIGHT
+    def_bool $(shields_list_contains,rollow_right)

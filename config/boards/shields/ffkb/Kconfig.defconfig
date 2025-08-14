@@ -1,24 +1,10 @@
-if SHIELD_ROLLOW_LEFT
+# Copyright (c) 2021 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if SHIELD_FFKB
 
 config ZMK_KEYBOARD_NAME
-    default "Rollow"
-
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_ROLLOW_RIGHT
-
-config ZMK_KEYBOARD_NAME
-    default "Rollow Right"
-
-endif
-
-if SHIELD_ROLLOW_LEFT || SHIELD_ROLLOW_RIGHT
-
-config ZMK_SPLIT
-    default y
+    default "FFKB"
 
 if ZMK_DISPLAY
 
@@ -38,7 +24,7 @@ if LVGL
 config LV_Z_VDB_SIZE
     default 64
 
-config LV_DPI_DEF
+config LV_Z_DPI
     default 148
 
 config LV_Z_BITS_PER_PIXEL
