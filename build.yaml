@@ -7,7 +7,7 @@
 #
 ---
 include:
-  - board: ahokore
+#  - board: ahokore
 #  - board: zaphod
 #  - board: sparkfun_pro_micro_rp2040
 #    shield: naked48
