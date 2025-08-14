@@ -10,5 +10,3 @@ exposes:
 features:
   - keys
   - encoder
-  - display
-  - underglow
