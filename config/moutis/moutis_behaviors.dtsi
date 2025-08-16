@@ -370,10 +370,10 @@
             bindings = <&kp HASH>;
 
         ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
-        ak_HASH_t_Gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_Gratefully>; };
-        ak_HASH_t_Indiana { trigger-keys = <I>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_Indiana>; };
-        ak_HASH_t_University { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_University>; };
-        ak_HASH_t_Bloomington { trigger-keys = <B>; max-prior-idle-ms = <my_ak_term>; bindings = <&t_Bloomington>; };
+        ak_HASH_b_Gratefully { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_Gratefully>; };
+        ak_HASH_b_Indiana { trigger-keys = <I>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_Indiana>; };
+        ak_HASH_b_University { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_University>; };
+        ak_HASH_b_Bloomington { trigger-keys = <B>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_Bloomington>; };
         };
 
 
