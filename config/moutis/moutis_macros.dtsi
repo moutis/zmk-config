@@ -401,12 +401,47 @@
                 , <&macro_tap &kp A &kp P &kp A &kp N &kp E &kp S &kp E &kp SPACE>
                 ;
         )
+    ZMK_MACRO(t_Gratefully,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(G)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp R &kp A &kp T &kp E &kp F &kp U &kp L &kp L &kp Y &kp CMMA &kp SPACE>
+                ;
+        )
+    ZMK_MACRO(t_Indiana,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(I)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp N &kp D &kp I &kp A &kp N &kp A>
+                ;
+        )
+    ZMK_MACRO(t_University,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(U)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp N &kp I &kp V &kp E &kp R &kp S &kp I &kp T &kp Y>
+                ;
+        )
+    ZMK_MACRO(t_Bloomington,
+        tap-ms = <(my_tapping_speed / 2)>;
+        bindings = <&kp LS(B)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp L &kp O &kp O &kp M &kp I &kp N &kp G &kp T &kp O &kp N>
+                ;
+        )
+
 
 #ifdef H_DIGRAPH_COMBOS                 // H-digraphs? (Th, Ch, Wh, Sh, Gh, Ph)
 #include "moutis_m_h_digraph.dtsi"
 #endif // H_DIGRAPH_COMBOS
+
 #ifdef EN_PRONOUN_COMBOS                // Pronoun macros?
 #include "moutis_m_pronoun.dtsi"
+
 #endif // EN_PRONOUN_COMBOS
 #ifdef JP_MODE_ENABLE                   // Japanese macros?
 #include "moutis_m_japanese.dtsi"
