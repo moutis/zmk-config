@@ -54,8 +54,8 @@
 #define S_DBTM  LG(DOWN)            // Bottom of document
 #define S_BBACK LG(LBKT)            // Browser Back
 #define S_BFWD  LG(RBKT)            // Browser Forward
-#define S_ZMIN  LG(MINUS)           // Zoom In
-#define S_ZMOUT LG(EQUAL)           // Zoom Out
+#define S_ZMIN  LG(EQUAL)           // Zoom In
+#define S_ZMOUT LG(MINUS)           // Zoom Out
 #define S_ZMRST LG(N0)              // Zoom Reset
 #define S_AppN  LG(TAB)             // APP switcher Next (last used)
 #define S_AppP  LG(LS(TAB))         // APP switcher Prev (least recently used)
