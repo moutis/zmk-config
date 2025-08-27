@@ -342,6 +342,16 @@
             bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        ak_BSPC: ak_BSPC {
+            compatible = "zmk,behavior-adaptive-key";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>;
+
+            ak_BSPC_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
+            ak_BSPC_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
+            ak_BSPC_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
+            ak_BSPC_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
+        };
 
         ak_DOT: ak_DOT {
             compatible = "zmk,behavior-adaptive-key";
@@ -353,9 +363,9 @@
         ak_FSLH: ak_FSLH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
-            bindings = <&sl_dot>;
+            bindings = <&kp FSLH>;
 
-            ak_FSLH_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp U>; };
+            ak_FSLH_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
         };
         ak_DQT: ak_DQT {
             compatible = "zmk,behavior-adaptive-key";
