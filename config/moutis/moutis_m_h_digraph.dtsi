@@ -16,7 +16,7 @@
  *
  */
 
-#define my_digraph_speed (18) // treat these as one very fast letter
+#define my_digraph_speed (my_tapping_speed / 4) // treat these as one very fast letter
 
 #ifdef H_DIGRAPH_COMBOS
     ZMK_MACRO(t_Th,
