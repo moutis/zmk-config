@@ -37,7 +37,7 @@ COMBO_LAYER(t_Z,     &ak_Z,         LM3 LM1, l_hd)       // Z is typically off m
 //
 COMBO_LAYER(sch,    &t_Sch,         LM4  LM3 LM2, l_hd)  // Sch
 COMBO_LAYER(tch,    &t_Tch,         LM4  LM3 LM1, l_hd)  // Tch
-COMBO_LAYER(th,     &lk_th H T,     LM2 LM1, l_hd)       // Th/sion
+COMBO_LAYER(th,     &t_Th,          LM2 LM1, l_hd)       // Th
 COMBO_LAYER(ch,     &t_Ch,          LM4 LM3, l_hd l_jp)  // Ch
 COMBO_LAYER(wh,     &t_Wh,          LB4 LB2, l_hd)       // Wh * not ideal!
 COMBO_LAYER(sh,     &lk_sh H S,     LM3 LM2, l_hd l_jp)  // Sh/sion
@@ -56,6 +56,7 @@ COMBO_LAYER(pnIll,   &t_PnIll,      RM3 LB2, l_hd)  // "I'll "
 COMBO_LAYER(pnId,    &t_PnId,       RM3 LB1, l_hd)  // "I'd "
 COMBO_LAYER(pnIve,   &t_PnIve,      RM3 LB0, l_hd)  // "I've "
 
+COMBO_LAYER(pnYou,   &t_Pnyou,      RB1 RB2  RB3, l_hd) // “You”
 COMBO_LAYER(pnYoure, &t_PnYoure,    RB3 LB4, l_hd)  // "You're "
 COMBO_LAYER(pnYour,  &t_PnYour,     RB3 LB3, l_hd)  // "Your "
 COMBO_LAYER(pnYoull, &t_PnYoull,    RB3 LB2, l_hd)  // "You'll "

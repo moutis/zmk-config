@@ -500,6 +500,7 @@
             bindings = <&t_ght>, <&t_Gh>;
         };
 
+
 /*
  *
  * Three finger text macros (tap & hold varieties)

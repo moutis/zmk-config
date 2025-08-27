@@ -49,6 +49,14 @@
                 ;
         )
 // YOU
+    ZMK_MACRO(t_Pnyou,
+        tap-ms = <(my_tapping_speed)>;
+        bindings = <&kp BSPC &kp LS(Y)>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp O &kp U &kp SPACE>
+                ;
+        )
     ZMK_MACRO(t_PnYour,
         tap-ms = <my_tapping_speed>;
         bindings = <&macro_tap &kp Y>
