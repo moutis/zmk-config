@@ -28,7 +28,7 @@
 
 #define my_tapping_term 200         // hold-tap threshhold
 #define my_quick_tapping_term 55    // lower reduces misfires, increases missed fires
-#define my_tapping_speed 45         // ms/tap (100 = 6 cps)
+#define my_tapping_speed 40         // ms/tap (100 = 6 cps ≈ 60wpm; 40 = 25 ≈ 125 wpm)
 
 
 &mt {
