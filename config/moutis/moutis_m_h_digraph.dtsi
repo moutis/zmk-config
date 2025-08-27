@@ -16,7 +16,7 @@
  *
  */
 
-#define my_digraph_speed my_tapping_speed/3
+#define my_digraph_speed (my_tapping_speed / 3)
 
 #ifdef H_DIGRAPH_COMBOS
     ZMK_MACRO(t_Th,
@@ -76,7 +76,7 @@
                 ;
         )
     ZMK_MACRO(t_Ph,
-        tap-ms = <my_tapping_speed>;
+        tap-ms = <my_digraph_speed>;
         bindings = <&ak_P>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
