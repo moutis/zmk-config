@@ -358,7 +358,7 @@
  *
  */
  
-    ZMK_MACRO(t_LTapE,
+    ZMK_MACRO(t_LTapE, // my domain name
         tap-ms = <(my_tapping_speed / 2)>;
         bindings = <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
@@ -382,7 +382,7 @@
         bindings = <&kp LS(J)>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp A &kp P &kp A &kp N>
+                , <&macro_tap &kp A &kp P &kp A &kp N &kp SPACE>
                 ;
         )
     ZMK_MACRO(t_RHoldE,
@@ -406,7 +406,7 @@
         bindings = <&kp BSPC &kp LS(I)>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp N &kp D &kp I &kp A &kp N &kp A>
+                , <&macro_tap &kp N &kp D &kp I &kp A &kp N &kp A &kp SPACE>
                 ;
         )
     ZMK_MACRO(b_University,
@@ -414,7 +414,7 @@
         bindings = <&kp BSPC &kp LS(U)>
                 , <&macro_release &kp LSHFT>
                 , <&macro_release &kp RSHFT>
-                , <&macro_tap &kp N &kp I &kp V &kp E &kp R &kp S &kp I &kp T &kp Y>
+                , <&macro_tap &kp N &kp I &kp V &kp E &kp R &kp S &kp I &kp T &kp Y &kp SPACE>
                 ;
         )
     ZMK_MACRO(b_Bloomington,
