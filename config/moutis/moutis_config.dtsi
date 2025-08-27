@@ -27,8 +27,8 @@
 #define my_cc_term (my_ak_term * 4) // CommaCap trigger time window
 
 #define my_tapping_term 200         // hold-tap threshhold
-#define my_quick_tapping_term 55    //
-#define my_tapping_speed 55         // ms/tap (100 = 6 cps)
+#define my_quick_tapping_term 55    // lower reduces misfires, increases missed fires
+#define my_tapping_speed 45         // ms/tap (100 = 6 cps)
 
 
 &mt {
