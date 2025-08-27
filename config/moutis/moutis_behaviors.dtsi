@@ -370,6 +370,7 @@
             bindings = <&kp SQT>;
 
             ak_SQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp S_INVQ>; };
+            ak_SQT_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp U>; };
             ak_SQT_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp U>; };
         };
         ak_HASH: ak_HASH {
