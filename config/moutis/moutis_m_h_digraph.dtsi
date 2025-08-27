@@ -18,6 +18,16 @@
 
 #define my_digraph_speed (my_tapping_speed / 4) // treat these as one very fast letter
 
+// linguistically, "Qu" behaves 'is almost a digraph
+    ZMK_MACRO(t_Qu,
+        tap-ms = <my_digraph_speed>;
+        bindings = <&ak_Q>
+                , <&macro_release &kp LSHFT>
+                , <&macro_release &kp RSHFT>
+                , <&macro_tap &kp U>
+                ;
+        )
+
 #ifdef H_DIGRAPH_COMBOS
     ZMK_MACRO(t_Th,
         tap-ms = <my_digraph_speed>;
