@@ -339,7 +339,7 @@
         lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt l_fun BACKSPACE>, <&kp DELETE>;
+            bindings = <&lt l_fun ak_BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         ak_BSPC: ak_BSPC {
