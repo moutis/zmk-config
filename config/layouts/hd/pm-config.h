@@ -27,7 +27,7 @@
 #define HD_LT &ak_V           &ak_W           &ak_G           &ak_M           &ak_J
 #define HD_LM &mt_S LCTRL S   &mt_N LALT N    &mt_T LGUI T    &mt_H LSHFT H   &ak_K
 #define HD_LB &ak_F           &ak_P           &ak_D           &ak_L           &ak_X
-#define HD_LH                                                 &lt_BspcDel     &lt_R l_nav R
+#define HD_LH                                                 &lt_BSPC l_fun BSPC &lt_R l_nav R
 
 #define HD_RT &HashDllr       &DotColn        &SlshStar       &DqtLT          &SqtGT
 #define HD_RM &CommaMagic     &mt_A RSHFT A   &mt_E RGUI E    &mt_I RALT I    &mt_C RCTRL C

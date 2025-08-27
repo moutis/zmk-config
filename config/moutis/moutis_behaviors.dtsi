@@ -122,6 +122,10 @@
             my_lt_config;
             bindings = <&mo>, <&ak_R>;
         };
+        lt_BSPC: lt_BSPC {
+            my_lt_config;
+            bindings = <&mo>, <&mm_BspcDel>;
+        };
 
 /*
  * modmorph behaviors
@@ -336,10 +340,10 @@
  * end of Single Quote key behaviors
  */
 
-        lt_BspcDel: lt_BspcDel { // layer-tap mod-morph
+        mm_BspcDel: mm_BspcDel { // layer-tap mod-morph
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt l_fun ak_BSPC>, <&kp DELETE>;
+            bindings = <&ak_BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         ak_BSPC: ak_BSPC {
@@ -347,10 +351,10 @@
             #binding-cells = <0>;
             bindings = <&kp BSPC>;
 
-            ak_BSPC_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
-            ak_BSPC_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
-            ak_BSPC_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
             ak_BSPC_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
+            ak_BSPC_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
+            ak_BSPC_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
+            ak_BSPC_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
         };
 
         ak_DOT: ak_DOT {
