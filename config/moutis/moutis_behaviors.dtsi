@@ -400,9 +400,29 @@
         };
 
 
-/* Comma Magic */
+/*
+ *  &CommaMagic (put just this in the keymap)
+ *
+ *  Then you'll need to add an behavior-adaptive-key for every alpha in place of
+ *  the alpha. For example:
+ *
+ *  instead of &KP A in the keymap, use &ak_A and a behavior def:
+ *
+ *      ak_A: ak_A {
+ *          compatible = "zmk,behavior-adaptive-key";
+ *          #binding-cells = <0>;
+ *          bindings = <&kp A>;
+ *          akA_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(A)>; };
+ *      };
+ *
+ *  It works flawlessly for me. Your mileage may vary
+ */
 #define CommaMagic CmmaMgc CAPSLOCK 0   // simple macro to keep the keymap uncluttered
 
+        CmmaMgc: CmmaMgc {  // Hold for CAPSLOCK, tap for COMMA
+            my_lk_config;
+            bindings = <&kp>, <&CmmaSemi>;
+        };
         CmmaSemi: CmmaSemi { // press = COMMA,shift = Semicolon
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -413,14 +433,10 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp CMMA>;
-
             ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC  &caps_word>; };
+        // optional alt fingering to eliminate SFBs in vowel block on HD Neu layout variations
             ak_CMMA_O { trigger-keys = <E>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; };
             ak_CMMA_E { trigger-keys = <O>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; };
-        };
-        CmmaMgc: CmmaMgc {              // Hold for CAPSLOCK, tap for COMMA
-            my_lk_config;
-            bindings = <&kp>, <&CmmaSemi>;
         };
 
 /*
