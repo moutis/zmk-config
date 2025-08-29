@@ -37,7 +37,7 @@ My personal ZMK take on [**Hands Down**](http://handsdownlayout.com) on small po
  <sup>[4]</sup> *Vim Friendly* variations were designed with VIM in mind, especially the navigation letters. Other layouts can work with VIM, especially with a separate nav layer.<br>
 
  - Many combos for less-used letters (`Qu`,`Z`,) editing (`Undo`, `Cut`, `Copy`, `Paste`, `Tab`, etc.), symbols and punctuation (`@`,`!`,`?`,`;`,`:`,`=` etc.).
- - [***Comma Magic***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy way of using Adaptive Keys to eliminate the shift misfires with home row mods. Simply type `COMMA` immediately before an alpha to capitalize it (*deleting the comma*). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It doesn't require a dedicated key for all this. It just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter. It's nearly perfect.
+ - [***Comma Magic***](https://www.reddit.com/r/KeyboardLayouts/comments/1cc2yri/oneshot_shift_via_adaptive_keys/) is very snappy use of Adaptive Keys to eliminate the shift misfires common with home row mods. Simply type `COMMA` immediately before an alpha to capitalize it (*deleting the comma*). Linger/Hold on comma for CapsLk, Double-tap comma for CAPS_WORD. It doesn't require a dedicated key for all this; it just works by exploiting a well-established pattern in how a comma is used, never immediatly preceding a letter, and never repeated. It works nearly flawlessly for me.
 
  - [***Linger Keys***](https://sites.google.com/alanreiser.com/handsdown#h.w8doktr0rzce) (*via hold-tap behaviors and macros*) for things like paired symbols like `{([<>])}` and diacritics `éèôåō`, and more.
 
