@@ -72,7 +72,7 @@
  * Keymap (all layers w/references to all the above)
  */
 
-#include "layers_def.h" // layer def common core (3x5+2)
+#include "keymaps/layers_def.h" // layer def common core (3x5+2)
 
     keymap {
         compatible = "zmk,keymap";
