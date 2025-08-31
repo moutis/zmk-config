@@ -155,7 +155,7 @@
                 bindings = <
                                         l_cfg_LT                                    l_cfg_RT
                                 _______ l_cfg_LM                                    l_cfg_RM    _______
-                                _______ l_cfg_BM   _______                  _______ l_cfg_RB    _______
+                                _______ l_cfg_LB   _______                  _______ l_cfg_RB    _______
                                 _______ l_cfg_LH   _______                  _______ l_cfg_RH    _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN  &inc_dec_kp S_ZMIN S_ZMOUT >;
