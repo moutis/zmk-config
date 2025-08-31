@@ -42,7 +42,7 @@
         status = "okay";
     };
 
-    sensors {
+    sensors: sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_l &encoder_r &encoder_c>;
     };
