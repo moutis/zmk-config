@@ -25,10 +25,10 @@ include:
 #    shield: dust
 
 ## boards I'm working to bring online
-#  - board: sparkfun_pro_micro_rp2040
-#    shield: ffkb
   - board: sparkfun_pro_micro_rp2040
-    shield: klor_left
+    shield: ffkb
+#  - board: sparkfun_pro_micro_rp2040
+#    shield: klor_left
 #  - board: sparkfun_pro_micro_rp2040
 #    shield: klor_right
 #  - board: nice_nano_v2
