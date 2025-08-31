@@ -12,14 +12,6 @@
 //                               █         █    █▄▄▄▄▄▄▄▄    ▀▀▀▄▄▄▄▄▄▀▀▀        █          █
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-       
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/rgb.h>
-
 /*
  * Copyright (c) 2022 The ZMK Contributors
  *
@@ -29,21 +21,27 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <behaviors/num_word.dtsi>      // urob's num_word module
 
 
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
 
-#include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
+#include "keymaps/keynames_3x5_2.h"     // key name defs
+#include "keymaps/layers_def.h"         // layer def common core (3x5+2)
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
+&sensors {
+        triggers-per-rotation = <36>;
+};
 / {
 /*
  * Behaviors
  */
     behaviors {
 
+#include "moutis/moutis_sensors.dtsi"   // EC11 & other sensor behaviors
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)
 
@@ -69,10 +67,8 @@
 
     };
 /*
- * Keymap (all layers w/references to all the above)
+ * Keymap (all layers w/references to the above behaviors/macros/combos)
  */
-
-#include "keymaps/layers_def.h" // layer def common core (3x5+2)
 
     keymap {
         compatible = "zmk,keymap";
@@ -80,9 +76,9 @@
                 label = HD_Layer_label;
                 bindings = <
                                         HD_LT                                       HD_RT
-                                _______ HD_LM                                       HD_RM       _______
-                                _______ HD_LB   &kp C_MUTE                 &kp C_PP HD_RB       _______
-                            &SlAppy     HD_LH   &kp LS(LC(N3))      &kp LS(LC(N4))  HD_RH       &tog l_num
+                                _______ HD_LM                                       HD_RM _______
+                                _______ HD_LB   &kp C_MUTE                 &kp C_PP HD_RB _______
+                            &SlAppy     HD_LH   &kp LS(LC(N3))      &kp LS(LC(N4))  HD_RH &tog l_num
                 >;
                 sensor-bindings = <&e_VolApp &e_PGApp>;
             };
@@ -90,9 +86,9 @@
                 label = JP_Layer_label;
                 bindings = <
                                         JP_LT                                       JP_RT
-                                _______ JP_LM                                       JP_RM       _______
-                                _______ JP_LB   _______                     _______ JP_RB       _______
-                                _______ JP_LH   _______                     _______ JP_RH       _______
+                                _______ JP_LM                                       JP_RM _______
+                                _______ JP_LB   _______                     _______ JP_RB _______
+                                _______ JP_LH   _______                     _______ JP_RH _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
@@ -100,9 +96,9 @@
                 label = l_akDOT_label;
                 bindings = <
                                         DOT_LT                                      DOT_RT
-                                _______ DOT_LM                                      DOT_RM      _______
-                                _______ DOT_LB   _______                    _______ DOT_RB      _______
-                                _______ DOT_LH   _______                    _______ DOT_RH      _______
+                                _______ DOT_LM                                      DOT_RM _______
+                                _______ DOT_LB   _______                    _______ DOT_RB _______
+                                _______ DOT_LH   _______                    _______ DOT_RH _______
                 >;
             };
 
@@ -110,9 +106,9 @@
             label = l_sym_label;
                 bindings = <
                                         l_sym_LT                                    l_sym_RT
-                                _______ l_sym_LM                                    l_sym_RM    _______
-                                _______ l_sym_LB   _______                  _______ l_sym_RB    _______
-                                _______ l_sym_LH   _______                  _______ l_sym_RH    _______
+                                _______ l_sym_LM                                    l_sym_RM _______
+                                _______ l_sym_LB   _______                  _______ l_sym_RB _______
+                                _______ l_sym_LH   _______                  _______ l_sym_RH _______
                 >;
                 sensor-bindings = <&inc_dec_kp S_WRDL S_WRDR &inc_dec_kp PG_UP PG_DN>;
             };
@@ -121,9 +117,9 @@
                 label = l_fun_label;
                 bindings = <
                                         l_fun_LT                                    l_fun_RT
-                                _______ l_fun_LM                                    l_fun_RM    _______
-                                _______ l_fun_LB   _______                  _______ l_fun_RB    _______
-                                _______ l_fun_LH   _______                  _______ l_fun_RH    _______
+                                _______ l_fun_LM                                    l_fun_RM _______
+                                _______ l_fun_LB   _______                  _______ l_fun_RB _______
+                                _______ l_fun_LH   _______                  _______ l_fun_RH _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_PREV C_NEXT>;
             };
@@ -132,9 +128,9 @@
                 label = l_num_label;
                 bindings = <
                                         l_num_LT                                    l_num_RT
-                                _______ l_num_LM                                    l_num_RM    _______
-                                _______ l_num_LB   _______                  _______ l_num_RB    _______
-                                _______ l_num_LH   _______                  _______ l_num_RH    _______
+                                _______ l_num_LM                                    l_num_RM _______
+                                _______ l_num_LB   _______                  _______ l_num_RB _______
+                                _______ l_num_LH   _______                  _______ l_num_RH _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
             };
@@ -143,9 +139,9 @@
                 label = l_nav_label;
                 bindings = <
                                         l_nav_LT                                    l_nav_RT
-                                _______ l_nav_LM                                    l_nav_RM    _______
-                                _______ l_nav_LB   _______                  _______ l_nav_RB    _______
-                                _______ l_nav_LH   _______                  _______ l_nav_RH    _______
+                                _______ l_nav_LM                                    l_nav_RM _______
+                                _______ l_nav_LB   _______                  _______ l_nav_RB _______
+                                _______ l_nav_LH   _______                  _______ l_nav_RH _______
                 >;
                 sensor-bindings = <&inc_dec_kp S_ZMIN S_ZMOUT &inc_dec_kp S_BBACK S_BFWD>;
             };
@@ -154,9 +150,9 @@
                 label = l_cfg_label;
                 bindings = <
                                         l_cfg_LT                                    l_cfg_RT
-                                _______ l_cfg_LM                                    l_cfg_RM    _______
-                                _______ l_cfg_LB   _______                  _______ l_cfg_RB    _______
-                                _______ l_cfg_LH   _______                  _______ l_cfg_RH    _______
+                                _______ l_cfg_LM                                    l_cfg_RM _______
+                                _______ l_cfg_LB   _______                  _______ l_cfg_RB _______
+                                _______ l_cfg_LH   _______                  _______ l_cfg_RH _______
                 >;
                 sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN  &inc_dec_kp S_ZMIN S_ZMOUT >;
             };
