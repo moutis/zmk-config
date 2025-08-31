@@ -14,12 +14,12 @@
 
 
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
-#include "keymaps/keynames_3x5_2.h"     // key name defs for core alpha layers
+#include "keymaps/keynames_3x5_2.h"     // keyname defs core alpha (3x5+2)
 #include "keymaps/layers_def.h"         // layer def common core (3x5+2)
 #include "layouts/hd/vf-config.h"       // HD alpha keymap, adapt, and combo definitions
 
 &sensors {
-        triggers-per-rotation = <36>;
+        triggers-per-rotation = <40>;   // depends on the encoder
 };
 / {
   chosen {
