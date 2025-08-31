@@ -13,9 +13,9 @@
     };
 
     // Left encoder
-    encoder_l: encoder_l {
+    left_encoder: left_encoder {
         compatible = "alps,ec11";
-        label = "Encoder l";
+        label = "left encoder";
         a-gpios = <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         resolution = <4>;
@@ -23,9 +23,9 @@
     };
 
     // Right encoder
-    encoder_r: encoder_r {
+    right_encoder: right_encoder {
         compatible = "alps,ec11";
-        label = "Encoder r";
+        label = "right encoder";
         a-gpios = <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&gpio1 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         resolution = <4>;
@@ -33,9 +33,9 @@
     };
 
     // Center encoder
-    encoder_c: encoder_c {
+    center_encoder: center_encoder {
         compatible = "alps,ec11";
-        label = "Encoder c";
+        label = "center encoder";
         a-gpios = <&pro_micro 3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         resolution = <4>;
@@ -44,7 +44,7 @@
 
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&encoder_l &encoder_r &encoder_c>;
+        sensors = <&left_encoder &right_encoder &center_encoder>;
     };
 
     kscan0: kscan_0 {

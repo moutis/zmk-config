@@ -6,4 +6,4 @@ url: https://github.com/sadekbaroudi/ffkb/
 requires: [pro_micro]
 features:
   - keys
-  - encoder
+#  - encoder
