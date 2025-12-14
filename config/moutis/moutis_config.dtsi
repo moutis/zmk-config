@@ -11,6 +11,10 @@
  * optional features
  */
 #define COMMA_CAP           // , before alpha capitalizes that alpha
+
+//#define MagicH              // use H as adaptive for vowel SFB handling
+#define MagicJ              // Use J as adaptive for vowel SFB handling
+
 #define H_DIGRAPH_COMBOS    // th, ch, sh, wh, gh, ph
 #define EN_PRONOUN_COMBOS   // I, I'm, I've I'd I'll you've you'd your you're you'll etc.
 #define JP_MODE_ENABLE      // Add a JP layer,combos, etc.
