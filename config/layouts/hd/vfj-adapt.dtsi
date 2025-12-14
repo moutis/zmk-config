@@ -49,7 +49,9 @@
             bindings = <&kp E>;
 
             akE_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(E)>; strict-modifiers; };
+#ifdef MagicJ
             akE_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
+#endif // MagicJ
         };
         ak_F: ak_F {
             compatible = "zmk,behavior-adaptive-key";
@@ -80,10 +82,10 @@
             akH_t_n { trigger-keys = <L M LS(M) RS(M)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
             akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; strict-modifiers; };
 #ifdef MagicH
-//            akH_t_a { trigger-keys = <U LS(U) RS(U)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; };
-//            akH_t_e { trigger-keys = <O LS(O) RS(O)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; };
-//            akH_t_o { trigger-keys = <E LS(E) RS(E)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; strict-modifiers; };
-//            akH_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
+            akH_t_a { trigger-keys = <U LS(U) RS(U)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; };
+            akH_t_e { trigger-keys = <O LS(O) RS(O)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; };
+            akH_t_o { trigger-keys = <E LS(E) RS(E)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; strict-modifiers; };
+            akH_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
 #endif // MagicH
         };
         ak_I: ak_I {

@@ -44,7 +44,9 @@
             bindings = <&kp E>;
 
             akE_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(E)>; };
-            akE_t_u { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
+#ifdef MagicJ
+            akE_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
+#endif // MagicJ
         };
         ak_F: ak_F {
             compatible = "zmk,behavior-adaptive-key";
