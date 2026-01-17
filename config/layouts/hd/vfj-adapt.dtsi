@@ -226,7 +226,7 @@
             akX_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(X)>; strict-modifiers; };
             akX_t_v { trigger-keys = <D>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp V>; strict-modifiers; };
             akX_t_t { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp T>; strict-modifiers; };
-            akX_t_l { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
+            akX_t_n { trigger-keys = <M>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
             akX_t_s { trigger-keys = <W>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp S>; strict-modifiers; };
         };
         ak_Y: ak_Y {
@@ -235,6 +235,7 @@
             bindings = <&kp Y>;
 
             akY_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(Y)>; strict-modifiers; };
+            akY_t_y { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp I>; strict-modifiers; };
         };
         ak_Z: ak_Z {
             compatible = "zmk,behavior-adaptive-key";

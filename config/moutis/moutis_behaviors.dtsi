@@ -358,56 +358,56 @@
             #binding-cells = <0>;
             bindings = <&sl_dot>;
 
-            ak_DOT_EXCL { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; };
+            ak_DOT_EXCL { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp EXCL>; strict-modifiers; };
         };
         ak_FSLH: ak_FSLH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp FSLH>;
 
-            ak_FSLH_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
+            ak_FSLH_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
         };
         ak_DQT: ak_DQT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp DQT>;
 
-            ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; };
-            ak_DQT_pairSquo { trigger-keys = <SQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &t_pairSquo>; };
+            ak_DQT_Q { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC  &kp QMARK>; strict-modifiers; };
+            ak_DQT_pairSquo { trigger-keys = <SQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &t_pairSquo>; strict-modifiers; };
         };
         ak_SQT: ak_SQT {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp SQT>;
 
-            ak_SQT_pairDquo { trigger-keys = <DQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &t_pairDquo>; };
+            ak_SQT_pairDquo { trigger-keys = <DQT>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &t_pairDquo>; strict-modifiers; };
 
-//            ak_SQT_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; };
-//            ak_SQT_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; };
+//            ak_SQT_A { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; };
+//            ak_SQT_U { trigger-keys = <A>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
         };
         ak_HASH: ak_HASH {
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp HASH>;
 
-        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; };
+        ak_HASH_INVX { trigger-keys = <FSLH>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp BSPC &kp S_INVX>; strict-modifiers; };
 #ifdef m_b_B
-        ak_HASH_b_B { trigger-keys = <B>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_B>; };
+        ak_HASH_b_B { trigger-keys = <B>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_B>; strict-modifiers; };
 #endif
 #ifdef m_b_G
-        ak_HASH_b_G { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_G>; };
+        ak_HASH_b_G { trigger-keys = <G>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_G>; strict-modifiers; };
 #endif
 #ifdef m_b_I
-        ak_HASH_b_I { trigger-keys = <I>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_I>; };
+        ak_HASH_b_I { trigger-keys = <I>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_I>; strict-modifiers; };
 #endif
 #ifdef m_b_T
-        ak_HASH_b_T { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_T>; };
+        ak_HASH_b_T { trigger-keys = <T>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_T>; strict-modifiers; };
 #endif
 #ifdef m_b_U
-        ak_HASH_b_U { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_U>; };
+        ak_HASH_b_U { trigger-keys = <U>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_U>; strict-modifiers; };
 #endif
 #ifdef m_b_V
-        ak_HASH_b_V { trigger-keys = <V>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_V>; };
+        ak_HASH_b_V { trigger-keys = <V>; max-prior-idle-ms = <my_ak_term>; bindings = <&b_V>; strict-modifiers; };
 #endif
         };
 
@@ -424,7 +424,7 @@
  *          compatible = "zmk,behavior-adaptive-key";
  *          #binding-cells = <0>;
  *          bindings = <&kp A>;
- *          akA_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(A)>; };
+ *          akA_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(A)>; strict-modifiers; };
  *      };
  *
  *  It works flawlessly for me. Your mileage may vary
@@ -445,7 +445,7 @@
             compatible = "zmk,behavior-adaptive-key";
             #binding-cells = <0>;
             bindings = <&kp CMMA>;
-            ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC  &caps_word>; };
+            ak_CMMA_cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC  &caps_word>; strict-modifiers; };
         };
 
 /*
