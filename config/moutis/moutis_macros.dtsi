@@ -70,7 +70,7 @@
 
     ZMK_MACRO(m_numword,
         tap-ms = <my_tapping_speed>;
-        bindings =  <&num_word l_fun>
+        bindings =  <&tog l_fun>
                 ;
         )
 
