@@ -38,7 +38,7 @@
 #define JP_Layer_label "HD-JP"
 #define JP_LT &kp MINUS       &kp W           &kp M           &kp G           &kp V
 #define JP_LM &hml RCTRL S    &hml RALT Z     &hml RGUI N     &hml RSHFT T    &kp K
-#define JP_LB &kp F           &kp P           &t_nn           &kp D           &kp X // x for ぁぃぅぇぉゃゅょ…
+#define JP_LB &kp F           &kp P           &t_nn           &kp D           &kp J
 #define JP_LH                                                 _______         &lt l_nav R
 
 #define JP_RT _______         &DotColnJ       &SlshStarJ      &lk_LRbkt       &kp RBKT
