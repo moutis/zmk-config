@@ -85,8 +85,8 @@
             akH_t_a { trigger-keys = <U LS(U) RS(U)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; };
             akH_t_e { trigger-keys = <O LS(O) RS(O)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; };
             akH_t_o { trigger-keys = <E LS(E) RS(E)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; strict-modifiers; };
-            akH_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
 #endif // MagicH
+            akH_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; };
         };
         ak_I: ak_I {
             compatible = "zmk,behavior-adaptive-key";
