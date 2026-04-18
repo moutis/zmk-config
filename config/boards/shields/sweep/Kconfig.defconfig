@@ -4,7 +4,7 @@
 if SHIELD_SWEEP_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "sweep"
+    default "Sweep"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
