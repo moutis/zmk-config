@@ -25,7 +25,7 @@
 
 #define HD_Layer_label "HD-Vfj"
 #define HD_LT &ak_X           &ak_W           &ak_M           &ak_G           &ak_V
-#define HD_LM &mt_S LCTRL S   &mt_C LALT C    &mt_N LGUI N    &mt_T LSHFT T   &lt l_num K
+#define HD_LM &mt_S LCTRL S   &mt_C LALT C    &mt_N LGUI N    &mt_T LSHFT T   &lt_K l_num K
 #define HD_LB &ak_F           &ak_P           &ak_L           &ak_D           &ak_J
 #define HD_LH                                                 &lt_BSPC l_fun BSPC   &lt_R l_nav R
 

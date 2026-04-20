@@ -25,7 +25,7 @@
 
 #define HD_Layer_label "HD-Ti"
 #define HD_LT &SqtLT          &ak_B           &ak_H           &ak_G           &DqtGT
-#define HD_LM &mt_C LCTRL C   &mt_S LALT S    &mt_N LGUI N    &mt_T LSHFT T   &ak_K
+#define HD_LM &mt_C LCTRL C   &mt_S LALT S    &mt_N LGUI N    &mt_T LSHFT T   &lt_K l_num K
 #define HD_LB &ak_P           &ak_F           &ak_L           &ak_D           &ak_V
 #define HD_LH                                                 &lt_BSPC l_fun BSPC &lt_R l_nav R
 
@@ -36,8 +36,8 @@
 
 // Japanese "mode" (no adaptives, & C, J, L, X not used so repurpose to Z, っ, ん, -)
 #define JP_Layer_label "HD-JP"
-#define JP_LT &lk_LRbkt         &kp G           &kp M         &kp P         &kp RBKT
-#define JP_LM &hml RCTRL Z    &hml RALT S     &hml RGUI N     &hml RSHFT T    &kp K
+#define JP_LT &lk_LRbkt         &kp G           &kp M         &kp P           &kp RBKT
+#define JP_LM &hml RCTRL Z    &hml RALT S     &hml RGUI N     &hml RSHFT T    &lt l_num K
 #define JP_LB &kp P           &kp F           &t_nn           &kp D           &kp V
 #define JP_LH                                                 _______         &lt l_nav R
 
