@@ -126,6 +126,10 @@
             my_lt_config;
             bindings = <&mo>, <&mm_BspcDel>;
         };
+        lt_K: lt_K {
+            my_lt_config;
+            bindings = <&mo>, <&ak_K>;
+        };
 
 /*
  * modmorph behaviors
