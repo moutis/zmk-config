@@ -38,7 +38,7 @@
 
 /*
  *
- * App switcher "SlAppy" & "SlApBack"
+ * App switcher "SlAppy" & "SlAppNext" & "SlAppBack"
  * holds up the app menu, allows L/R navigation
  *
  */
@@ -55,7 +55,17 @@
                 , <&macro_release &kp RGUI>  // release the previous hold
                 ;
         )
-    ZMK_MACRO(SlApBack,        // "Sticky Layer App Switcher Backwards"
+    ZMK_MACRO(SlAppNext,        // "Sticky Layer App Switcher Next"
+        wait-ms = <50>; tap-ms = <20>;
+        bindings =
+                  <&macro_press &sk RGUI>     // leave GUI down to keep menu up
+                , <&macro_tap &kp TAB>        // just tap for no repeat
+                , <&macro_pause_for_release>  // hold for repeat ...
+                , <&macro_tap &skapp LGUI>    // release other GUI after a timeout
+                , <&macro_release &sk RGUI>   // now release the previous hold
+                ;
+        )
+    ZMK_MACRO(SlAppBack,        // "Sticky Layer App Switcher Back"
         wait-ms = <50>; tap-ms = <20>;
         bindings =
                   <&macro_press &sk RGUI>     // leave GUI down to keep menu up

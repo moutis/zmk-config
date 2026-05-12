@@ -88,15 +88,15 @@
 #define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          &kp S_FAGN
 #define l_nav_RB &kp S_DBTM         &kp END             &kp DOWN            &kp PG_DN           &kp S_PARD
 
-#define l_nav_LH &SlApBack          &SlAppy
+#define l_nav_LH &SlAppBack          &SlAppNext
 #define l_nav_RH &kp S_BBACK        &kp S_BFWD
 
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
 //│  BT3     BT2      BT1      BT0      BT_Clr  │                │ ZOOMRST none    none    KILL-W  KILL-M     │
-//│  HD_AKTg L_0      L_1      KC_VOLU  KC_BRIU |                | ZOOMOUT KC_MPRV KC_MUTE KC_MNXT KC_NO      │
-//│  QK_BOOT AG_SWAP  AG_NORM  KC_VOLD  KC_BRID │                │ ZOOMIN  KC_MRWD KC_MPLY KC_MFFD QK_BOOT    │
+//│  _____   C_NEXT   C_PP     C_VOL_UP KC_BRIU |                | ZOOMOUT KC_MPRV KC_MUTE KC_MNXT KC_NO      │
+//│ rst_btld C_PREV   C_MUTE   C_VOL_DN KC_BRID │                │ ZOOMIN  KC_MRWD KC_MPLY KC_MFFD rst_btld   │
 //╰──────────────────────────╮ ZOOMOUT  ZOOMIN  │                │ ZOOMIN  ZOOMOUT ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_cfg_label "l_cfg"
