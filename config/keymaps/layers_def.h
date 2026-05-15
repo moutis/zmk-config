@@ -88,27 +88,32 @@
 #define l_nav_LB &kp UNDO           &kp CUT             &kp S_COPY          &kp S_PSTM          &kp S_FAGN
 #define l_nav_RB &kp S_DBTM         &kp END             &kp DOWN            &kp PG_DN           &kp S_PARD
 
-#define l_nav_LH &SlAppBack          &SlAppNext
+#define l_nav_LH &SlAppBack         &SlAppNext
 #define l_nav_RH &kp S_BBACK        &kp S_BFWD
 
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
-//╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
-//│  BT3     BT2      BT1      BT0      BT_Clr  │                │ ZOOMRST none    none    KILL-W  KILL-M     │
-//│  _____   C_NEXT   C_PP     C_VOL_UP KC_BRIU |                | ZOOMOUT KC_MPRV KC_MUTE KC_MNXT KC_NO      │
-//│ rst_btld C_PREV   C_MUTE   C_VOL_DN KC_BRID │                │ ZOOMIN  KC_MRWD KC_MPLY KC_MFFD rst_btld   │
-//╰──────────────────────────╮ ZOOMOUT  ZOOMIN  │                │ ZOOMIN  ZOOMOUT ╭──────────────────────────╯
-//                           ╰──────────────────╯                ╰─────────────────╯
+//╭──────────────────────────────────────────────╮              ╭──────────────────────────────────────────────╮
+//│  OS_LUX   OS_WIN   OS_MAC   KILL-W   OS_KILL │              │ ZOOMRST KC_BRID  KC_BRIU  none     none      │
+//│  BT3      BT2      BT1      BT0      BT_Clr  |              | ZOOMOUT C_VOL_DN C_VOL_UP C_MUTE   none      │
+//│  rst_btld C_PP     C_PREV   C_NEXT   C_MUTE  │              │ ZOOMIN  C_PREV   C_NEXT   C_PP     rst_btld  │
+//╰──────────────────────────╮ C_VOL_DN C_VOL_UP │              │ ZOOMIN  ZOOMOUT  ╭───────────────────────────╯
+//                           ╰───────────────────╯              ╰──────────────────╯
 #define l_cfg_label "l_cfg"
 
-#define l_cfg_LT &bt BT_SEL 3        &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
-#define l_cfg_RT &kp S_ZMRST         &none               &none               &kp KILL_W         &kp KILL_M
+#define OS_MAC none // Eventually, the OS selector using OS_Key module
+#define OS_WIN none // Eventually, the OS selector using OS_Key module
+#define OS_LUX none // Eventually, the OS selector using OS_Key module
+#define OS_KILL kp KILL_M
 
-#define l_cfg_LM &none              &kp C_NEXT          &kp C_PP            &kp C_VOL_UP        &kp C_BRI_UP
-#define l_cfg_RM &kp S_ZMOUT        &kp C_VOL_UP        &kp C_MUTE          &kp C_NEXT          &none
+#define l_cfg_LT &OS_LUX            &OS_WIN             &OS_MAC             &kp KILL_W          &OS_KILL
+#define l_cfg_RT &kp ZOOMRST        &kp KC_BRID         &kp KC_BRIU         &none               &none
 
-#define l_cfg_LB &rst_btld          &kp C_PREV          &kp C_MUTE          &kp C_VOL_DN        &kp C_BRI_DN
-#define l_cfg_RB &kp S_ZMIN         &kp C_VOL_DN        &kp C_PP            &kp C_PREV          &rst_btld
+#define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
+#define l_cfg_RM &kp S_ZMOUT        &kp C_VOL_DN        &kp C_VOL_UP        &kp C_MUTE          &none
 
-#define l_cfg_LH &kp S_ZMOUT        &kp S_ZMIN
+#define l_cfg_LB &rst_btld          &kp C_PP            &kp C_PREV          &kp C_NEXT          &kp C_MUTE
+#define l_cfg_RB &kp S_ZMIN         &kp C_PREV          &kp C_NEXT          &kp C_PP            &rst_btld
+
+#define l_cfg_LH &kp C_VOL_DN       &kp C_VOL_UP
 #define l_cfg_RH &kp S_ZMIN         &kp S_ZMOUT

@@ -60,7 +60,7 @@ COMBO_LAYER(pnIll,      &t_PnIll,   RM3 LB2, l_hd)  // "I'll "
 COMBO_LAYER(pnId,       &t_PnId,    RM3 LB1, l_hd)  // "I'd "
 COMBO_LAYER(pnIve,      &t_PnIve,   RM3 LT0, l_hd)  // "I've "
 
-COMBO_LAYER(pnYou,      &t_Pnyou,   RB1 RB2  RB3, l_hd) // “You”
+COMBO_LAYER(pnYou,      &t_Pnyou,   RB3 RB1, l_hd) // “You”
 COMBO_LAYER(pnYoure,    &t_PnYoure, RB3 LB4, l_hd)  // "You're "
 COMBO_LAYER(pnYour,     &t_PnYour,  RB3 LB3, l_hd)  // "Your "
 COMBO_LAYER(pnYoull,    &t_PnYoull, RB3 LB2, l_hd)  // "You'll "
@@ -84,6 +84,9 @@ COMBO_LAYER(jp_t_wo,    &t_wo,      LT3 LT2, l_jp)  // を
 COMBO_LAYER(jp_t_shi,   &t_watashi, RM3 RM4, l_jp)  // わたし
 
 #ifdef JP_YOUON_COMBOS     // Major Japanese contracted sounds as combos
+COMBO_LAYER(jp_t_ya,   &t_ya,     RB3 RM1, l_jp)  // ya ゃ
+COMBO_LAYER(jp_t_yu,   &t_yu,     RB3 RB1, l_jp)  // yu ゅ
+COMBO_LAYER(jp_t_yo,   &t_yo,     RB3 RB2, l_jp)  // yo ょ
 
 COMBO_LAYER(jp_t_kya,   &t_kya,     LM0 RM1, l_jp)  // kya
 COMBO_LAYER(jp_t_kyu,   &t_kyu,     LM0 RB1, l_jp)  // kyu
