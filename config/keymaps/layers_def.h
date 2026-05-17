@@ -106,7 +106,7 @@
 #define OS_LUX none // Eventually, the OS selector using OS_Key module
 #define OS_KILL (kp KILL_M)
 
-#define l_cfg_LT &OS_MAC            &OS_WIN             &OS_LUX             &kp KILL_W          &OS_KILL
+#define l_cfg_LT &OS_MAC            &OS_WIN             &OS_LUX             &kp KILL_W          &kp KILL_M
 #define l_cfg_RT &kp S_ZMRST        &kp KC_BRID         &kp KC_BRIU         &none               &none
 
 #define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
