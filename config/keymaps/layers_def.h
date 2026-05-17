@@ -101,15 +101,10 @@
 //                           ╰───────────────────╯              ╰──────────────────╯
 #define l_cfg_label "l_cfg"
 
-#define OS_MAC none // Eventually, the OS selector using OS_Key module
-#define OS_WIN none // Eventually, the OS selector using OS_Key module
-#define OS_LUX none // Eventually, the OS selector using OS_Key module
-#define OS_KILL (kp KILL_M)
-
-//#define l_cfg_LT &none              &none               &none               &kp KILL_W          &kp KILL_M
+#define l_cfg_LT &none              &none               &none               &kp KILL_W          &kp KILL_M
+//#define l_cfg_LT &bt BT_SEL 3        &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
+#define l_cfg_RT &kp S_ZMRST        &none               &none               &none         &none
 //#define l_cfg_RT &kp S_ZMRST        &kp KC_BRID         &kp KC_BRIU         &none               &none
-#define l_cfg_LT &bt BT_SEL 3        &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
-#define l_cfg_RT &kp S_ZMRST         &none               &none               &kp KILL_W         &kp KILL_M
 
 #define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
 #define l_cfg_RM &kp S_ZMOUT        &kp C_VOL_DN        &kp C_VOL_UP        &kp C_MUTE          &none
