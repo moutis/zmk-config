@@ -8,18 +8,31 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-// #include <behaviors/num_word.dtsi>      // urob's num_word module
-
+#include <dt-bindings/zmk/oskey.h>      // mentaldesk's oskey module https://github.com/mentaldesk/oskey#configuration
+// #include <behaviors/num_word.dtsi>   // urob's num_word module
 
 #include "moutis/moutis_config.dtsi"    // my add-on feature defs
 #include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
-#include "layouts/hd/vfj-config.h"       // HD alpha keymap, adapt, and combo definitions
+#include "layouts/hd/vfj-config.h"      // HD alpha keymap, adapt, and combo definitions
 
 / {
 /*
  * Behaviors
  */
     behaviors {
+        os_sel: os_selector {
+            compatible = "zmk,behavior-os-selector";
+            #binding-cells = <1>;
+        };
+    ok_KILL: os_key_KILL {
+        compatible = "zmk,behavior-os-key";
+        #binding-cells = <0>;
+        /*             Win           Mac           Lin  */
+        bindings = <&kp KILL_W>, <&kp KILL_M>, <&kp KILL_W>;
+    };
+
+
+#include <behaviors/oskey.dtsi>         // default oskey behaviors
 
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)

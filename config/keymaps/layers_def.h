@@ -100,13 +100,14 @@
 //╰──────────────────────────╮ C_VOL_DN C_VOL_UP │              │ ZOOMIN  ZOOMOUT  ╭───────────────────────────╯
 //                           ╰───────────────────╯              ╰──────────────────╯
 #define l_cfg_label "l_cfg"
+// the OS selector using OSKey module by mentaldesk <https://github.com/mentaldesk/oskey>
+// #define OS_MAC os_sel OS_MAC
+// #define OS_WIN os_sel OS_WIN
+// #define OS_LUX os_sel OS_LIN
+// #define OS_KILL kp KILL_M
 
-#define OS_MAC none // Eventually, the OS selector using OS_Key module
-#define OS_WIN none // Eventually, the OS selector using OS_Key module
-#define OS_LUX none // Eventually, the OS selector using OS_Key module
-#define OS_KILL kp KILL_M
 
-#define l_cfg_LT &OS_LUX            &OS_WIN             &OS_MAC             &kp KILL_W          &OS_KILL
+#define l_cfg_LT &os_sel OS_LIN     &os_sel OS_WIN      &os_sel OS_MAC      &kp KILL_W          &ok_KILL
 #define l_cfg_RT &kp S_ZMRST        &kp C_BRI_DN        &kp C_BRI_UP        &none               &none
 
 #define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR

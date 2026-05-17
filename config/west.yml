@@ -8,8 +8,8 @@ manifest:
       url-base: https://github.com/urob
     - name: ssbb
       url-base: https://github.com/ssbb
-#    - name: mentaldesk
-#      url-base: https://github.com/mentaldesk
+    - name: mentaldesk
+      url-base: https://github.com/mentaldesk
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -28,8 +28,8 @@ manifest:
     - name: zmk-adaptive-key
       remote: urob
       revision: main # set to same as ZMK version above
-#    - name: oskey
-#      remote: mentaldesk
+    - name: oskey
+      remote: mentaldesk
 #    - name: zmk-auto-layer # used in &num_word
 #      remote: urob
 #      revision: main # set to same as ZMK version above
