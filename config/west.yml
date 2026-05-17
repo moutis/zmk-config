@@ -30,6 +30,7 @@ manifest:
       revision: main # set to same as ZMK version above
     - name: oskey
       remote: mentaldesk
+      revision: main
 #    - name: zmk-auto-layer # used in &num_word
 #      remote: urob
 #      revision: main # set to same as ZMK version above
