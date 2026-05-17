@@ -28,7 +28,7 @@
         compatible = "zmk,behavior-os-key";
         #binding-cells = <0>;
         /*             Win           Mac           Lin  */
-        bindings = <&kp KILL_W>, <&kp KILL_M>, <&kp KILL_W>;
+        bindings = <&kp LC(LA(DEL))>, <&kp LG(LA(ESCAPE))>, <&kp LC(LA(DEL))S>;
     };
 
 
