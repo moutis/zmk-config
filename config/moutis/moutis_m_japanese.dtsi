@@ -57,6 +57,19 @@
 
 #ifdef JP_YOUON_COMBOS
 
+    ZMK_MACRO(t_ya,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp X &kp Y &kp A>;
+        )
+    ZMK_MACRO(t_yu,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp X &kp Y &kp U>;
+        )
+    ZMK_MACRO(t_yo,
+        tap-ms = <my_tapping_speed>;
+        bindings = <&kp X &kp Y &kp O>;
+        )
+
     ZMK_MACRO(t_kya,
         tap-ms = <my_tapping_speed>;
         bindings = <&kp K &kp Y &kp A>;
