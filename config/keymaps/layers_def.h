@@ -10,8 +10,8 @@
 //  * left paired symbols are "linger keys" via hold taps. Tap for left, hold for pair with insertion point between
 //╭─────────────────────────────────────────────╮                ╭────────────────────────────────────────────╮
 //|    Z   |    Q   |   ¶    |   †    |    ‡    |                |   ¢    |    $   |    €   |    £   |   ¥    |
-//|    §   |    [   |   (    |   {    |    •    |                |   /    |    =   |    *   |    +   |   -    |
-//|    °   |    ]   |   )    |   }    |    ·    |                |   ^    |    |   |    &   |    <   |   >    |
+//|    §   |    {   |   (    |   [    |    •    |                |   /    |    =   |    *   |    +   |   -    |
+//|    °   |    }   |   )    |   ]    |    ·    |                |   ^    |    |   |    &   |    <   |   >    |
 //╰──────────────────────────╮ dwdlt  |  dwdr   |                | &none  |    ¡   ╭──────────────────────────╯
 //                           ╰──────────────────╯                ╰─────────────────╯
 #define l_sym_label "l_sym"
@@ -19,10 +19,10 @@
 #define l_sym_LT &kp Z              &kp Q               &kp S_PARA          &kp S_CROS          &kp S_DCRS
 #define l_sym_RT &kp C_CENT         &kp DLLR            &kp C_EURO          &kp C_BPND          &kp C_JPY
 
-#define l_sym_LM &kp S_SECT         &lk_LRbkt           &lk_LRpar           &lk_LRbrc           &kp S_BBLT
+#define l_sym_LM &kp S_SECT         &lk_LRbrc           &lk_LRpar           &lk_LRbkt           &kp S_BBLT
 #define l_sym_RM &kp FSLH           &mt RSHFT EQUAL     &mt RGUI STAR       &mt RALT PLUS       &mt LCTRL MINUS
 
-#define l_sym_LB &kp S_DEGR         &kp RBKT            &kp RPAR            &kp RBRC            &kp S_SBLT
+#define l_sym_LB &kp S_DEGR         &kp RBRC            &kp RPAR            &kp RBKT            &kp S_SBLT
 #define l_sym_RB &kp CARET          &kp PIPE            &kp AMPS            &lk_LRltgt          &kp GT
 
 #define l_sym_LH &kp S_DWRDL        &kp S_DWRDR
@@ -106,7 +106,7 @@
 #define OS_LUX none // Eventually, the OS selector using OS_Key module
 #define OS_KILL (kp KILL_M)
 
-#define l_cfg_LT &OS_LUX            &OS_WIN             &OS_MAC             &kp KILL_W          &kp KILL_M
+#define l_cfg_LT &none              &none               &none               &kp KILL_W          &kp KILL_M
 #define l_cfg_RT &kp ZOOMRST        &kp KC_BRID         &kp KC_BRIU         &none               &none
 
 #define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
