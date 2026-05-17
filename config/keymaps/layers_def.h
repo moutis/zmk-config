@@ -94,7 +94,7 @@
 //                                          Keyboard & System Settings
 //                      L_CFG Keyboard Configuration (left) and Media Settings (right)
 //╭──────────────────────────────────────────────╮              ╭──────────────────────────────────────────────╮
-//│  OS_LUX   OS_WIN   OS_MAC   KILL-W   OS_KILL │              │ ZOOMRST KC_BRID  KC_BRIU  none     none      │
+//│  OS_LUX   OS_WIN   OS_MAC   KILL-W   OS_KILL │              │ ZOOMRST C_BRI_DN C_BRI_UP none     none      │
 //│  BT3      BT2      BT1      BT0      BT_Clr  |              | ZOOMOUT C_VOL_DN C_VOL_UP C_MUTE   none      │
 //│  rst_btld C_PP     C_PREV   C_NEXT   C_MUTE  │              │ ZOOMIN  C_PREV   C_NEXT   C_PP     rst_btld  │
 //╰──────────────────────────╮ C_VOL_DN C_VOL_UP │              │ ZOOMIN  ZOOMOUT  ╭───────────────────────────╯
@@ -104,12 +104,10 @@
 #define OS_MAC none // Eventually, the OS selector using OS_Key module
 #define OS_WIN none // Eventually, the OS selector using OS_Key module
 #define OS_LUX none // Eventually, the OS selector using OS_Key module
-#define OS_KILL (kp KILL_M)
+#define OS_KILL kp KILL_M
 
-#define l_cfg_LT &OS_LUX              &OS_WIN               &OS_MAC               &kp KILL_W          &kp KILL_M
-//#define l_cfg_LT &bt BT_SEL 3        &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0       &bt BT_CLR
-#define l_cfg_RT &kp S_ZMRST        &KC_BRID               &KC_BRIU               &none               &none
-//#define l_cfg_RT &kp S_ZMRST        &kp KC_BRID         &kp KC_BRIU         &none               &none
+#define l_cfg_LT &OS_LUX            &OS_WIN             &OS_MAC             &kp KILL_W          &OS_KILL
+#define l_cfg_RT &kp S_ZMRST        &C_BRI_DN           &C_BRI_UP           &none               &none
 
 #define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
 #define l_cfg_RM &kp S_ZMOUT        &kp C_VOL_DN        &kp C_VOL_UP        &kp C_MUTE          &none
