@@ -107,7 +107,8 @@
 // #define OS_KILL kp KILL_M
 
 
-#define l_cfg_LT &os_sel OS_LIN     &os_sel OS_WIN      &os_sel OS_MAC      &kp KILL_W          &ok_KILL
+//#define l_cfg_LT &os_sel OS_LIN     &os_sel OS_WIN      &os_sel OS_MAC      &kp KILL_W          &ok_KILL
+#define l_cfg_LT &none              &none               &none               &kp KILL_W          &kp KILL_M
 #define l_cfg_RT &kp S_ZMRST        &kp C_BRI_DN        &kp C_BRI_UP        &none               &none
 
 #define l_cfg_LM &bt BT_SEL 3       &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        &bt BT_CLR
