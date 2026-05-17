@@ -89,8 +89,7 @@
             l_cfg {
                 label = l_cfg_label;
                 bindings = <
-                                l_cfg_LT
-                                            l_cfg_RT
+                                l_cfg_LT            l_cfg_RT
                                 l_cfg_LM            l_cfg_RM
                                 l_cfg_LB            l_cfg_RB
                         _______ l_cfg_LH            l_cfg_RH _______

@@ -101,11 +101,6 @@
 //                           ╰───────────────────╯              ╰──────────────────╯
 #define l_cfg_label "l_cfg"
 
-#define OS_MAC none // Eventually, the OS selector using OS_Key module
-#define OS_WIN none // Eventually, the OS selector using OS_Key module
-#define OS_LUX none // Eventually, the OS selector using OS_Key module
-#define OS_KILL (kp KILL_M)
-
 #define l_cfg_LT &none              &none               &none               &kp KILL_W          &kp KILL_M
 #define l_cfg_RT &kp S_ZMRST        &kp KC_BRID         &kp KC_BRIU         &none               &none
 
