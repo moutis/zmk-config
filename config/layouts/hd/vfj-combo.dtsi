@@ -60,7 +60,7 @@ COMBO_LAYER(pnIll,      &t_PnIll,   RM3 LB2, l_hd)  // "I'll "
 COMBO_LAYER(pnId,       &t_PnId,    RM3 LB1, l_hd)  // "I'd "
 COMBO_LAYER(pnIve,      &t_PnIve,   RM3 LT0, l_hd)  // "I've "
 
-COMBO_LAYER(pnYou,      &t_Pnyou,   RB3 RB1, l_hd) // “You”
+COMBO_LAYER(pnYou,      &t_Pnyou,   RB3 RB2 RB1, l_hd) // “You”
 COMBO_LAYER(pnYoure,    &t_PnYoure, RB3 LB4, l_hd)  // "You're "
 COMBO_LAYER(pnYour,     &t_PnYour,  RB3 LB3, l_hd)  // "Your "
 COMBO_LAYER(pnYoull,    &t_PnYoull, RB3 LB2, l_hd)  // "You'll "

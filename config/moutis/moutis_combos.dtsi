@@ -82,7 +82,7 @@ COMBO_LAYER(t_Excl,  &kp EXCL,              RT1 RT2, l_hd l_jp)
 COMBO_LAYER(t_Ques,  &kp QMARK,             RT2 RT3, l_hd l_jp)
 COMBO_LAYER(t_Grav,  &kp GRAVE,             RT3 RT4, l_hd l_jp)
 COMBO_LAYER(t_atMk,  &lk LS(LA(SEMI)) AT_SIGN,  RT0 RT1, l_hd l_jp)   // @ (№ if held)
-COMBO_LAYER(t_Under, &kp UNDER,             RB1 RB2 RB3, l_hd l_jp)       // _
+COMBO_LAYER(t_Under, &kp UNDER,             RB1 RB3, l_hd l_jp)       // _
 COMBO_LAYER(t_Equal, &lk PRCNT EQUAL,       RB2 RB3, l_hd l_jp)       // = (percent if held)
 COMBO_LAYER(t_Ndash, &lk LA(LS(MINUS)) LA(MINUS), RB0 RB1, l_hd l_jp) // N-dash (M-dash if held)
 COMBO_LAYER(t_Mdash, &kp LA(LS(MINUS)),     RB0 RB2, l_hd l_jp)       // M-dash (minus)
