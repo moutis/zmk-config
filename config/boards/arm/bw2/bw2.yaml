@@ -1,0 +1,10 @@
+file_format: "1"
+id: bad_wings
+name: Bad Wings
+type: board
+arch: arm
+features:
+  - keys
+outputs:
+  - usb
+url: https://github.com/hazels-garage/bad-wings/tree/master/v2

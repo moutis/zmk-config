@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     - name: caksoylar
       url-base: https://github.com/caksoylar
     - name: urob
@@ -21,13 +23,16 @@ manifest:
 
       remote: urob # zmkfirmware or urob
       revision: main # main or v0.2+fix-child-nodes
-
       import: app/west.yml
 
       revision: main
     - name: zmk-adaptive-key
       remote: urob
       revision: main # set to same as ZMK version above
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
+
     - name: oskey
       remote: mentaldesk
       revision: main

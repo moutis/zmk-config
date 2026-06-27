@@ -1,0 +1,7 @@
+file_format: "1"
+id: bw2_cirque
+name: bw2_cirque
+type: shield
+url: https://github.com/hazels-garage/bad-wings/
+exposes:
+  - spi_glidepoint
