@@ -31,7 +31,7 @@ manifest:
       revision: main # set to same as ZMK version above
     - name: cirque-input-module
       remote: petejohanson
-      revision: v0.3
+      revision: main
 
     - name: oskey
       remote: mentaldesk
