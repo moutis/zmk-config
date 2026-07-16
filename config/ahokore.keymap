@@ -15,6 +15,7 @@
 #include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
 #include "layouts/hd/vfj-config.h"      // HD alpha keymap, adapt, and combo definitions
 
+#include <behaviors/oskey.dtsi>         // default oskey behaviors
 / {
 /*
  * Behaviors
@@ -24,7 +25,7 @@
             compatible = "zmk,behavior-os-selector";
             #binding-cells = <1>;
         };
-    ok_KILL: os_key_KILL {
+    os_KILL: os_key_KILL {
         compatible = "zmk,behavior-os-key";
         #binding-cells = <0>;
         /*             Win           Mac           Lin  */
@@ -37,7 +38,6 @@
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)
 
     };
-#include <behaviors/oskey.dtsi>         // default oskey behaviors
 
 /*
  * Macros
