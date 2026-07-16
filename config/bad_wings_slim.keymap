@@ -22,6 +22,9 @@
     debounce-scan-period-ms = <3>;
 };
 
+#ifdef OSKEYMODULE //  (not working in v.3, requires update to v.4)
+#include <behaviors/oskey.dtsi>         // default oskey behaviors
+#endif
 / {
 /*
  * Behaviors
