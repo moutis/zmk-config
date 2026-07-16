@@ -106,7 +106,7 @@
 #define SK_OSX os_sel OS_MAC
 #define SK_WIN os_sel OS_WIN
 #define SK_LNX os_sel OS_LIN
-#elif
+#else
 #define SK_OSX none
 #define SK_WIN none
 #define SK_LNX none
