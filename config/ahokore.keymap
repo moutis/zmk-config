@@ -20,7 +20,7 @@
  * Behaviors
  */
     behaviors {
-        os_sel: os_selector {
+    os_sel: os_selector {
             compatible = "zmk,behavior-os-selector";
             #binding-cells = <1>;
         };
@@ -32,12 +32,12 @@
     };
 
 
-#include <behaviors/oskey.dtsi>         // default oskey behaviors
 
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
 #include HD_adapt_file                  // HDalpha/mnemonic based adaptives (most of them)
 
     };
+#include <behaviors/oskey.dtsi>         // default oskey behaviors
 
 /*
  * Macros
