@@ -15,6 +15,7 @@
 #include "keymaps/keynames_3x5_3.h"     // key name defs for this board topology
 #include "layouts/hd/vfj-config.h"      // HD alpha keymap, adapt, and combo definitions
 
+#ifdef OSKEYMODULE //  (not working in v.3, requires update to v.4)
 #include <behaviors/oskey.dtsi>         // default oskey behaviors
 / {
 /*
@@ -31,7 +32,7 @@
         /*             Win           Mac           Lin  */
         bindings = <&kp LC(LA(DEL))>, <&kp LG(LA(ESCAPE))>, <&kp LC(LA(DEL))>;
     };
-
+#endif
 
 
 #include "moutis/moutis_behaviors.dtsi" // common behaviors (hold-taps, mod-morphs, lingers, adaptives)
