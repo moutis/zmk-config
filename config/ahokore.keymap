@@ -24,7 +24,7 @@
             compatible = "zmk,behavior-os-selector";
             #binding-cells = <1>;
         };
-    ok_KILL: os_key_KILL {
+    os_KILL: os_key_KILL {
         compatible = "zmk,behavior-os-key";
         #binding-cells = <0>;
         /*             Win           Mac           Lin  */
