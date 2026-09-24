@@ -46,7 +46,7 @@ COMBO_ANY(jpmode,    &m_japan,      RM1 RM2 RM3)    // switch to Japanese input 
 COMBO_ANY(cfgL,      &mo l_cfg,     LH2 LH1)        // get the settings/media layer from anywhere
 COMBO_ANY(cfgR,      &mo l_cfg,     RH1 RH2)
 COMBO_ANY(navnum,    &tog l_num,    LM4 LH1)        // get the nav(l)/numpad(r) layer from anywhere
-COMBO_ANY(funnum,    &tog l_num,    RH1 RM4)        // get the fun(l)/num-optimized (r) layer from anywhere
+COMBO_ANY(funnum,    &tog l_fun,    RH1 RM4)        // get the fun(l)/num-optimized (r) layer from anywhere
 COMBO_ANY(appswitch, &SlAppy,       LT1 LT0)        // App switch
 COMBO_LAYER(docaps,  &caps_word,    RB3 RB4, l_hd)  // CAPSWORD
 COMBO_LAYER(capslk,  &kp CAPS,      RB2 RB3 RB4, l_hd) // CAPS LOCK
