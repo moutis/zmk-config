@@ -109,7 +109,9 @@
             akJ_t_a { trigger-keys = <U LS(U) RS(U)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; strict-modifiers; };
             akJ_t_e { trigger-keys = <O LS(O) RS(O) A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp E>; strict-modifiers; strict-modifiers; };
             akJ_t_o { trigger-keys = <E LS(E) RS(E)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp O>; strict-modifiers; strict-modifiers; };
-//            akJ_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; strict-modifiers; };
+            akJ_t_u { trigger-keys = <A LS(A) RS(A)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp U>; strict-modifiers; strict-modifiers; };
+            akJ_t_L { trigger-keys = <L LS(L) RS(L)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; strict-modifiers; };
+
 #endif // MagicJ
         };
         ak_K: ak_K {
