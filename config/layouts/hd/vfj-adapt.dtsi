@@ -78,7 +78,7 @@
             bindings = <&kp H>;
 
             akH_Cap { trigger-keys = <CMMA>; max-prior-idle-ms = <my_cc_term>; bindings = <&kp BSPC &kp LS(H)>; strict-modifiers; };
-            akH_t_l { trigger-keys = <N V>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
+            akH_t_l { trigger-keys = <N LS(M) V LS(V) H LS(H)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp L>; strict-modifiers; };
             akH_t_n { trigger-keys = <L M LS(M) RS(M)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp N>; strict-modifiers; };
             akH_t_sqt { trigger-keys = <Y>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp SQT>; strict-modifiers; };
             akH_t_a { trigger-keys = <U LS(U) RS(U)>; max-prior-idle-ms = <my_ak_term>; bindings = <&kp A>; strict-modifiers; };
